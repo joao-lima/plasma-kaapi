@@ -1,0 +1,3321 @@
+\hypertarget{group__PLASMA__Complex64__t}{
+\section{Simple Interface -\/ Double Complex}
+\label{group__PLASMA__Complex64__t}\index{Simple Interface -\/ Double Complex@{Simple Interface -\/ Double Complex}}
+}
+\subsection*{Functions/Subroutines}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{group__PLASMA__Complex64__t_ga6733ad2b79f186348ba47778e2e26fae_ga6733ad2b79f186348ba47778e2e26fae}{PLASMA\_\-zcgels} (PLASMA\_\-enum trans, int M, int N, int NRHS, PLASMA\_\-Complex64\_\-t $\ast$A, int LDA, PLASMA\_\-Complex64\_\-t $\ast$B, int LDB, PLASMA\_\-Complex64\_\-t $\ast$X, int LDX, int $\ast$ITER)
+\item 
+int \hyperlink{group__PLASMA__Complex64__t_gab372ccb64517ddb8e0f7ea66088489a9_gab372ccb64517ddb8e0f7ea66088489a9}{PLASMA\_\-zcgesv} (int N, int NRHS, PLASMA\_\-Complex64\_\-t $\ast$A, int LDA, int $\ast$IPIV, PLASMA\_\-Complex64\_\-t $\ast$B, int LDB, PLASMA\_\-Complex64\_\-t $\ast$X, int LDX, int $\ast$ITER)
+\item 
+int \hyperlink{group__PLASMA__Complex64__t_ga11ee4c71901e8675d5423cfceecaaf43_ga11ee4c71901e8675d5423cfceecaaf43}{PLASMA\_\-zcposv} (PLASMA\_\-enum uplo, int N, int NRHS, PLASMA\_\-Complex64\_\-t $\ast$A, int LDA, PLASMA\_\-Complex64\_\-t $\ast$B, int LDB, PLASMA\_\-Complex64\_\-t $\ast$X, int LDX, int $\ast$ITER)
+\item 
+int \hyperlink{group__PLASMA__Complex64__t_gaba15b4f438d8d2fe41f2c38820d043ef_gaba15b4f438d8d2fe41f2c38820d043ef}{PLASMA\_\-zcungesv} (PLASMA\_\-enum trans, int N, int NRHS, PLASMA\_\-Complex64\_\-t $\ast$A, int LDA, PLASMA\_\-Complex64\_\-t $\ast$B, int LDB, PLASMA\_\-Complex64\_\-t $\ast$X, int LDX, int $\ast$ITER)
+\item 
+int \hyperlink{group__PLASMA__Complex64__t_gaeaf62e9c3d1a1259c0dbeb91e5eb6693_gaeaf62e9c3d1a1259c0dbeb91e5eb6693}{PLASMA\_\-zgebrd} (PLASMA\_\-enum jobu, PLASMA\_\-enum jobvt, int M, int N, PLASMA\_\-Complex64\_\-t $\ast$A, int LDA, double $\ast$D, double $\ast$E, PLASMA\_\-Complex64\_\-t $\ast$U, int LDU, PLASMA\_\-Complex64\_\-t $\ast$VT, int LDVT, \hyperlink{typeplasma__desc__t}{PLASMA\_\-desc} $\ast$descT)
+\item 
+int \hyperlink{group__PLASMA__Complex64__t_ga848678454b9e0462625fd9fd77568edf_ga848678454b9e0462625fd9fd77568edf}{PLASMA\_\-zgelqf} (int M, int N, PLASMA\_\-Complex64\_\-t $\ast$A, int LDA, PLASMA\_\-Complex64\_\-t $\ast$T)
+\item 
+int \hyperlink{group__PLASMA__Complex64__t_ga93299f75fbba6fadbe859e60ff395733_ga93299f75fbba6fadbe859e60ff395733}{PLASMA\_\-zgelqs} (int M, int N, int NRHS, PLASMA\_\-Complex64\_\-t $\ast$A, int LDA, PLASMA\_\-Complex64\_\-t $\ast$T, PLASMA\_\-Complex64\_\-t $\ast$B, int LDB)
+\item 
+int \hyperlink{group__PLASMA__Complex64__t_gada51cc2dfd38da1ff5f6a636c16ff972_gada51cc2dfd38da1ff5f6a636c16ff972}{PLASMA\_\-zgels} (PLASMA\_\-enum trans, int M, int N, int NRHS, PLASMA\_\-Complex64\_\-t $\ast$A, int LDA, PLASMA\_\-Complex64\_\-t $\ast$T, PLASMA\_\-Complex64\_\-t $\ast$B, int LDB)
+\item 
+int \hyperlink{group__PLASMA__Complex64__t_ga1a0f8d759e535f9947ae11baa0af6fa3_ga1a0f8d759e535f9947ae11baa0af6fa3}{PLASMA\_\-zgemm} (PLASMA\_\-enum transA, PLASMA\_\-enum transB, int M, int N, int K, PLASMA\_\-Complex64\_\-t alpha, PLASMA\_\-Complex64\_\-t $\ast$A, int LDA, PLASMA\_\-Complex64\_\-t $\ast$B, int LDB, PLASMA\_\-Complex64\_\-t beta, PLASMA\_\-Complex64\_\-t $\ast$C, int LDC)
+\item 
+int \hyperlink{group__PLASMA__Complex64__t_ga36fc6c695a8288f7ff64669c50fc4d74_ga36fc6c695a8288f7ff64669c50fc4d74}{PLASMA\_\-zgeqrf} (int M, int N, PLASMA\_\-Complex64\_\-t $\ast$A, int LDA, PLASMA\_\-Complex64\_\-t $\ast$T)
+\item 
+int \hyperlink{group__PLASMA__Complex64__t_gaed0fd329c8dca2063c4afc2caa781218_gaed0fd329c8dca2063c4afc2caa781218}{PLASMA\_\-zgeqrs} (int M, int N, int NRHS, PLASMA\_\-Complex64\_\-t $\ast$A, int LDA, PLASMA\_\-Complex64\_\-t $\ast$T, PLASMA\_\-Complex64\_\-t $\ast$B, int LDB)
+\item 
+int \hyperlink{group__PLASMA__Complex64__t_ga94397d6fba523c946f1e56cfe9aa967d_ga94397d6fba523c946f1e56cfe9aa967d}{PLASMA\_\-zgesv} (int N, int NRHS, PLASMA\_\-Complex64\_\-t $\ast$A, int LDA, int $\ast$IPIV, PLASMA\_\-Complex64\_\-t $\ast$B, int LDB)
+\item 
+int \hyperlink{group__PLASMA__Complex64__t_ga20ea1251fef4f13efdd798a1cf5f1bbb_ga20ea1251fef4f13efdd798a1cf5f1bbb}{PLASMA\_\-zgesv\_\-incpiv} (int N, int NRHS, PLASMA\_\-Complex64\_\-t $\ast$A, int LDA, PLASMA\_\-Complex64\_\-t $\ast$L, int $\ast$IPIV, PLASMA\_\-Complex64\_\-t $\ast$B, int LDB)
+\item 
+int \hyperlink{group__PLASMA__Complex64__t_ga36fc556f67632e00105090a60657dab2_ga36fc556f67632e00105090a60657dab2}{PLASMA\_\-zgesvd} (PLASMA\_\-enum jobu, PLASMA\_\-enum jobvt, int M, int N, PLASMA\_\-Complex64\_\-t $\ast$A, int LDA, double $\ast$S, PLASMA\_\-Complex64\_\-t $\ast$U, int LDU, PLASMA\_\-Complex64\_\-t $\ast$VT, int LDVT, \hyperlink{typeplasma__desc__t}{PLASMA\_\-desc} $\ast$descT)
+\item 
+int \hyperlink{group__PLASMA__Complex64__t_ga03449aa4e83b2f2223dad281d122697d_ga03449aa4e83b2f2223dad281d122697d}{PLASMA\_\-zgetrf} (int M, int N, PLASMA\_\-Complex64\_\-t $\ast$A, int LDA, int $\ast$IPIV)
+\item 
+int \hyperlink{group__PLASMA__Complex64__t_ga4853b0850dddb5702b2b48f0049d933d_ga4853b0850dddb5702b2b48f0049d933d}{PLASMA\_\-zgetrf\_\-incpiv} (int M, int N, PLASMA\_\-Complex64\_\-t $\ast$A, int LDA, PLASMA\_\-Complex64\_\-t $\ast$L, int $\ast$IPIV)
+\item 
+int \hyperlink{group__PLASMA__Complex64__t_gad7b041e52be07ced12ad09ca2c51ddc6_gad7b041e52be07ced12ad09ca2c51ddc6}{PLASMA\_\-zgetrs} (PLASMA\_\-enum trans, int N, int NRHS, PLASMA\_\-Complex64\_\-t $\ast$A, int LDA, int $\ast$IPIV, PLASMA\_\-Complex64\_\-t $\ast$B, int LDB)
+\item 
+int \hyperlink{group__PLASMA__Complex64__t_ga03b8805f6775c6c05bac527eb47e2ffa_ga03b8805f6775c6c05bac527eb47e2ffa}{PLASMA\_\-zgetrs\_\-incpiv} (PLASMA\_\-enum trans, int N, int NRHS, PLASMA\_\-Complex64\_\-t $\ast$A, int LDA, PLASMA\_\-Complex64\_\-t $\ast$L, int $\ast$IPIV, PLASMA\_\-Complex64\_\-t $\ast$B, int LDB)
+\item 
+int \hyperlink{group__PLASMA__Complex64__t_gad148e141c13feede49709370caea9c2a_gad148e141c13feede49709370caea9c2a}{PLASMA\_\-zheev} (PLASMA\_\-enum jobz, PLASMA\_\-enum uplo, int N, PLASMA\_\-Complex64\_\-t $\ast$A, int LDA, double $\ast$W, \hyperlink{typeplasma__desc__t}{PLASMA\_\-desc} $\ast$descT, PLASMA\_\-Complex64\_\-t $\ast$Q, int LDQ)
+\item 
+int \hyperlink{group__PLASMA__Complex64__t_gada171b7dc0b2147ce730f716f6ebd05d_gada171b7dc0b2147ce730f716f6ebd05d}{PLASMA\_\-zheevd} (PLASMA\_\-enum jobz, PLASMA\_\-enum uplo, int N, PLASMA\_\-Complex64\_\-t $\ast$A, int LDA, double $\ast$W, \hyperlink{typeplasma__desc__t}{PLASMA\_\-desc} $\ast$T, PLASMA\_\-Complex64\_\-t $\ast$Q, int LDQ)
+\item 
+int \hyperlink{group__PLASMA__Complex64__t_ga387eb7a21f8b3d03aec26324255e7510_ga387eb7a21f8b3d03aec26324255e7510}{PLASMA\_\-zhegst} (PLASMA\_\-enum itype, PLASMA\_\-enum uplo, int N, PLASMA\_\-Complex64\_\-t $\ast$A, int LDA, PLASMA\_\-Complex64\_\-t $\ast$B, int LDB)
+\item 
+int \hyperlink{group__PLASMA__Complex64__t_gaec004491cb00c99f63f9604c84ef8f43_gaec004491cb00c99f63f9604c84ef8f43}{PLASMA\_\-zhegv} (PLASMA\_\-enum itype, PLASMA\_\-enum jobz, PLASMA\_\-enum uplo, int N, PLASMA\_\-Complex64\_\-t $\ast$A, int LDA, PLASMA\_\-Complex64\_\-t $\ast$B, int LDB, double $\ast$W, \hyperlink{typeplasma__desc__t}{PLASMA\_\-desc} $\ast$descT, PLASMA\_\-Complex64\_\-t $\ast$Q, int LDQ)
+\item 
+int \hyperlink{group__PLASMA__Complex64__t_gad53a9ae69e0ff46c3859f19c16b97081_gad53a9ae69e0ff46c3859f19c16b97081}{PLASMA\_\-zhemm} (PLASMA\_\-enum side, PLASMA\_\-enum uplo, int M, int N, PLASMA\_\-Complex64\_\-t alpha, PLASMA\_\-Complex64\_\-t $\ast$A, int LDA, PLASMA\_\-Complex64\_\-t $\ast$B, int LDB, PLASMA\_\-Complex64\_\-t beta, PLASMA\_\-Complex64\_\-t $\ast$C, int LDC)
+\item 
+int \hyperlink{group__PLASMA__Complex64__t_ga1086284f7bd6db0de2341eeaa3a3e655_ga1086284f7bd6db0de2341eeaa3a3e655}{PLASMA\_\-zher2k} (PLASMA\_\-enum uplo, PLASMA\_\-enum trans, int N, int K, PLASMA\_\-Complex64\_\-t alpha, PLASMA\_\-Complex64\_\-t $\ast$A, int LDA, PLASMA\_\-Complex64\_\-t $\ast$B, int LDB, double beta, PLASMA\_\-Complex64\_\-t $\ast$C, int LDC)
+\item 
+int \hyperlink{group__PLASMA__Complex64__t_ga37897923ff4fb613bbd5a69a58b12fb8_ga37897923ff4fb613bbd5a69a58b12fb8}{PLASMA\_\-zherk} (PLASMA\_\-enum uplo, PLASMA\_\-enum trans, int N, int K, double alpha, PLASMA\_\-Complex64\_\-t $\ast$A, int LDA, double beta, PLASMA\_\-Complex64\_\-t $\ast$C, int LDC)
+\item 
+int \hyperlink{group__PLASMA__Complex64__t_gadeaa16b417f2033a10685c130db081fb_gadeaa16b417f2033a10685c130db081fb}{PLASMA\_\-zhetrd} (PLASMA\_\-enum jobz, PLASMA\_\-enum uplo, int N, PLASMA\_\-Complex64\_\-t $\ast$A, int LDA, double $\ast$D, double $\ast$E, \hyperlink{typeplasma__desc__t}{PLASMA\_\-desc} $\ast$descT, PLASMA\_\-Complex64\_\-t $\ast$Q, int LDQ)
+\item 
+double \hyperlink{group__PLASMA__Complex64__t_ga89327462733d7b77d403e9612954474d_ga89327462733d7b77d403e9612954474d}{PLASMA\_\-zlange} (PLASMA\_\-enum norm, int M, int N, PLASMA\_\-Complex64\_\-t $\ast$A, int LDA, double $\ast$work)
+\item 
+double \hyperlink{group__PLASMA__Complex64__t_ga3667b32ec418aa44fe1e28b78a670af6_ga3667b32ec418aa44fe1e28b78a670af6}{PLASMA\_\-zlanhe} (PLASMA\_\-enum norm, PLASMA\_\-enum uplo, int N, PLASMA\_\-Complex64\_\-t $\ast$A, int LDA, double $\ast$work)
+\item 
+double \hyperlink{group__PLASMA__Complex64__t_ga56ed091feed59f955ba15b8c6204e06a_ga56ed091feed59f955ba15b8c6204e06a}{PLASMA\_\-zlansy} (PLASMA\_\-enum norm, PLASMA\_\-enum uplo, int N, PLASMA\_\-Complex64\_\-t $\ast$A, int LDA, double $\ast$work)
+\item 
+int \hyperlink{group__PLASMA__Complex64__t_ga33f553c60d1f95a0d7da9e7e17e2a160_ga33f553c60d1f95a0d7da9e7e17e2a160}{PLASMA\_\-zlaswp} (int N, PLASMA\_\-Complex64\_\-t $\ast$A, int LDA, int K1, int K2, int $\ast$IPIV, int INCX)
+\item 
+int \hyperlink{group__PLASMA__Complex64__t_ga0e1f064db19e3855c590172274fbdf43_ga0e1f064db19e3855c590172274fbdf43}{PLASMA\_\-zlauum} (PLASMA\_\-enum uplo, int N, PLASMA\_\-Complex64\_\-t $\ast$A, int LDA)
+\item 
+int \hyperlink{group__PLASMA__Complex64__t_ga3a50559a69450b4f13a23c4af092c60e_ga3a50559a69450b4f13a23c4af092c60e}{PLASMA\_\-zplghe} (double bump, int N, PLASMA\_\-Complex64\_\-t $\ast$A, int LDA, unsigned long long int seed)
+\item 
+int \hyperlink{group__PLASMA__Complex64__t_ga065c2bc2190fc079035e1de4d16e4e60_ga065c2bc2190fc079035e1de4d16e4e60}{PLASMA\_\-zplgsy} (PLASMA\_\-Complex64\_\-t bump, int N, PLASMA\_\-Complex64\_\-t $\ast$A, int LDA, unsigned long long int seed)
+\item 
+int \hyperlink{group__PLASMA__Complex64__t_gaed78cffc7c2835c485ef7c8e3761d127_gaed78cffc7c2835c485ef7c8e3761d127}{PLASMA\_\-zplrnt} (int M, int N, PLASMA\_\-Complex64\_\-t $\ast$A, int LDA, unsigned long long int seed)
+\item 
+int \hyperlink{group__PLASMA__Complex64__t_gaed71622155778ea4372e34879184e742_gaed71622155778ea4372e34879184e742}{PLASMA\_\-zposv} (PLASMA\_\-enum uplo, int N, int NRHS, PLASMA\_\-Complex64\_\-t $\ast$A, int LDA, PLASMA\_\-Complex64\_\-t $\ast$B, int LDB)
+\item 
+int \hyperlink{group__PLASMA__Complex64__t_ga850a6c9da7c5632d160b28f211cdf2eb_ga850a6c9da7c5632d160b28f211cdf2eb}{PLASMA\_\-zpotrf} (PLASMA\_\-enum uplo, int N, PLASMA\_\-Complex64\_\-t $\ast$A, int LDA)
+\item 
+int \hyperlink{group__PLASMA__Complex64__t_ga6dd563144dd8c7f29a58659f220f44a0_ga6dd563144dd8c7f29a58659f220f44a0}{PLASMA\_\-zpotri} (PLASMA\_\-enum uplo, int N, PLASMA\_\-Complex64\_\-t $\ast$A, int LDA)
+\item 
+int \hyperlink{group__PLASMA__Complex64__t_gafa3392d835a508f57674c601c46eb331_gafa3392d835a508f57674c601c46eb331}{PLASMA\_\-zpotrs} (PLASMA\_\-enum uplo, int N, int NRHS, PLASMA\_\-Complex64\_\-t $\ast$A, int LDA, PLASMA\_\-Complex64\_\-t $\ast$B, int LDB)
+\item 
+int \hyperlink{group__PLASMA__Complex64__t_ga78d0974b51b7d019e0606422b3292b46_ga78d0974b51b7d019e0606422b3292b46}{PLASMA\_\-zsymm} (PLASMA\_\-enum side, PLASMA\_\-enum uplo, int M, int N, PLASMA\_\-Complex64\_\-t alpha, PLASMA\_\-Complex64\_\-t $\ast$A, int LDA, PLASMA\_\-Complex64\_\-t $\ast$B, int LDB, PLASMA\_\-Complex64\_\-t beta, PLASMA\_\-Complex64\_\-t $\ast$C, int LDC)
+\item 
+int \hyperlink{group__PLASMA__Complex64__t_ga575230c6f1629fabf7ba151a09e4c7a7_ga575230c6f1629fabf7ba151a09e4c7a7}{PLASMA\_\-zsyr2k} (PLASMA\_\-enum uplo, PLASMA\_\-enum trans, int N, int K, PLASMA\_\-Complex64\_\-t alpha, PLASMA\_\-Complex64\_\-t $\ast$A, int LDA, PLASMA\_\-Complex64\_\-t $\ast$B, int LDB, PLASMA\_\-Complex64\_\-t beta, PLASMA\_\-Complex64\_\-t $\ast$C, int LDC)
+\item 
+int \hyperlink{group__PLASMA__Complex64__t_gaae2f934da463e7256c82500587c3042b_gaae2f934da463e7256c82500587c3042b}{PLASMA\_\-zsyrk} (PLASMA\_\-enum uplo, PLASMA\_\-enum trans, int N, int K, PLASMA\_\-Complex64\_\-t alpha, PLASMA\_\-Complex64\_\-t $\ast$A, int LDA, PLASMA\_\-Complex64\_\-t beta, PLASMA\_\-Complex64\_\-t $\ast$C, int LDC)
+\item 
+int \hyperlink{group__PLASMA__Complex64__t_ga9d25baa9dfdb84cd69270558338ce9b1_ga9d25baa9dfdb84cd69270558338ce9b1}{PLASMA\_\-ztrmm} (PLASMA\_\-enum side, PLASMA\_\-enum uplo, PLASMA\_\-enum transA, PLASMA\_\-enum diag, int N, int NRHS, PLASMA\_\-Complex64\_\-t alpha, PLASMA\_\-Complex64\_\-t $\ast$A, int LDA, PLASMA\_\-Complex64\_\-t $\ast$B, int LDB)
+\item 
+int \hyperlink{group__PLASMA__Complex64__t_ga36cf60d55716c7ab0c2fba7fb8833e2c_ga36cf60d55716c7ab0c2fba7fb8833e2c}{PLASMA\_\-ztrsm} (PLASMA\_\-enum side, PLASMA\_\-enum uplo, PLASMA\_\-enum transA, PLASMA\_\-enum diag, int N, int NRHS, PLASMA\_\-Complex64\_\-t alpha, PLASMA\_\-Complex64\_\-t $\ast$A, int LDA, PLASMA\_\-Complex64\_\-t $\ast$B, int LDB)
+\item 
+int \hyperlink{group__PLASMA__Complex64__t_gab63ff4bc17759efb017c4a34556e5818_gab63ff4bc17759efb017c4a34556e5818}{PLASMA\_\-ztrsmpl} (int N, int NRHS, PLASMA\_\-Complex64\_\-t $\ast$A, int LDA, PLASMA\_\-Complex64\_\-t $\ast$L, int $\ast$IPIV, PLASMA\_\-Complex64\_\-t $\ast$B, int LDB)
+\item 
+int \hyperlink{group__PLASMA__Complex64__t_gaf634d0dec7f2b59a571b5aafa19892d1_gaf634d0dec7f2b59a571b5aafa19892d1}{PLASMA\_\-ztrtri} (PLASMA\_\-enum uplo, PLASMA\_\-enum diag, int N, PLASMA\_\-Complex64\_\-t $\ast$A, int LDA)
+\item 
+int \hyperlink{group__PLASMA__Complex64__t_ga7071ad423d20fe7e0fc8f3869dda7ecb_ga7071ad423d20fe7e0fc8f3869dda7ecb}{PLASMA\_\-zunglq} (int M, int N, int K, PLASMA\_\-Complex64\_\-t $\ast$A, int LDA, PLASMA\_\-Complex64\_\-t $\ast$T, PLASMA\_\-Complex64\_\-t $\ast$Q, int LDQ)
+\item 
+int \hyperlink{group__PLASMA__Complex64__t_ga32c6138471c324fe0788bdcecea66ca8_ga32c6138471c324fe0788bdcecea66ca8}{PLASMA\_\-zungqr} (int M, int N, int K, PLASMA\_\-Complex64\_\-t $\ast$A, int LDA, PLASMA\_\-Complex64\_\-t $\ast$T, PLASMA\_\-Complex64\_\-t $\ast$Q, int LDQ)
+\item 
+int \hyperlink{group__PLASMA__Complex64__t_gae34adef35948b9dfbb683f94a8d4f70e_gae34adef35948b9dfbb683f94a8d4f70e}{PLASMA\_\-zunmlq} (PLASMA\_\-enum side, PLASMA\_\-enum trans, int M, int N, int K, PLASMA\_\-Complex64\_\-t $\ast$A, int LDA, PLASMA\_\-Complex64\_\-t $\ast$T, PLASMA\_\-Complex64\_\-t $\ast$B, int LDB)
+\item 
+int \hyperlink{group__PLASMA__Complex64__t_ga938e8d7780d4a578fe926e3e146462ca_ga938e8d7780d4a578fe926e3e146462ca}{PLASMA\_\-zunmqr} (PLASMA\_\-enum side, PLASMA\_\-enum trans, int M, int N, int K, PLASMA\_\-Complex64\_\-t $\ast$A, int LDA, PLASMA\_\-Complex64\_\-t $\ast$T, PLASMA\_\-Complex64\_\-t $\ast$B, int LDB)
+\item 
+int \hyperlink{group__PLASMA__Complex64__t_ga54817e0733e678bcdfdfeaa76ab486f6_ga54817e0733e678bcdfdfeaa76ab486f6}{PLASMA\_\-zLapack\_\-to\_\-Tile} (PLASMA\_\-Complex64\_\-t $\ast$Af77, int LDA, \hyperlink{typeplasma__desc__t}{PLASMA\_\-desc} $\ast$A)
+\item 
+int \hyperlink{group__PLASMA__Complex64__t_ga8df0b9fdc5537a648d7544b528c9e6e3_ga8df0b9fdc5537a648d7544b528c9e6e3}{PLASMA\_\-zTile\_\-to\_\-Lapack} (\hyperlink{typeplasma__desc__t}{PLASMA\_\-desc} $\ast$A, PLASMA\_\-Complex64\_\-t $\ast$Af77, int LDA)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This is the group of double complex functions using the simple user interface. 
+
+\subsection{Function/Subroutine Documentation}
+\hypertarget{group__PLASMA__Complex64__t_ga6733ad2b79f186348ba47778e2e26fae_ga6733ad2b79f186348ba47778e2e26fae}{
+\index{PLASMA\_\-Complex64\_\-t@{PLASMA\_\-Complex64\_\-t}!PLASMA\_\-zcgels@{PLASMA\_\-zcgels}}
+\index{PLASMA\_\-zcgels@{PLASMA\_\-zcgels}!PLASMA_Complex64_t@{PLASMA\_\-Complex64\_\-t}}
+\subsubsection[{PLASMA\_\-zcgels}]{\setlength{\rightskip}{0pt plus 5cm}int PLASMA\_\-zcgels (
+\begin{DoxyParamCaption}
+\item[{PLASMA\_\-enum}]{trans, }
+\item[{int}]{M, }
+\item[{int}]{N, }
+\item[{int}]{NRHS, }
+\item[{PLASMA\_\-Complex64\_\-t $\ast$}]{A, }
+\item[{int}]{LDA, }
+\item[{PLASMA\_\-Complex64\_\-t $\ast$}]{B, }
+\item[{int}]{LDB, }
+\item[{PLASMA\_\-Complex64\_\-t $\ast$}]{X, }
+\item[{int}]{LDX, }
+\item[{int $\ast$}]{ITER}
+\end{DoxyParamCaption}
+)}}
+\label{group__PLASMA__Complex64__t_ga6733ad2b79f186348ba47778e2e26fae_ga6733ad2b79f186348ba47778e2e26fae}
+PLASMA\_\-zcgels -\/ Solves overdetermined or underdetermined linear systems involving an M-\/by-\/N matrix A using the QR or the LQ factorization of A. It is assumed that A has full rank. The following options are provided:
+
+\# trans = PlasmaNoTrans and M $>$= N: find the least squares solution of an overdetermined system, i.e., solve the least squares problem: minimize $|$$|$ B -\/ A$\ast$X $|$$|$.
+
+\# trans = PlasmaNoTrans and M $<$ N: find the minimum norm solution of an underdetermined system A $\ast$ X = B.
+
+Several right hand side vectors B and solution vectors X can be handled in a single call; they are stored as the columns of the M-\/by-\/NRHS right hand side matrix B and the N-\/by-\/NRHS solution matrix X.
+
+PLASMA\_\-zcgels first attempts to factorize the matrix in COMPLEX and use this factorization within an iterative refinement procedure to produce a solution with COMPLEX$\ast$16 normwise backward error quality (see below). If the approach fails the method switches to a COMPLEX$\ast$16 factorization and solve.
+
+The iterative refinement is not going to be a winning strategy if the ratio COMPLEX performance over COMPLEX$\ast$16 performance is too small. A reasonable strategy should take the number of right-\/hand sides and the size of the matrix into account. This might be done with a call to ILAENV in the future. Up to now, we always try iterative refinement.
+
+The iterative refinement process is stopped if ITER $>$ ITERMAX or for all the RHS we have: RNRM $<$ N$\ast$XNRM$\ast$ANRM$\ast$EPS$\ast$BWDMAX where:
+
+
+\begin{DoxyItemize}
+\item ITER is the number of the current iteration in the iterative refinement process
+\item RNRM is the infinity-\/norm of the residual
+\item XNRM is the infinity-\/norm of the solution
+\item ANRM is the infinity-\/operator-\/norm of the matrix A
+\item EPS is the machine epsilon returned by DLAMCH('Epsilon').
+\end{DoxyItemize}
+
+Actually, in its current state (PLASMA 2.1.0), the test is slightly relaxed.
+
+The values ITERMAX and BWDMAX are fixed to 30 and 1.0D+00 respectively.
+
+We follow Bjorck's algorithm proposed in \char`\"{}Iterative Refinement of Linear
+  Least Squares solutions I\char`\"{}, BIT, 7:257-\/278, 1967.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em trans} & Intended usage: = PlasmaNoTrans: the linear system involves A; = PlasmaConjTrans: the linear system involves A$\ast$$\ast$H. Currently only PlasmaNoTrans is supported.\\
+\hline
+\mbox{\tt in}  & {\em M} & The number of rows of the matrix A. M $>$= 0.\\
+\hline
+\mbox{\tt in}  & {\em N} & The number of columns of the matrix A. N $>$= 0.\\
+\hline
+\mbox{\tt in}  & {\em NRHS} & The number of right hand sides, i.e., the number of columns of the matrices B and X. NRHS $>$= 0.\\
+\hline
+\mbox{\tt in}  & {\em A} & The M-\/by-\/N matrix A. This matrix is not modified.\\
+\hline
+\mbox{\tt in}  & {\em LDA} & The leading dimension of the array A. LDA $>$= max(1,M).\\
+\hline
+\mbox{\tt in}  & {\em B} & The M-\/by-\/NRHS matrix B of right hand side vectors, stored columnwise. Not modified.\\
+\hline
+\mbox{\tt in}  & {\em LDB} & The leading dimension of the array B. LDB $>$= MAX(1,M,N).\\
+\hline
+\mbox{\tt out}  & {\em X} & If return value = 0, the solution vectors, stored columnwise. if M $>$= N, rows 1 to N of X contain the least squares solution vectors; the residual sum of squares for the solution in each column is given by the sum of squares of the modulus of elements N+1 to M in that column; if M $<$ N, rows 1 to N of X contain the minimum norm solution vectors;\\
+\hline
+\mbox{\tt in}  & {\em LDX} & The leading dimension of the array X. LDX $>$= MAX(1,M,N).\\
+\hline
+\mbox{\tt out}  & {\em ITER} & The number of the current iteration in the iterative refinement process\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em PLASMA\_\-SUCCESS} & successful exit \\
+\hline
+{\em $<$0} & if -\/i, the i-\/th argument had an illegal value\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{group__PLASMA__Complex64__t__Tile_ga6bd738a1ffefcf9d561cd5d82a7e2f10_ga6bd738a1ffefcf9d561cd5d82a7e2f10}{PLASMA\_\-zcgels\_\-Tile} 
+
+\hyperlink{group__PLASMA__Complex64__t__Tile__Async_ga996b201266467b1742e9797eea79130d_ga996b201266467b1742e9797eea79130d}{PLASMA\_\-zcgels\_\-Tile\_\-Async} 
+
+PLASMA\_\-dsgels 
+
+\hyperlink{group__PLASMA__Complex64__t_gada51cc2dfd38da1ff5f6a636c16ff972_gada51cc2dfd38da1ff5f6a636c16ff972}{PLASMA\_\-zgels} 
+\end{DoxySeeAlso}
+\hypertarget{group__PLASMA__Complex64__t_gab372ccb64517ddb8e0f7ea66088489a9_gab372ccb64517ddb8e0f7ea66088489a9}{
+\index{PLASMA\_\-Complex64\_\-t@{PLASMA\_\-Complex64\_\-t}!PLASMA\_\-zcgesv@{PLASMA\_\-zcgesv}}
+\index{PLASMA\_\-zcgesv@{PLASMA\_\-zcgesv}!PLASMA_Complex64_t@{PLASMA\_\-Complex64\_\-t}}
+\subsubsection[{PLASMA\_\-zcgesv}]{\setlength{\rightskip}{0pt plus 5cm}int PLASMA\_\-zcgesv (
+\begin{DoxyParamCaption}
+\item[{int}]{N, }
+\item[{int}]{NRHS, }
+\item[{PLASMA\_\-Complex64\_\-t $\ast$}]{A, }
+\item[{int}]{LDA, }
+\item[{int $\ast$}]{IPIV, }
+\item[{PLASMA\_\-Complex64\_\-t $\ast$}]{B, }
+\item[{int}]{LDB, }
+\item[{PLASMA\_\-Complex64\_\-t $\ast$}]{X, }
+\item[{int}]{LDX, }
+\item[{int $\ast$}]{ITER}
+\end{DoxyParamCaption}
+)}}
+\label{group__PLASMA__Complex64__t_gab372ccb64517ddb8e0f7ea66088489a9_gab372ccb64517ddb8e0f7ea66088489a9}
+PLASMA\_\-zcgesv -\/ Computes the solution to a system of linear equations A $\ast$ X = B, where A is an N-\/by-\/N matrix and X and B are N-\/by-\/NRHS matrices.
+
+PLASMA\_\-zcgesv first attempts to factorize the matrix in COMPLEX and use this factorization within an iterative refinement procedure to produce a solution with COMPLEX$\ast$16 normwise backward error quality (see below). If the approach fails the method switches to a COMPLEX$\ast$16 factorization and solve.
+
+The iterative refinement is not going to be a winning strategy if the ratio COMPLEX performance over COMPLEX$\ast$16 performance is too small. A reasonable strategy should take the number of right-\/hand sides and the size of the matrix into account. This might be done with a call to ILAENV in the future. Up to now, we always try iterative refinement.
+
+The iterative refinement process is stopped if ITER $>$ ITERMAX or for all the RHS we have: RNRM $<$ N$\ast$XNRM$\ast$ANRM$\ast$EPS$\ast$BWDMAX where:
+
+
+\begin{DoxyItemize}
+\item ITER is the number of the current iteration in the iterative refinement process
+\item RNRM is the infinity-\/norm of the residual
+\item XNRM is the infinity-\/norm of the solution
+\item ANRM is the infinity-\/operator-\/norm of the matrix A
+\item EPS is the machine epsilon returned by DLAMCH('Epsilon').
+\end{DoxyItemize}
+
+Actually, in its current state (PLASMA 2.1.0), the test is slightly relaxed.
+
+The values ITERMAX and BWDMAX are fixed to 30 and 1.0D+00 respectively.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em N} & The number of linear equations, i.e., the order of the matrix A. N $>$= 0.\\
+\hline
+\mbox{\tt in}  & {\em NRHS} & The number of right hand sides, i.e., the number of columns of the matrix B. NRHS $>$= 0.\\
+\hline
+\mbox{\tt in}  & {\em A} & The N-\/by-\/N coefficient matrix A. This matrix is not modified.\\
+\hline
+\mbox{\tt in}  & {\em LDA} & The leading dimension of the array A. LDA $>$= max(1,N).\\
+\hline
+\mbox{\tt out}  & {\em IPIV} & On exit, the pivot indices that define the permutations.\\
+\hline
+\mbox{\tt in}  & {\em B} & The N-\/by-\/NRHS matrix of right hand side matrix B.\\
+\hline
+\mbox{\tt in}  & {\em LDB} & The leading dimension of the array B. LDB $>$= max(1,N).\\
+\hline
+\mbox{\tt out}  & {\em X} & If return value = 0, the N-\/by-\/NRHS solution matrix X.\\
+\hline
+\mbox{\tt in}  & {\em LDX} & The leading dimension of the array B. LDX $>$= max(1,N).\\
+\hline
+\mbox{\tt out}  & {\em ITER} & The number of the current iteration in the iterative refinement process\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em PLASMA\_\-SUCCESS} & successful exit \\
+\hline
+{\em $<$0} & if -\/i, the i-\/th argument had an illegal value \\
+\hline
+{\em $>$0} & if i, U(i,i) is exactly zero. The factorization has been completed, but the factor U is exactly singular, so the solution could not be computed.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{group__PLASMA__Complex64__t__Tile_ga1323bdbc5973b2ee613e9c128a98d419_ga1323bdbc5973b2ee613e9c128a98d419}{PLASMA\_\-zcgesv\_\-Tile} 
+
+\hyperlink{group__PLASMA__Complex64__t__Tile__Async_ga951cf5fa265511341d92979d9ca86613_ga951cf5fa265511341d92979d9ca86613}{PLASMA\_\-zcgesv\_\-Tile\_\-Async} 
+
+\hyperlink{group__double_ga50fe4c984e8994fe22aac09c0f6c3422_ga50fe4c984e8994fe22aac09c0f6c3422}{PLASMA\_\-dsgesv} 
+
+\hyperlink{group__PLASMA__Complex64__t_ga94397d6fba523c946f1e56cfe9aa967d_ga94397d6fba523c946f1e56cfe9aa967d}{PLASMA\_\-zgesv} 
+\end{DoxySeeAlso}
+\hypertarget{group__PLASMA__Complex64__t_ga11ee4c71901e8675d5423cfceecaaf43_ga11ee4c71901e8675d5423cfceecaaf43}{
+\index{PLASMA\_\-Complex64\_\-t@{PLASMA\_\-Complex64\_\-t}!PLASMA\_\-zcposv@{PLASMA\_\-zcposv}}
+\index{PLASMA\_\-zcposv@{PLASMA\_\-zcposv}!PLASMA_Complex64_t@{PLASMA\_\-Complex64\_\-t}}
+\subsubsection[{PLASMA\_\-zcposv}]{\setlength{\rightskip}{0pt plus 5cm}int PLASMA\_\-zcposv (
+\begin{DoxyParamCaption}
+\item[{PLASMA\_\-enum}]{uplo, }
+\item[{int}]{N, }
+\item[{int}]{NRHS, }
+\item[{PLASMA\_\-Complex64\_\-t $\ast$}]{A, }
+\item[{int}]{LDA, }
+\item[{PLASMA\_\-Complex64\_\-t $\ast$}]{B, }
+\item[{int}]{LDB, }
+\item[{PLASMA\_\-Complex64\_\-t $\ast$}]{X, }
+\item[{int}]{LDX, }
+\item[{int $\ast$}]{ITER}
+\end{DoxyParamCaption}
+)}}
+\label{group__PLASMA__Complex64__t_ga11ee4c71901e8675d5423cfceecaaf43_ga11ee4c71901e8675d5423cfceecaaf43}
+PLASMA\_\-zcposv -\/ Computes the solution to a system of linear equations A $\ast$ X = B, where A is an N-\/by-\/N symmetric positive definite (or Hermitian positive definite in the complex case) matrix and X and B are N-\/by-\/NRHS matrices. The Cholesky decomposition is used to factor A as
+
+A = U$\ast$$\ast$H $\ast$ U, if uplo = PlasmaUpper, or A = L $\ast$ L$\ast$$\ast$H, if uplo = PlasmaLower,
+
+where U is an upper triangular matrix and L is a lower triangular matrix. The factored form of A is then used to solve the system of equations A $\ast$ X = B.
+
+PLASMA\_\-zcposv first attempts to factorize the matrix in COMPLEX and use this factorization within an iterative refinement procedure to produce a solution with COMPLEX$\ast$16 normwise backward error quality (see below). If the approach fails the method switches to a COMPLEX$\ast$16 factorization and solve.
+
+The iterative refinement is not going to be a winning strategy if the ratio COMPLEX performance over COMPLEX$\ast$16 performance is too small. A reasonable strategy should take the number of right-\/hand sides and the size of the matrix into account. This might be done with a call to ILAENV in the future. Up to now, we always try iterative refinement.
+
+The iterative refinement process is stopped if ITER $>$ ITERMAX or for all the RHS we have: RNRM $<$ N$\ast$XNRM$\ast$ANRM$\ast$EPS$\ast$BWDMAX where:
+
+
+\begin{DoxyItemize}
+\item ITER is the number of the current iteration in the iterative refinement process
+\item RNRM is the infinity-\/norm of the residual
+\item XNRM is the infinity-\/norm of the solution
+\item ANRM is the infinity-\/operator-\/norm of the matrix A
+\item EPS is the machine epsilon returned by DLAMCH('Epsilon').
+\end{DoxyItemize}
+
+Actually, in its current state (PLASMA 2.1.0), the test is slightly relaxed.
+
+The values ITERMAX and BWDMAX are fixed to 30 and 1.0D+00 respectively.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em uplo} & Specifies whether the matrix A is upper triangular or lower triangular: = PlasmaUpper: Upper triangle of A is stored; = PlasmaLower: Lower triangle of A is stored.\\
+\hline
+\mbox{\tt in}  & {\em N} & The number of linear equations, i.e., the order of the matrix A. N $>$= 0.\\
+\hline
+\mbox{\tt in}  & {\em NRHS} & The number of right hand sides, i.e., the number of columns of the matrix B. NRHS $>$= 0.\\
+\hline
+\mbox{\tt in}  & {\em A} & The N-\/by-\/N symmetric positive definite (or Hermitian) coefficient matrix A. If uplo = PlasmaUpper, the leading N-\/by-\/N upper triangular part of A contains the upper triangular part of the matrix A, and the strictly lower triangular part of A is not referenced. If UPLO = 'L', the leading N-\/by-\/N lower triangular part of A contains the lower triangular part of the matrix A, and the strictly upper triangular part of A is not referenced. This matrix is not modified.\\
+\hline
+\mbox{\tt in}  & {\em LDA} & The leading dimension of the array A. LDA $>$= max(1,N).\\
+\hline
+\mbox{\tt in}  & {\em B} & The N-\/by-\/NRHS matrix of right hand side matrix B.\\
+\hline
+\mbox{\tt in}  & {\em LDB} & The leading dimension of the array B. LDB $>$= max(1,N).\\
+\hline
+\mbox{\tt out}  & {\em X} & If return value = 0, the N-\/by-\/NRHS solution matrix X.\\
+\hline
+\mbox{\tt in}  & {\em LDX} & The leading dimension of the array B. LDX $>$= max(1,N).\\
+\hline
+\mbox{\tt out}  & {\em ITER} & The number of the current iteration in the iterative refinement process\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em PLASMA\_\-SUCCESS} & successful exit \\
+\hline
+{\em $<$0} & if -\/i, the i-\/th argument had an illegal value \\
+\hline
+{\em $>$0} & if i, the leading minor of order i of A is not positive definite, so the factorization could not be completed, and the solution has not been computed.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{group__PLASMA__Complex64__t__Tile_ga0be255f00d6a4cc70a544a715bdc6dd3_ga0be255f00d6a4cc70a544a715bdc6dd3}{PLASMA\_\-zcposv\_\-Tile} 
+
+\hyperlink{group__PLASMA__Complex64__t__Tile__Async_gad582515d56a856b1d1477dbfac676a40_gad582515d56a856b1d1477dbfac676a40}{PLASMA\_\-zcposv\_\-Tile\_\-Async} 
+
+\hyperlink{group__double_gaf4c055accc54907abd1ea3a85555c9b4_gaf4c055accc54907abd1ea3a85555c9b4}{PLASMA\_\-dsposv} 
+
+\hyperlink{group__PLASMA__Complex64__t_gaed71622155778ea4372e34879184e742_gaed71622155778ea4372e34879184e742}{PLASMA\_\-zposv} 
+\end{DoxySeeAlso}
+\hypertarget{group__PLASMA__Complex64__t_gaba15b4f438d8d2fe41f2c38820d043ef_gaba15b4f438d8d2fe41f2c38820d043ef}{
+\index{PLASMA\_\-Complex64\_\-t@{PLASMA\_\-Complex64\_\-t}!PLASMA\_\-zcungesv@{PLASMA\_\-zcungesv}}
+\index{PLASMA\_\-zcungesv@{PLASMA\_\-zcungesv}!PLASMA_Complex64_t@{PLASMA\_\-Complex64\_\-t}}
+\subsubsection[{PLASMA\_\-zcungesv}]{\setlength{\rightskip}{0pt plus 5cm}int PLASMA\_\-zcungesv (
+\begin{DoxyParamCaption}
+\item[{PLASMA\_\-enum}]{trans, }
+\item[{int}]{N, }
+\item[{int}]{NRHS, }
+\item[{PLASMA\_\-Complex64\_\-t $\ast$}]{A, }
+\item[{int}]{LDA, }
+\item[{PLASMA\_\-Complex64\_\-t $\ast$}]{B, }
+\item[{int}]{LDB, }
+\item[{PLASMA\_\-Complex64\_\-t $\ast$}]{X, }
+\item[{int}]{LDX, }
+\item[{int $\ast$}]{ITER}
+\end{DoxyParamCaption}
+)}}
+\label{group__PLASMA__Complex64__t_gaba15b4f438d8d2fe41f2c38820d043ef_gaba15b4f438d8d2fe41f2c38820d043ef}
+PLASMA\_\-zcungesv -\/ Solves overdetermined or underdetermined linear systems involving an M-\/by-\/N matrix A using the QR or the LQ factorization of A. It is assumed that A has full rank. The following options are provided:
+
+\# trans = PlasmaNoTrans and M $>$= N: find the least squares solution of an overdetermined system, i.e., solve the least squares problem: minimize $|$$|$ B -\/ A$\ast$X $|$$|$.
+
+\# trans = PlasmaNoTrans and M $<$ N: find the minimum norm solution of an underdetermined system A $\ast$ X = B.
+
+Several right hand side vectors B and solution vectors X can be handled in a single call; they are stored as the columns of the M-\/by-\/NRHS right hand side matrix B and the N-\/by-\/NRHS solution matrix X.
+
+PLASMA\_\-zcungesv first attempts to factorize the matrix in COMPLEX and use this factorization within an iterative refinement procedure to produce a solution with COMPLEX$\ast$16 normwise backward error quality (see below). If the approach fails the method switches to a COMPLEX$\ast$16 factorization and solve.
+
+The iterative refinement is not going to be a winning strategy if the ratio COMPLEX performance over COMPLEX$\ast$16 performance is too small. A reasonable strategy should take the number of right-\/hand sides and the size of the matrix into account. This might be done with a call to ILAENV in the future. Up to now, we always try iterative refinement.
+
+The iterative refinement process is stopped if ITER $>$ ITERMAX or for all the RHS we have: RNRM $<$ N$\ast$XNRM$\ast$ANRM$\ast$EPS$\ast$BWDMAX where:
+
+
+\begin{DoxyItemize}
+\item ITER is the number of the current iteration in the iterative refinement process
+\item RNRM is the infinity-\/norm of the residual
+\item XNRM is the infinity-\/norm of the solution
+\item ANRM is the infinity-\/operator-\/norm of the matrix A
+\item EPS is the machine epsilon returned by DLAMCH('Epsilon').
+\end{DoxyItemize}
+
+Actually, in its current state (PLASMA 2.1.0), the test is slightly relaxed.
+
+The values ITERMAX and BWDMAX are fixed to 30 and 1.0D+00 respectively.
+
+We follow Bjorck's algorithm proposed in \char`\"{}Iterative Refinement of Linear
+  Least Squares solutions I\char`\"{}, BIT, 7:257-\/278, 1967.4
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em trans} & Intended usage: = PlasmaNoTrans: the linear system involves A; = PlasmaConjTrans: the linear system involves A$\ast$$\ast$H. Currently only PlasmaNoTrans is supported.\\
+\hline
+\mbox{\tt in}  & {\em N} & The number of columns of the matrix A. N $>$= 0.\\
+\hline
+\mbox{\tt in}  & {\em NRHS} & The number of right hand sides, i.e., the number of columns of the matrices B and X. NRHS $>$= 0.\\
+\hline
+\mbox{\tt in}  & {\em A} & The M-\/by-\/N matrix A. This matrix is not modified.\\
+\hline
+\mbox{\tt in}  & {\em LDA} & The leading dimension of the array A. LDA $>$= max(1,M).\\
+\hline
+\mbox{\tt in}  & {\em B} & The M-\/by-\/NRHS matrix B of right hand side vectors, stored columnwise. Not modified.\\
+\hline
+\mbox{\tt in}  & {\em LDB} & The leading dimension of the array B. LDB $>$= MAX(1,M,N).\\
+\hline
+\mbox{\tt out}  & {\em X} & If return value = 0, the solution vectors, stored columnwise. if M $>$= N, rows 1 to N of B contain the least squares solution vectors; the residual sum of squares for the solution in each column is given by the sum of squares of the modulus of elements N+1 to M in that column; if M $<$ N, rows 1 to N of B contain the minimum norm solution vectors;\\
+\hline
+\mbox{\tt in}  & {\em LDX} & The leading dimension of the array B. LDB $>$= MAX(1,M,N).\\
+\hline
+\mbox{\tt out}  & {\em ITER} & The number of the current iteration in the iterative refinement process\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em PLASMA\_\-SUCCESS} & successful exit \\
+\hline
+{\em $<$0} & if -\/i, the i-\/th argument had an illegal value\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{group__PLASMA__Complex64__t__Tile_ga5eecfe4fcf4814dd939f39c0629d2222_ga5eecfe4fcf4814dd939f39c0629d2222}{PLASMA\_\-zcungesv\_\-Tile} 
+
+\hyperlink{group__PLASMA__Complex64__t__Tile__Async_ga968e899d87b6805ffbd6975359e05efd_ga968e899d87b6805ffbd6975359e05efd}{PLASMA\_\-zcungesv\_\-Tile\_\-Async} 
+
+\hyperlink{group__double_ga5ad1a5e52e906d9add120b37fc4301fc_ga5ad1a5e52e906d9add120b37fc4301fc}{PLASMA\_\-dsungesv} 
+
+\hyperlink{group__PLASMA__Complex64__t_gada51cc2dfd38da1ff5f6a636c16ff972_gada51cc2dfd38da1ff5f6a636c16ff972}{PLASMA\_\-zgels} 
+\end{DoxySeeAlso}
+\hypertarget{group__PLASMA__Complex64__t_gaeaf62e9c3d1a1259c0dbeb91e5eb6693_gaeaf62e9c3d1a1259c0dbeb91e5eb6693}{
+\index{PLASMA\_\-Complex64\_\-t@{PLASMA\_\-Complex64\_\-t}!PLASMA\_\-zgebrd@{PLASMA\_\-zgebrd}}
+\index{PLASMA\_\-zgebrd@{PLASMA\_\-zgebrd}!PLASMA_Complex64_t@{PLASMA\_\-Complex64\_\-t}}
+\subsubsection[{PLASMA\_\-zgebrd}]{\setlength{\rightskip}{0pt plus 5cm}int PLASMA\_\-zgebrd (
+\begin{DoxyParamCaption}
+\item[{PLASMA\_\-enum}]{jobu, }
+\item[{PLASMA\_\-enum}]{jobvt, }
+\item[{int}]{M, }
+\item[{int}]{N, }
+\item[{PLASMA\_\-Complex64\_\-t $\ast$}]{A, }
+\item[{int}]{LDA, }
+\item[{double $\ast$}]{D, }
+\item[{double $\ast$}]{E, }
+\item[{PLASMA\_\-Complex64\_\-t $\ast$}]{U, }
+\item[{int}]{LDU, }
+\item[{PLASMA\_\-Complex64\_\-t $\ast$}]{VT, }
+\item[{int}]{LDVT, }
+\item[{{\bf PLASMA\_\-desc} $\ast$}]{descT}
+\end{DoxyParamCaption}
+)}}
+\label{group__PLASMA__Complex64__t_gaeaf62e9c3d1a1259c0dbeb91e5eb6693_gaeaf62e9c3d1a1259c0dbeb91e5eb6693}
+PLASMA\_\-zgebrd -\/ computes the singular value decomposition (SVD) of a complex M-\/by-\/N matrix A, optionally computing the left and/or right singular vectors. The SVD is written
+
+A = U $\ast$ SIGMA $\ast$ transpose(V)
+
+where SIGMA is an M-\/by-\/N matrix which is zero except for its min(m,n) diagonal elements, U is an M-\/by-\/M orthogonal matrix, and V is an N-\/by-\/N orthogonal matrix. The diagonal elements of SIGMA are the singular values of A; they are real and non-\/negative, and are returned in descending order. The first min(m,n) columns of U and V are the left and right singular vectors of A.
+
+Note that the routine returns V$\ast$$\ast$T, not V. Not LAPACK Compliant for now! Note: Only PlasmaNoVec supported!
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em jobu} & Specifies options for computing all or part of the matrix U. Intended usage: = PlasmaVec: all M columns of U are returned in array U; = PlasmaNoVec: no columns of U (no left singular vectors) are computed. Note: Only PlasmaNoVec supported!\\
+\hline
+\mbox{\tt in}  & {\em jobvt} & Specifies options for computing all or part of the matrix V$\ast$$\ast$H. Intended usage: = PlasmaVec: all M columns of U are returned in array U; = PlasmaNoVec: no columns of U (no left singular vectors) are computed. Note: Only PlasmaNoVec supported!\\
+\hline
+\mbox{\tt in}  & {\em M} & The number of rows of the matrix A. M $>$= 0.\\
+\hline
+\mbox{\tt in}  & {\em N} & The number of columns of the matrix A. N $>$= 0.\\
+\hline
+\mbox{\tt in,out}  & {\em A} & On entry, the M-\/by-\/N matrix A. On exit, if JOBU = 'O', A is overwritten with the first min(m,n) columns of U (the left singular vectors, stored columnwise); if JOBVT = 'O', A is overwritten with the first min(m,n) rows of V$\ast$$\ast$H (the right singular vectors, stored rowwise); if JOBU .ne. 'O' and JOBVT .ne. 'O', the contents of A are destroyed.\\
+\hline
+\mbox{\tt in}  & {\em LDA} & The leading dimension of the array A. LDA $>$= max(1,M).\\
+\hline
+\mbox{\tt out}  & {\em S} & The double precision singular values of A, sorted so that S(i) $>$= S(i+1).\\
+\hline
+\mbox{\tt out}  & {\em U} & (LDU,M) if JOBU = 'A' or (LDU,min(M,N)) if JOBU = 'S'. If JOBU = 'A', U contains the M-\/by-\/M unitary matrix U; if JOBU = 'S', U contains the first min(m,n) columns of U (the left singular vectors, stored columnwise); if JOBU = 'N' or 'O', U is not referenced.\\
+\hline
+\mbox{\tt in}  & {\em LDU} & The leading dimension of the array U. LDU $>$= 1; if JOBU = 'S' or 'A', LDU $>$= M.\\
+\hline
+\mbox{\tt out}  & {\em VT} & If JOBVT = 'A', VT contains the N-\/by-\/N unitary matrix V$\ast$$\ast$H; if JOBVT = 'S', VT contains the first min(m,n) rows of V$\ast$$\ast$H (the right singular vectors, stored rowwise); if JOBVT = 'N' or 'O', VT is not referenced.\\
+\hline
+\mbox{\tt in}  & {\em LDVT} & The leading dimension of the array VT. LDVT $>$= 1; if JOBVT = 'A', LDVT $>$= N; if JOBVT = 'S', LDVT $>$= min(M,N).\\
+\hline
+\mbox{\tt in,out}  & {\em descT} & On entry, descriptor as return by PLASMA\_\-Alloc\_\-Workspace\_\-zgesvd On exit, contains auxiliary factorization data.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em PLASMA\_\-SUCCESS} & successful exit \\
+\hline
+{\em $<$0} & if -\/i, the i-\/th argument had an illegal value\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{group__PLASMA__Complex64__t__Tile_gaacd6158d3c92dad26e08f83785ebe2ff_gaacd6158d3c92dad26e08f83785ebe2ff}{PLASMA\_\-zgebrd\_\-Tile} 
+
+\hyperlink{group__PLASMA__Complex64__t__Tile__Async_ga36ebcf9a832eb4436918b900a6133fde_ga36ebcf9a832eb4436918b900a6133fde}{PLASMA\_\-zgebrd\_\-Tile\_\-Async} 
+
+\hyperlink{group__PLASMA__Complex32__t_gabf5940026f96255f13a9193b17328625_gabf5940026f96255f13a9193b17328625}{PLASMA\_\-cgebrd} 
+
+\hyperlink{group__double_gaa9b75605421852ca5bef6df013d083bd_gaa9b75605421852ca5bef6df013d083bd}{PLASMA\_\-dgebrd} 
+
+\hyperlink{group__float_ga73ad8a7def750a22ac325b946b4bc8df_ga73ad8a7def750a22ac325b946b4bc8df}{PLASMA\_\-sgebrd} 
+\end{DoxySeeAlso}
+\hypertarget{group__PLASMA__Complex64__t_ga848678454b9e0462625fd9fd77568edf_ga848678454b9e0462625fd9fd77568edf}{
+\index{PLASMA\_\-Complex64\_\-t@{PLASMA\_\-Complex64\_\-t}!PLASMA\_\-zgelqf@{PLASMA\_\-zgelqf}}
+\index{PLASMA\_\-zgelqf@{PLASMA\_\-zgelqf}!PLASMA_Complex64_t@{PLASMA\_\-Complex64\_\-t}}
+\subsubsection[{PLASMA\_\-zgelqf}]{\setlength{\rightskip}{0pt plus 5cm}int PLASMA\_\-zgelqf (
+\begin{DoxyParamCaption}
+\item[{int}]{M, }
+\item[{int}]{N, }
+\item[{PLASMA\_\-Complex64\_\-t $\ast$}]{A, }
+\item[{int}]{LDA, }
+\item[{PLASMA\_\-Complex64\_\-t $\ast$}]{T}
+\end{DoxyParamCaption}
+)}}
+\label{group__PLASMA__Complex64__t_ga848678454b9e0462625fd9fd77568edf_ga848678454b9e0462625fd9fd77568edf}
+PLASMA\_\-zgelqf -\/ Computes the tile LQ factorization of a complex M-\/by-\/N matrix A: A = L $\ast$ Q.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em M} & The number of rows of the matrix A. M $>$= 0.\\
+\hline
+\mbox{\tt in}  & {\em N} & The number of columns of the matrix A. N $>$= 0.\\
+\hline
+\mbox{\tt in,out}  & {\em A} & On entry, the M-\/by-\/N matrix A. On exit, the elements on and below the diagonal of the array contain the m-\/by-\/min(M,N) lower trapezoidal matrix L (L is lower triangular if M $<$= N); the elements above the diagonal represent the unitary matrix Q as a product of elementary reflectors, stored by tiles.\\
+\hline
+\mbox{\tt in}  & {\em LDA} & The leading dimension of the array A. LDA $>$= max(1,M).\\
+\hline
+\mbox{\tt out}  & {\em T} & On exit, auxiliary factorization data, required by PLASMA\_\-zgelqs to solve the system of equations.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em PLASMA\_\-SUCCESS} & successful exit \\
+\hline
+{\em $<$0} & if -\/i, the i-\/th argument had an illegal value\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{group__PLASMA__Complex64__t__Tile_ga67a829a6a8c8fa6f0fbdfee5ea61ce12_ga67a829a6a8c8fa6f0fbdfee5ea61ce12}{PLASMA\_\-zgelqf\_\-Tile} 
+
+\hyperlink{group__PLASMA__Complex64__t__Tile__Async_ga045cbdfc84b025ffbf9aa8af9877a2a4_ga045cbdfc84b025ffbf9aa8af9877a2a4}{PLASMA\_\-zgelqf\_\-Tile\_\-Async} 
+
+\hyperlink{group__PLASMA__Complex32__t_ga6e21f8513ceb88a9a380619734f89a82_ga6e21f8513ceb88a9a380619734f89a82}{PLASMA\_\-cgelqf} 
+
+\hyperlink{group__double_ga43928289e29ea6b49b29111247f61456_ga43928289e29ea6b49b29111247f61456}{PLASMA\_\-dgelqf} 
+
+\hyperlink{group__float_gae16290f3f2f69be833b5fe48497d997a_gae16290f3f2f69be833b5fe48497d997a}{PLASMA\_\-sgelqf} 
+
+\hyperlink{group__PLASMA__Complex64__t_ga93299f75fbba6fadbe859e60ff395733_ga93299f75fbba6fadbe859e60ff395733}{PLASMA\_\-zgelqs} 
+\end{DoxySeeAlso}
+\hypertarget{group__PLASMA__Complex64__t_ga93299f75fbba6fadbe859e60ff395733_ga93299f75fbba6fadbe859e60ff395733}{
+\index{PLASMA\_\-Complex64\_\-t@{PLASMA\_\-Complex64\_\-t}!PLASMA\_\-zgelqs@{PLASMA\_\-zgelqs}}
+\index{PLASMA\_\-zgelqs@{PLASMA\_\-zgelqs}!PLASMA_Complex64_t@{PLASMA\_\-Complex64\_\-t}}
+\subsubsection[{PLASMA\_\-zgelqs}]{\setlength{\rightskip}{0pt plus 5cm}int PLASMA\_\-zgelqs (
+\begin{DoxyParamCaption}
+\item[{int}]{M, }
+\item[{int}]{N, }
+\item[{int}]{NRHS, }
+\item[{PLASMA\_\-Complex64\_\-t $\ast$}]{A, }
+\item[{int}]{LDA, }
+\item[{PLASMA\_\-Complex64\_\-t $\ast$}]{T, }
+\item[{PLASMA\_\-Complex64\_\-t $\ast$}]{B, }
+\item[{int}]{LDB}
+\end{DoxyParamCaption}
+)}}
+\label{group__PLASMA__Complex64__t_ga93299f75fbba6fadbe859e60ff395733_ga93299f75fbba6fadbe859e60ff395733}
+PLASMA\_\-zgelqs -\/ Compute a minimum-\/norm solution min $|$$|$ A$\ast$X -\/ B $|$$|$ using the LQ factorization A = L$\ast$Q computed by PLASMA\_\-zgelqf.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em M} & The number of rows of the matrix A. M $>$= 0.\\
+\hline
+\mbox{\tt in}  & {\em N} & The number of columns of the matrix A. N $>$= M $>$= 0.\\
+\hline
+\mbox{\tt in}  & {\em NRHS} & The number of columns of B. NRHS $>$= 0.\\
+\hline
+\mbox{\tt in}  & {\em A} & Details of the LQ factorization of the original matrix A as returned by PLASMA\_\-zgelqf.\\
+\hline
+\mbox{\tt in}  & {\em LDA} & The leading dimension of the array A. LDA $>$= M.\\
+\hline
+\mbox{\tt in}  & {\em T} & Auxiliary factorization data, computed by PLASMA\_\-zgelqf.\\
+\hline
+\mbox{\tt in,out}  & {\em B} & On entry, the M-\/by-\/NRHS right hand side matrix B. On exit, the N-\/by-\/NRHS solution matrix X.\\
+\hline
+\mbox{\tt in}  & {\em LDB} & The leading dimension of the array B. LDB $>$= N.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em PLASMA\_\-SUCCESS} & successful exit \\
+\hline
+{\em $<$0} & if -\/i, the i-\/th argument had an illegal value\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{group__PLASMA__Complex64__t__Tile_gaa6c2e67e567c4f9a4e3f3a84e4b54b8c_gaa6c2e67e567c4f9a4e3f3a84e4b54b8c}{PLASMA\_\-zgelqs\_\-Tile} 
+
+\hyperlink{group__PLASMA__Complex64__t__Tile__Async_gaea984817531da99d1188623a0822e5f6_gaea984817531da99d1188623a0822e5f6}{PLASMA\_\-zgelqs\_\-Tile\_\-Async} 
+
+\hyperlink{group__PLASMA__Complex32__t_gabb8f3eb0c5b2dc0c76a279584accb260_gabb8f3eb0c5b2dc0c76a279584accb260}{PLASMA\_\-cgelqs} 
+
+\hyperlink{group__double_ga702946ad7da2faed32f38197bf03e43e_ga702946ad7da2faed32f38197bf03e43e}{PLASMA\_\-dgelqs} 
+
+\hyperlink{group__float_gadb420644662f4026e67ebe990f677721_gadb420644662f4026e67ebe990f677721}{PLASMA\_\-sgelqs} 
+
+\hyperlink{group__PLASMA__Complex64__t_ga848678454b9e0462625fd9fd77568edf_ga848678454b9e0462625fd9fd77568edf}{PLASMA\_\-zgelqf} 
+\end{DoxySeeAlso}
+\hypertarget{group__PLASMA__Complex64__t_gada51cc2dfd38da1ff5f6a636c16ff972_gada51cc2dfd38da1ff5f6a636c16ff972}{
+\index{PLASMA\_\-Complex64\_\-t@{PLASMA\_\-Complex64\_\-t}!PLASMA\_\-zgels@{PLASMA\_\-zgels}}
+\index{PLASMA\_\-zgels@{PLASMA\_\-zgels}!PLASMA_Complex64_t@{PLASMA\_\-Complex64\_\-t}}
+\subsubsection[{PLASMA\_\-zgels}]{\setlength{\rightskip}{0pt plus 5cm}int PLASMA\_\-zgels (
+\begin{DoxyParamCaption}
+\item[{PLASMA\_\-enum}]{trans, }
+\item[{int}]{M, }
+\item[{int}]{N, }
+\item[{int}]{NRHS, }
+\item[{PLASMA\_\-Complex64\_\-t $\ast$}]{A, }
+\item[{int}]{LDA, }
+\item[{PLASMA\_\-Complex64\_\-t $\ast$}]{T, }
+\item[{PLASMA\_\-Complex64\_\-t $\ast$}]{B, }
+\item[{int}]{LDB}
+\end{DoxyParamCaption}
+)}}
+\label{group__PLASMA__Complex64__t_gada51cc2dfd38da1ff5f6a636c16ff972_gada51cc2dfd38da1ff5f6a636c16ff972}
+PLASMA\_\-zgels -\/ solves overdetermined or underdetermined linear systems involving an M-\/by-\/N matrix A using the QR or the LQ factorization of A. It is assumed that A has full rank. The following options are provided:
+
+\# trans = PlasmaNoTrans and M $>$= N: find the least squares solution of an overdetermined system, i.e., solve the least squares problem: minimize $|$$|$ B -\/ A$\ast$X $|$$|$.
+
+\# trans = PlasmaNoTrans and M $<$ N: find the minimum norm solution of an underdetermined system A $\ast$ X = B.
+
+Several right hand side vectors B and solution vectors X can be handled in a single call; they are stored as the columns of the M-\/by-\/NRHS right hand side matrix B and the N-\/by-\/NRHS solution matrix X.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em trans} & Intended usage: = PlasmaNoTrans: the linear system involves A; = PlasmaConjTrans: the linear system involves A$\ast$$\ast$H. Currently only PlasmaNoTrans is supported.\\
+\hline
+\mbox{\tt in}  & {\em M} & The number of rows of the matrix A. M $>$= 0.\\
+\hline
+\mbox{\tt in}  & {\em N} & The number of columns of the matrix A. N $>$= 0.\\
+\hline
+\mbox{\tt in}  & {\em NRHS} & The number of right hand sides, i.e., the number of columns of the matrices B and X. NRHS $>$= 0.\\
+\hline
+\mbox{\tt in,out}  & {\em A} & On entry, the M-\/by-\/N matrix A. On exit, if M $>$= N, A is overwritten by details of its QR factorization as returned by PLASMA\_\-zgeqrf; if M $<$ N, A is overwritten by details of its LQ factorization as returned by PLASMA\_\-zgelqf.\\
+\hline
+\mbox{\tt in}  & {\em LDA} & The leading dimension of the array A. LDA $>$= max(1,M).\\
+\hline
+\mbox{\tt out}  & {\em T} & On exit, auxiliary factorization data.\\
+\hline
+\mbox{\tt in,out}  & {\em B} & On entry, the M-\/by-\/NRHS matrix B of right hand side vectors, stored columnwise; On exit, if return value = 0, B is overwritten by the solution vectors, stored columnwise: if M $>$= N, rows 1 to N of B contain the least squares solution vectors; the residual sum of squares for the solution in each column is given by the sum of squares of the modulus of elements N+1 to M in that column; if M $<$ N, rows 1 to N of B contain the minimum norm solution vectors;\\
+\hline
+\mbox{\tt in}  & {\em LDB} & The leading dimension of the array B. LDB $>$= MAX(1,M,N).\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em PLASMA\_\-SUCCESS} & successful exit \\
+\hline
+{\em $<$0} & if -\/i, the i-\/th argument had an illegal value\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{group__PLASMA__Complex64__t__Tile_ga2bb601838348c183a781a1ec00023065_ga2bb601838348c183a781a1ec00023065}{PLASMA\_\-zgels\_\-Tile} 
+
+\hyperlink{group__PLASMA__Complex64__t__Tile__Async_gaef149ecf3716aec86c4da1b4ab4974f9_gaef149ecf3716aec86c4da1b4ab4974f9}{PLASMA\_\-zgels\_\-Tile\_\-Async} 
+
+\hyperlink{group__PLASMA__Complex32__t_gab2a5cb169660212ccc117f4548a950eb_gab2a5cb169660212ccc117f4548a950eb}{PLASMA\_\-cgels} 
+
+\hyperlink{group__double_ga2bb4bdde30eac02ddcf226bbaa1baf6e_ga2bb4bdde30eac02ddcf226bbaa1baf6e}{PLASMA\_\-dgels} 
+
+\hyperlink{group__float_gace3d0030c6727d66314a7b5926031b6a_gace3d0030c6727d66314a7b5926031b6a}{PLASMA\_\-sgels} 
+\end{DoxySeeAlso}
+\hypertarget{group__PLASMA__Complex64__t_ga1a0f8d759e535f9947ae11baa0af6fa3_ga1a0f8d759e535f9947ae11baa0af6fa3}{
+\index{PLASMA\_\-Complex64\_\-t@{PLASMA\_\-Complex64\_\-t}!PLASMA\_\-zgemm@{PLASMA\_\-zgemm}}
+\index{PLASMA\_\-zgemm@{PLASMA\_\-zgemm}!PLASMA_Complex64_t@{PLASMA\_\-Complex64\_\-t}}
+\subsubsection[{PLASMA\_\-zgemm}]{\setlength{\rightskip}{0pt plus 5cm}int PLASMA\_\-zgemm (
+\begin{DoxyParamCaption}
+\item[{PLASMA\_\-enum}]{transA, }
+\item[{PLASMA\_\-enum}]{transB, }
+\item[{int}]{M, }
+\item[{int}]{N, }
+\item[{int}]{K, }
+\item[{PLASMA\_\-Complex64\_\-t}]{alpha, }
+\item[{PLASMA\_\-Complex64\_\-t $\ast$}]{A, }
+\item[{int}]{LDA, }
+\item[{PLASMA\_\-Complex64\_\-t $\ast$}]{B, }
+\item[{int}]{LDB, }
+\item[{PLASMA\_\-Complex64\_\-t}]{beta, }
+\item[{PLASMA\_\-Complex64\_\-t $\ast$}]{C, }
+\item[{int}]{LDC}
+\end{DoxyParamCaption}
+)}}
+\label{group__PLASMA__Complex64__t_ga1a0f8d759e535f9947ae11baa0af6fa3_ga1a0f8d759e535f9947ae11baa0af6fa3}
+PLASMA\_\-zgemm -\/ Performs one of the matrix-\/matrix operations
+
+\[ C = \alpha [op( A )\times op( B )] + \beta C \],
+
+where op( X ) is one of
+
+op( X ) = X or op( X ) = X' or op( X ) = conjg( X' )
+
+alpha and beta are scalars, and A, B and C are matrices, with op( A ) an m by k matrix, op( B ) a k by n matrix and C an m by n matrix.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em transA} & Specifies whether the matrix A is transposed, not transposed or conjugate transposed: = PlasmaNoTrans: A is not transposed; = PlasmaTrans: A is transposed; = PlasmaConjTrans: A is conjugate transposed.\\
+\hline
+\mbox{\tt in}  & {\em transB} & Specifies whether the matrix B is transposed, not transposed or conjugate transposed: = PlasmaNoTrans: B is not transposed; = PlasmaTrans: B is transposed; = PlasmaConjTrans: B is conjugate transposed.\\
+\hline
+\mbox{\tt in}  & {\em M} & M specifies the number of rows of the matrix op( A ) and of the matrix C. M $>$= 0.\\
+\hline
+\mbox{\tt in}  & {\em N} & N specifies the number of columns of the matrix op( B ) and of the matrix C. N $>$= 0.\\
+\hline
+\mbox{\tt in}  & {\em K} & K specifies the number of columns of the matrix op( A ) and the number of rows of the matrix op( B ). K $>$= 0.\\
+\hline
+\mbox{\tt in}  & {\em alpha} & alpha specifies the scalar alpha\\
+\hline
+\mbox{\tt in}  & {\em A} & A is a LDA-\/by-\/ka matrix, where ka is K when transA = PlasmaNoTrans, and is M otherwise.\\
+\hline
+\mbox{\tt in}  & {\em LDA} & The leading dimension of the array A. LDA $>$= max(1,M).\\
+\hline
+\mbox{\tt in}  & {\em B} & B is a LDB-\/by-\/kb matrix, where kb is N when transB = PlasmaNoTrans, and is K otherwise.\\
+\hline
+\mbox{\tt in}  & {\em LDB} & The leading dimension of the array B. LDB $>$= max(1,N).\\
+\hline
+\mbox{\tt in}  & {\em beta} & beta specifies the scalar beta\\
+\hline
+\mbox{\tt in,out}  & {\em C} & C is a LDC-\/by-\/N matrix. On exit, the array is overwritten by the M by N matrix ( alpha$\ast$op( A )$\ast$op( B ) + beta$\ast$C )\\
+\hline
+\mbox{\tt in}  & {\em LDC} & The leading dimension of the array C. LDC $>$= max(1,M).\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em PLASMA\_\-SUCCESS} & successful exit\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{group__PLASMA__Complex64__t__Tile_ga988b90795ec2367dc11590bc5dd05ada_ga988b90795ec2367dc11590bc5dd05ada}{PLASMA\_\-zgemm\_\-Tile} 
+
+\hyperlink{group__PLASMA__Complex32__t_ga5505cdf8794ea00c9160d656d2a00ec9_ga5505cdf8794ea00c9160d656d2a00ec9}{PLASMA\_\-cgemm} 
+
+\hyperlink{group__double_ga5c560bea8139857be91339582ba830ef_ga5c560bea8139857be91339582ba830ef}{PLASMA\_\-dgemm} 
+
+\hyperlink{group__float_gace4e6452ba3ffb8cef11be1987091382_gace4e6452ba3ffb8cef11be1987091382}{PLASMA\_\-sgemm} 
+\end{DoxySeeAlso}
+\hypertarget{group__PLASMA__Complex64__t_ga36fc6c695a8288f7ff64669c50fc4d74_ga36fc6c695a8288f7ff64669c50fc4d74}{
+\index{PLASMA\_\-Complex64\_\-t@{PLASMA\_\-Complex64\_\-t}!PLASMA\_\-zgeqrf@{PLASMA\_\-zgeqrf}}
+\index{PLASMA\_\-zgeqrf@{PLASMA\_\-zgeqrf}!PLASMA_Complex64_t@{PLASMA\_\-Complex64\_\-t}}
+\subsubsection[{PLASMA\_\-zgeqrf}]{\setlength{\rightskip}{0pt plus 5cm}int PLASMA\_\-zgeqrf (
+\begin{DoxyParamCaption}
+\item[{int}]{M, }
+\item[{int}]{N, }
+\item[{PLASMA\_\-Complex64\_\-t $\ast$}]{A, }
+\item[{int}]{LDA, }
+\item[{PLASMA\_\-Complex64\_\-t $\ast$}]{T}
+\end{DoxyParamCaption}
+)}}
+\label{group__PLASMA__Complex64__t_ga36fc6c695a8288f7ff64669c50fc4d74_ga36fc6c695a8288f7ff64669c50fc4d74}
+PLASMA\_\-zgeqrf -\/ Computes the tile QR factorization of a complex M-\/by-\/N matrix A: A = Q $\ast$ R.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em M} & The number of rows of the matrix A. M $>$= 0.\\
+\hline
+\mbox{\tt in}  & {\em N} & The number of columns of the matrix A. N $>$= 0.\\
+\hline
+\mbox{\tt in,out}  & {\em A} & On entry, the M-\/by-\/N matrix A. On exit, the elements on and above the diagonal of the array contain the min(M,N)-\/by-\/N upper trapezoidal matrix R (R is upper triangular if M $>$= N); the elements below the diagonal represent the unitary matrix Q as a product of elementary reflectors stored by tiles.\\
+\hline
+\mbox{\tt in}  & {\em LDA} & The leading dimension of the array A. LDA $>$= max(1,M).\\
+\hline
+\mbox{\tt out}  & {\em T} & On exit, auxiliary factorization data, required by PLASMA\_\-zgeqrs to solve the system of equations.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em PLASMA\_\-SUCCESS} & successful exit \\
+\hline
+{\em $<$0} & if -\/i, the i-\/th argument had an illegal value\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{group__PLASMA__Complex64__t__Tile_gabc10a21174d94b348a2493d6e885be57_gabc10a21174d94b348a2493d6e885be57}{PLASMA\_\-zgeqrf\_\-Tile} 
+
+\hyperlink{group__PLASMA__Complex64__t__Tile__Async_ga82e726155a07c9f4bb8e9c3a0298c1c4_ga82e726155a07c9f4bb8e9c3a0298c1c4}{PLASMA\_\-zgeqrf\_\-Tile\_\-Async} 
+
+\hyperlink{group__PLASMA__Complex32__t_ga08a9c83e000ad753494888652b832db2_ga08a9c83e000ad753494888652b832db2}{PLASMA\_\-cgeqrf} 
+
+\hyperlink{group__double_ga184e26d7cdbc6b22a830f58d464f74e4_ga184e26d7cdbc6b22a830f58d464f74e4}{PLASMA\_\-dgeqrf} 
+
+\hyperlink{group__float_gad1f56cbabe8e31093818cff47f781cdf_gad1f56cbabe8e31093818cff47f781cdf}{PLASMA\_\-sgeqrf} 
+
+\hyperlink{group__PLASMA__Complex64__t_gaed0fd329c8dca2063c4afc2caa781218_gaed0fd329c8dca2063c4afc2caa781218}{PLASMA\_\-zgeqrs} 
+\end{DoxySeeAlso}
+\hypertarget{group__PLASMA__Complex64__t_gaed0fd329c8dca2063c4afc2caa781218_gaed0fd329c8dca2063c4afc2caa781218}{
+\index{PLASMA\_\-Complex64\_\-t@{PLASMA\_\-Complex64\_\-t}!PLASMA\_\-zgeqrs@{PLASMA\_\-zgeqrs}}
+\index{PLASMA\_\-zgeqrs@{PLASMA\_\-zgeqrs}!PLASMA_Complex64_t@{PLASMA\_\-Complex64\_\-t}}
+\subsubsection[{PLASMA\_\-zgeqrs}]{\setlength{\rightskip}{0pt plus 5cm}int PLASMA\_\-zgeqrs (
+\begin{DoxyParamCaption}
+\item[{int}]{M, }
+\item[{int}]{N, }
+\item[{int}]{NRHS, }
+\item[{PLASMA\_\-Complex64\_\-t $\ast$}]{A, }
+\item[{int}]{LDA, }
+\item[{PLASMA\_\-Complex64\_\-t $\ast$}]{T, }
+\item[{PLASMA\_\-Complex64\_\-t $\ast$}]{B, }
+\item[{int}]{LDB}
+\end{DoxyParamCaption}
+)}}
+\label{group__PLASMA__Complex64__t_gaed0fd329c8dca2063c4afc2caa781218_gaed0fd329c8dca2063c4afc2caa781218}
+PLASMA\_\-zgeqrs -\/ Compute a minimum-\/norm solution min $|$$|$ A$\ast$X -\/ B $|$$|$ using the RQ factorization A = R$\ast$Q computed by PLASMA\_\-zgeqrf.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em M} & The number of rows of the matrix A. M $>$= 0.\\
+\hline
+\mbox{\tt in}  & {\em N} & The number of columns of the matrix A. N $>$= M $>$= 0.\\
+\hline
+\mbox{\tt in}  & {\em NRHS} & The number of columns of B. NRHS $>$= 0.\\
+\hline
+\mbox{\tt in,out}  & {\em A} & Details of the QR factorization of the original matrix A as returned by PLASMA\_\-zgeqrf.\\
+\hline
+\mbox{\tt in}  & {\em LDA} & The leading dimension of the array A. LDA $>$= M.\\
+\hline
+\mbox{\tt in}  & {\em T} & Auxiliary factorization data, computed by PLASMA\_\-zgeqrf.\\
+\hline
+\mbox{\tt in,out}  & {\em B} & On entry, the m-\/by-\/nrhs right hand side matrix B. On exit, the n-\/by-\/nrhs solution matrix X.\\
+\hline
+\mbox{\tt in}  & {\em LDB} & The leading dimension of the array B. LDB $>$= max(1,N).\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em PLASMA\_\-SUCCESS} & successful exit \\
+\hline
+{\em $<$0} & if -\/i, the i-\/th argument had an illegal value\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{group__PLASMA__Complex64__t__Tile_gac9063541a51dbee5a3e51ea774d30de9_gac9063541a51dbee5a3e51ea774d30de9}{PLASMA\_\-zgeqrs\_\-Tile} 
+
+\hyperlink{group__PLASMA__Complex64__t__Tile__Async_ga2e3360f39f4b262354718a6aaefe649c_ga2e3360f39f4b262354718a6aaefe649c}{PLASMA\_\-zgeqrs\_\-Tile\_\-Async} 
+
+\hyperlink{group__PLASMA__Complex32__t_ga0b516dab8ed5a7a2e12dc03d3d4100f0_ga0b516dab8ed5a7a2e12dc03d3d4100f0}{PLASMA\_\-cgeqrs} 
+
+\hyperlink{group__double_gaaecfe48b9cf6d11757f9a8fa2b96070e_gaaecfe48b9cf6d11757f9a8fa2b96070e}{PLASMA\_\-dgeqrs} 
+
+\hyperlink{group__float_ga7d6884abddaf25d155084d4c2eb2e31b_ga7d6884abddaf25d155084d4c2eb2e31b}{PLASMA\_\-sgeqrs} 
+
+\hyperlink{group__PLASMA__Complex64__t_ga36fc6c695a8288f7ff64669c50fc4d74_ga36fc6c695a8288f7ff64669c50fc4d74}{PLASMA\_\-zgeqrf} 
+\end{DoxySeeAlso}
+\hypertarget{group__PLASMA__Complex64__t_ga94397d6fba523c946f1e56cfe9aa967d_ga94397d6fba523c946f1e56cfe9aa967d}{
+\index{PLASMA\_\-Complex64\_\-t@{PLASMA\_\-Complex64\_\-t}!PLASMA\_\-zgesv@{PLASMA\_\-zgesv}}
+\index{PLASMA\_\-zgesv@{PLASMA\_\-zgesv}!PLASMA_Complex64_t@{PLASMA\_\-Complex64\_\-t}}
+\subsubsection[{PLASMA\_\-zgesv}]{\setlength{\rightskip}{0pt plus 5cm}int PLASMA\_\-zgesv (
+\begin{DoxyParamCaption}
+\item[{int}]{N, }
+\item[{int}]{NRHS, }
+\item[{PLASMA\_\-Complex64\_\-t $\ast$}]{A, }
+\item[{int}]{LDA, }
+\item[{int $\ast$}]{IPIV, }
+\item[{PLASMA\_\-Complex64\_\-t $\ast$}]{B, }
+\item[{int}]{LDB}
+\end{DoxyParamCaption}
+)}}
+\label{group__PLASMA__Complex64__t_ga94397d6fba523c946f1e56cfe9aa967d_ga94397d6fba523c946f1e56cfe9aa967d}
+PLASMA\_\-zgesv -\/ Computes the solution to a system of linear equations A $\ast$ X = B, where A is an N-\/by-\/N matrix and X and B are N-\/by-\/NRHS matrices. The tile LU decomposition with partial tile pivoting and row interchanges is used to factor A. The factored form of A is then used to solve the system of equations A $\ast$ X = B.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em N} & The number of linear equations, i.e., the order of the matrix A. N $>$= 0.\\
+\hline
+\mbox{\tt in}  & {\em NRHS} & The number of right hand sides, i.e., the number of columns of the matrix B. NRHS $>$= 0.\\
+\hline
+\mbox{\tt in,out}  & {\em A} & On entry, the N-\/by-\/N coefficient matrix A. On exit, the tile L and U factors from the factorization.\\
+\hline
+\mbox{\tt in}  & {\em LDA} & The leading dimension of the array A. LDA $>$= max(1,N).\\
+\hline
+\mbox{\tt out}  & {\em IPIV} & On exit, the pivot indices that define the permutations.\\
+\hline
+\mbox{\tt in,out}  & {\em B} & On entry, the N-\/by-\/NRHS matrix of right hand side matrix B. On exit, if return value = 0, the N-\/by-\/NRHS solution matrix X.\\
+\hline
+\mbox{\tt in}  & {\em LDB} & The leading dimension of the array B. LDB $>$= max(1,N).\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em PLASMA\_\-SUCCESS} & successful exit \\
+\hline
+{\em $<$0} & if -\/i, the i-\/th argument had an illegal value \\
+\hline
+{\em $>$0} & if i, U(i,i) is exactly zero. The factorization has been completed, but the factor U is exactly singular, so the solution could not be computed.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{group__PLASMA__Complex64__t__Tile_gae332d3896516a34f413881d7383506d4_gae332d3896516a34f413881d7383506d4}{PLASMA\_\-zgesv\_\-Tile} 
+
+\hyperlink{group__PLASMA__Complex64__t__Tile__Async_ga34f307dbc6cd1dc5adab0970fe559a30_ga34f307dbc6cd1dc5adab0970fe559a30}{PLASMA\_\-zgesv\_\-Tile\_\-Async} 
+
+\hyperlink{group__PLASMA__Complex32__t_ga5ec3217862ee4b820b9cd9d4b343bfae_ga5ec3217862ee4b820b9cd9d4b343bfae}{PLASMA\_\-cgesv} 
+
+\hyperlink{group__double_gae380e95b53e07b9b1261aec244191c0f_gae380e95b53e07b9b1261aec244191c0f}{PLASMA\_\-dgesv} 
+
+\hyperlink{group__float_ga39018420f926f77ef11c50c82f66da77_ga39018420f926f77ef11c50c82f66da77}{PLASMA\_\-sgesv} 
+\end{DoxySeeAlso}
+\hypertarget{group__PLASMA__Complex64__t_ga20ea1251fef4f13efdd798a1cf5f1bbb_ga20ea1251fef4f13efdd798a1cf5f1bbb}{
+\index{PLASMA\_\-Complex64\_\-t@{PLASMA\_\-Complex64\_\-t}!PLASMA\_\-zgesv\_\-incpiv@{PLASMA\_\-zgesv\_\-incpiv}}
+\index{PLASMA\_\-zgesv\_\-incpiv@{PLASMA\_\-zgesv\_\-incpiv}!PLASMA_Complex64_t@{PLASMA\_\-Complex64\_\-t}}
+\subsubsection[{PLASMA\_\-zgesv\_\-incpiv}]{\setlength{\rightskip}{0pt plus 5cm}int PLASMA\_\-zgesv\_\-incpiv (
+\begin{DoxyParamCaption}
+\item[{int}]{N, }
+\item[{int}]{NRHS, }
+\item[{PLASMA\_\-Complex64\_\-t $\ast$}]{A, }
+\item[{int}]{LDA, }
+\item[{PLASMA\_\-Complex64\_\-t $\ast$}]{L, }
+\item[{int $\ast$}]{IPIV, }
+\item[{PLASMA\_\-Complex64\_\-t $\ast$}]{B, }
+\item[{int}]{LDB}
+\end{DoxyParamCaption}
+)}}
+\label{group__PLASMA__Complex64__t_ga20ea1251fef4f13efdd798a1cf5f1bbb_ga20ea1251fef4f13efdd798a1cf5f1bbb}
+PLASMA\_\-zgesv\_\-incpiv -\/ Computes the solution to a system of linear equations A $\ast$ X = B, where A is an N-\/by-\/N matrix and X and B are N-\/by-\/NRHS matrices. The tile LU decomposition with partial tile pivoting and row interchanges is used to factor A. The factored form of A is then used to solve the system of equations A $\ast$ X = B.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em N} & The number of linear equations, i.e., the order of the matrix A. N $>$= 0.\\
+\hline
+\mbox{\tt in}  & {\em NRHS} & The number of right hand sides, i.e., the number of columns of the matrix B. NRHS $>$= 0.\\
+\hline
+\mbox{\tt in,out}  & {\em A} & On entry, the N-\/by-\/N coefficient matrix A. On exit, the tile L and U factors from the factorization (not equivalent to LAPACK).\\
+\hline
+\mbox{\tt in}  & {\em LDA} & The leading dimension of the array A. LDA $>$= max(1,N).\\
+\hline
+\mbox{\tt out}  & {\em L} & On exit, auxiliary factorization data, related to the tile L factor, necessary to solve the system of equations.\\
+\hline
+\mbox{\tt out}  & {\em IPIV} & On exit, the pivot indices that define the permutations (not equivalent to LAPACK).\\
+\hline
+\mbox{\tt in,out}  & {\em B} & On entry, the N-\/by-\/NRHS matrix of right hand side matrix B. On exit, if return value = 0, the N-\/by-\/NRHS solution matrix X.\\
+\hline
+\mbox{\tt in}  & {\em LDB} & The leading dimension of the array B. LDB $>$= max(1,N).\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em PLASMA\_\-SUCCESS} & successful exit \\
+\hline
+{\em $<$0} & if -\/i, the i-\/th argument had an illegal value \\
+\hline
+{\em $>$0} & if i, U(i,i) is exactly zero. The factorization has been completed, but the factor U is exactly singular, so the solution could not be computed.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{group__PLASMA__Complex64__t__Tile_gab1992fd7d128b9101dfcf9da53238cec_gab1992fd7d128b9101dfcf9da53238cec}{PLASMA\_\-zgesv\_\-incpiv\_\-Tile} 
+
+\hyperlink{group__PLASMA__Complex64__t__Tile__Async_ga249ca8742ffa280cbd62c4bdad362ee7_ga249ca8742ffa280cbd62c4bdad362ee7}{PLASMA\_\-zgesv\_\-incpiv\_\-Tile\_\-Async} 
+
+\hyperlink{group__PLASMA__Complex32__t_ga8342884ee16d7e52722adfe84ea7c9dc_ga8342884ee16d7e52722adfe84ea7c9dc}{PLASMA\_\-cgesv\_\-incpiv} 
+
+\hyperlink{group__double_ga77c09eeea1e0a7710a8920e53f7f062e_ga77c09eeea1e0a7710a8920e53f7f062e}{PLASMA\_\-dgesv\_\-incpiv} 
+
+\hyperlink{group__float_ga1140b2ee91d48b2e3ee57346f752098c_ga1140b2ee91d48b2e3ee57346f752098c}{PLASMA\_\-sgesv\_\-incpiv} 
+\end{DoxySeeAlso}
+\hypertarget{group__PLASMA__Complex64__t_ga36fc556f67632e00105090a60657dab2_ga36fc556f67632e00105090a60657dab2}{
+\index{PLASMA\_\-Complex64\_\-t@{PLASMA\_\-Complex64\_\-t}!PLASMA\_\-zgesvd@{PLASMA\_\-zgesvd}}
+\index{PLASMA\_\-zgesvd@{PLASMA\_\-zgesvd}!PLASMA_Complex64_t@{PLASMA\_\-Complex64\_\-t}}
+\subsubsection[{PLASMA\_\-zgesvd}]{\setlength{\rightskip}{0pt plus 5cm}int PLASMA\_\-zgesvd (
+\begin{DoxyParamCaption}
+\item[{PLASMA\_\-enum}]{jobu, }
+\item[{PLASMA\_\-enum}]{jobvt, }
+\item[{int}]{M, }
+\item[{int}]{N, }
+\item[{PLASMA\_\-Complex64\_\-t $\ast$}]{A, }
+\item[{int}]{LDA, }
+\item[{double $\ast$}]{S, }
+\item[{PLASMA\_\-Complex64\_\-t $\ast$}]{U, }
+\item[{int}]{LDU, }
+\item[{PLASMA\_\-Complex64\_\-t $\ast$}]{VT, }
+\item[{int}]{LDVT, }
+\item[{{\bf PLASMA\_\-desc} $\ast$}]{descT}
+\end{DoxyParamCaption}
+)}}
+\label{group__PLASMA__Complex64__t_ga36fc556f67632e00105090a60657dab2_ga36fc556f67632e00105090a60657dab2}
+PLASMA\_\-zgesvd -\/ computes the singular value decomposition (SVD) of a complex M-\/by-\/N matrix A, optionally computing the left and/or right singular vectors. The SVD is written
+
+A = U $\ast$ SIGMA $\ast$ transpose(V)
+
+where SIGMA is an M-\/by-\/N matrix which is zero except for its min(m,n) diagonal elements, U is an M-\/by-\/M orthogonal matrix, and V is an N-\/by-\/N orthogonal matrix. The diagonal elements of SIGMA are the singular values of A; they are real and non-\/negative, and are returned in descending order. The first min(m,n) columns of U and V are the left and right singular vectors of A.
+
+Note that the routine returns V$\ast$$\ast$T, not V. Not LAPACK Compliant for now! Note: Only PlasmaNoVec supported!
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em jobu} & Specifies options for computing all or part of the matrix U. Intended usage: = PlasmaVec: all M columns of U are returned in array U; = PlasmaNoVec: no columns of U (no left singular vectors) are computed. Note: Only PlasmaNoVec supported!\\
+\hline
+\mbox{\tt in}  & {\em jobvt} & Specifies options for computing all or part of the matrix V$\ast$$\ast$H. Intended usage: = PlasmaVec: all M columns of U are returned in array U; = PlasmaNoVec: no columns of U (no left singular vectors) are computed. Note: Only PlasmaNoVec supported!\\
+\hline
+\mbox{\tt in}  & {\em M} & The number of rows of the matrix A. M $>$= 0.\\
+\hline
+\mbox{\tt in}  & {\em N} & The number of columns of the matrix A. N $>$= 0.\\
+\hline
+\mbox{\tt in,out}  & {\em A} & On entry, the M-\/by-\/N matrix A. On exit, if JOBU = 'O', A is overwritten with the first min(m,n) columns of U (the left singular vectors, stored columnwise); if JOBVT = 'O', A is overwritten with the first min(m,n) rows of V$\ast$$\ast$H (the right singular vectors, stored rowwise); if JOBU .ne. 'O' and JOBVT .ne. 'O', the contents of A are destroyed.\\
+\hline
+\mbox{\tt in}  & {\em LDA} & The leading dimension of the array A. LDA $>$= max(1,M).\\
+\hline
+\mbox{\tt out}  & {\em S} & The double precision singular values of A, sorted so that S(i) $>$= S(i+1).\\
+\hline
+\mbox{\tt out}  & {\em U} & (LDU,M) if JOBU = 'A' or (LDU,min(M,N)) if JOBU = 'S'. If JOBU = 'A', U contains the M-\/by-\/M unitary matrix U; if JOBU = 'S', U contains the first min(m,n) columns of U (the left singular vectors, stored columnwise); if JOBU = 'N' or 'O', U is not referenced.\\
+\hline
+\mbox{\tt in}  & {\em LDU} & The leading dimension of the array U. LDU $>$= 1; if JOBU = 'S' or 'A', LDU $>$= M.\\
+\hline
+\mbox{\tt out}  & {\em VT} & If JOBVT = 'A', VT contains the N-\/by-\/N unitary matrix V$\ast$$\ast$H; if JOBVT = 'S', VT contains the first min(m,n) rows of V$\ast$$\ast$H (the right singular vectors, stored rowwise); if JOBVT = 'N' or 'O', VT is not referenced.\\
+\hline
+\mbox{\tt in}  & {\em LDVT} & The leading dimension of the array VT. LDVT $>$= 1; if JOBVT = 'A', LDVT $>$= N; if JOBVT = 'S', LDVT $>$= min(M,N).\\
+\hline
+\mbox{\tt in,out}  & {\em descT} & On entry, descriptor as return by PLASMA\_\-Alloc\_\-Workspace\_\-zgesvd On exit, contains auxiliary factorization data.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em PLASMA\_\-SUCCESS} & successful exit \\
+\hline
+{\em $<$0} & if -\/i, the i-\/th argument had an illegal value\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{group__PLASMA__Complex64__t__Tile_ga025036ca043dbc70234c596eaf890b09_ga025036ca043dbc70234c596eaf890b09}{PLASMA\_\-zgesvd\_\-Tile} 
+
+\hyperlink{group__PLASMA__Complex64__t__Tile__Async_gaeeee9490a0606f1160863b3de568b8fe_gaeeee9490a0606f1160863b3de568b8fe}{PLASMA\_\-zgesvd\_\-Tile\_\-Async} 
+
+\hyperlink{group__PLASMA__Complex32__t_ga2c71687d9af24541b259570cb46fbce0_ga2c71687d9af24541b259570cb46fbce0}{PLASMA\_\-cgesvd} 
+
+\hyperlink{group__double_ga033944c3892f07b32ae0275788e51b00_ga033944c3892f07b32ae0275788e51b00}{PLASMA\_\-dgesvd} 
+
+\hyperlink{group__float_ga5f1c967294c4214329ed839f41988e2b_ga5f1c967294c4214329ed839f41988e2b}{PLASMA\_\-sgesvd} 
+\end{DoxySeeAlso}
+\hypertarget{group__PLASMA__Complex64__t_ga03449aa4e83b2f2223dad281d122697d_ga03449aa4e83b2f2223dad281d122697d}{
+\index{PLASMA\_\-Complex64\_\-t@{PLASMA\_\-Complex64\_\-t}!PLASMA\_\-zgetrf@{PLASMA\_\-zgetrf}}
+\index{PLASMA\_\-zgetrf@{PLASMA\_\-zgetrf}!PLASMA_Complex64_t@{PLASMA\_\-Complex64\_\-t}}
+\subsubsection[{PLASMA\_\-zgetrf}]{\setlength{\rightskip}{0pt plus 5cm}int PLASMA\_\-zgetrf (
+\begin{DoxyParamCaption}
+\item[{int}]{M, }
+\item[{int}]{N, }
+\item[{PLASMA\_\-Complex64\_\-t $\ast$}]{A, }
+\item[{int}]{LDA, }
+\item[{int $\ast$}]{IPIV}
+\end{DoxyParamCaption}
+)}}
+\label{group__PLASMA__Complex64__t_ga03449aa4e83b2f2223dad281d122697d_ga03449aa4e83b2f2223dad281d122697d}
+PLASMA\_\-zgetrf -\/ Computes an LU factorization of a general M-\/by-\/N matrix A using the tile LU algorithm with partial tile pivoting with row interchanges.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em M} & The number of rows of the matrix A. M $>$= 0.\\
+\hline
+\mbox{\tt in}  & {\em N} & The number of columns of the matrix A. N $>$= 0.\\
+\hline
+\mbox{\tt in,out}  & {\em A} & On entry, the M-\/by-\/N matrix to be factored. On exit, the tile factors L and U from the factorization.\\
+\hline
+\mbox{\tt in}  & {\em LDA} & The leading dimension of the array A. LDA $>$= max(1,M).\\
+\hline
+\mbox{\tt out}  & {\em IPIV} & The pivot indices that define the permutations.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em PLASMA\_\-SUCCESS} & successful exit \\
+\hline
+{\em $<$0} & if -\/i, the i-\/th argument had an illegal value \\
+\hline
+{\em $>$0} & if i, U(i,i) is exactly zero. The factorization has been completed, but the factor U is exactly singular, and division by zero will occur if it is used to solve a system of equations.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{group__PLASMA__Complex64__t__Tile_gabaabd34550ca8a2ba83245af3c44bea0_gabaabd34550ca8a2ba83245af3c44bea0}{PLASMA\_\-zgetrf\_\-Tile} 
+
+\hyperlink{group__PLASMA__Complex64__t__Tile__Async_ga8005f834cea1750e617b078d2cfa39d2_ga8005f834cea1750e617b078d2cfa39d2}{PLASMA\_\-zgetrf\_\-Tile\_\-Async} 
+
+\hyperlink{group__PLASMA__Complex32__t_ga9a372dbe56f1ef00531a284e1bf3a694_ga9a372dbe56f1ef00531a284e1bf3a694}{PLASMA\_\-cgetrf} 
+
+\hyperlink{group__double_gaa626e37ec710bfb5c98fef7b00511ea8_gaa626e37ec710bfb5c98fef7b00511ea8}{PLASMA\_\-dgetrf} 
+
+\hyperlink{group__float_ga8bf6af99c20539f64fa60b64d99fc1be_ga8bf6af99c20539f64fa60b64d99fc1be}{PLASMA\_\-sgetrf} 
+\end{DoxySeeAlso}
+\hypertarget{group__PLASMA__Complex64__t_ga4853b0850dddb5702b2b48f0049d933d_ga4853b0850dddb5702b2b48f0049d933d}{
+\index{PLASMA\_\-Complex64\_\-t@{PLASMA\_\-Complex64\_\-t}!PLASMA\_\-zgetrf\_\-incpiv@{PLASMA\_\-zgetrf\_\-incpiv}}
+\index{PLASMA\_\-zgetrf\_\-incpiv@{PLASMA\_\-zgetrf\_\-incpiv}!PLASMA_Complex64_t@{PLASMA\_\-Complex64\_\-t}}
+\subsubsection[{PLASMA\_\-zgetrf\_\-incpiv}]{\setlength{\rightskip}{0pt plus 5cm}int PLASMA\_\-zgetrf\_\-incpiv (
+\begin{DoxyParamCaption}
+\item[{int}]{M, }
+\item[{int}]{N, }
+\item[{PLASMA\_\-Complex64\_\-t $\ast$}]{A, }
+\item[{int}]{LDA, }
+\item[{PLASMA\_\-Complex64\_\-t $\ast$}]{L, }
+\item[{int $\ast$}]{IPIV}
+\end{DoxyParamCaption}
+)}}
+\label{group__PLASMA__Complex64__t_ga4853b0850dddb5702b2b48f0049d933d_ga4853b0850dddb5702b2b48f0049d933d}
+PLASMA\_\-zgetrf\_\-incpiv -\/ Computes an LU factorization of a general M-\/by-\/N matrix A using the tile LU algorithm with partial tile pivoting with row interchanges.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em M} & The number of rows of the matrix A. M $>$= 0.\\
+\hline
+\mbox{\tt in}  & {\em N} & The number of columns of the matrix A. N $>$= 0.\\
+\hline
+\mbox{\tt in,out}  & {\em A} & On entry, the M-\/by-\/N matrix to be factored. On exit, the tile factors L and U from the factorization.\\
+\hline
+\mbox{\tt in}  & {\em LDA} & The leading dimension of the array A. LDA $>$= max(1,M).\\
+\hline
+\mbox{\tt out}  & {\em L} & On exit, auxiliary factorization data, related to the tile L factor, required by PLASMA\_\-zgetrs\_\-incpiv to solve the system of equations.\\
+\hline
+\mbox{\tt out}  & {\em IPIV} & The pivot indices that define the permutations (not equivalent to LAPACK).\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em PLASMA\_\-SUCCESS} & successful exit \\
+\hline
+{\em $<$0} & if -\/i, the i-\/th argument had an illegal value \\
+\hline
+{\em $>$0} & if i, U(i,i) is exactly zero. The factorization has been completed, but the factor U is exactly singular, and division by zero will occur if it is used to solve a system of equations.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{group__PLASMA__Complex64__t__Tile_ga767b9ff4ff1b5289e680ea42b05786e1_ga767b9ff4ff1b5289e680ea42b05786e1}{PLASMA\_\-zgetrf\_\-incpiv\_\-Tile} 
+
+\hyperlink{group__PLASMA__Complex64__t__Tile__Async_gaa9d5a18c3cd7ddfb551cfcffe7d90f2d_gaa9d5a18c3cd7ddfb551cfcffe7d90f2d}{PLASMA\_\-zgetrf\_\-incpiv\_\-Tile\_\-Async} 
+
+\hyperlink{group__PLASMA__Complex32__t_gabf5975a299de706daad487624413c10d_gabf5975a299de706daad487624413c10d}{PLASMA\_\-cgetrf\_\-incpiv} 
+
+\hyperlink{group__double_ga26bb94ac1da7a7e6492ef6d524e40388_ga26bb94ac1da7a7e6492ef6d524e40388}{PLASMA\_\-dgetrf\_\-incpiv} 
+
+\hyperlink{group__float_ga730d57fb92c97d6bdd7cad02189c7f7e_ga730d57fb92c97d6bdd7cad02189c7f7e}{PLASMA\_\-sgetrf\_\-incpiv} 
+
+\hyperlink{group__PLASMA__Complex64__t_ga03b8805f6775c6c05bac527eb47e2ffa_ga03b8805f6775c6c05bac527eb47e2ffa}{PLASMA\_\-zgetrs\_\-incpiv} 
+\end{DoxySeeAlso}
+\hypertarget{group__PLASMA__Complex64__t_gad7b041e52be07ced12ad09ca2c51ddc6_gad7b041e52be07ced12ad09ca2c51ddc6}{
+\index{PLASMA\_\-Complex64\_\-t@{PLASMA\_\-Complex64\_\-t}!PLASMA\_\-zgetrs@{PLASMA\_\-zgetrs}}
+\index{PLASMA\_\-zgetrs@{PLASMA\_\-zgetrs}!PLASMA_Complex64_t@{PLASMA\_\-Complex64\_\-t}}
+\subsubsection[{PLASMA\_\-zgetrs}]{\setlength{\rightskip}{0pt plus 5cm}int PLASMA\_\-zgetrs (
+\begin{DoxyParamCaption}
+\item[{PLASMA\_\-enum}]{trans, }
+\item[{int}]{N, }
+\item[{int}]{NRHS, }
+\item[{PLASMA\_\-Complex64\_\-t $\ast$}]{A, }
+\item[{int}]{LDA, }
+\item[{int $\ast$}]{IPIV, }
+\item[{PLASMA\_\-Complex64\_\-t $\ast$}]{B, }
+\item[{int}]{LDB}
+\end{DoxyParamCaption}
+)}}
+\label{group__PLASMA__Complex64__t_gad7b041e52be07ced12ad09ca2c51ddc6_gad7b041e52be07ced12ad09ca2c51ddc6}
+PLASMA\_\-zgetrs -\/ Solves a system of linear equations A $\ast$ X = B, with a general N-\/by-\/N matrix A using the tile LU factorization computed by PLASMA\_\-zgetrf.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em trans} & Intended to specify the the form of the system of equations: = PlasmaNoTrans: A $\ast$ X = B (No transpose) = PlasmaTrans: A$\ast$$\ast$T $\ast$ X = B (Transpose) = PlasmaConjTrans: A$\ast$$\ast$H $\ast$ X = B (Conjugate transpose)\\
+\hline
+\mbox{\tt in}  & {\em N} & The order of the matrix A. N $>$= 0.\\
+\hline
+\mbox{\tt in}  & {\em NRHS} & The number of right hand sides, i.e., the number of columns of the matrix B. NRHS $>$= 0.\\
+\hline
+\mbox{\tt in}  & {\em A} & The tile factors L and U from the factorization, computed by PLASMA\_\-zgetrf.\\
+\hline
+\mbox{\tt in}  & {\em LDA} & The leading dimension of the array A. LDA $>$= max(1,N).\\
+\hline
+\mbox{\tt in}  & {\em IPIV} & The pivot indices from PLASMA\_\-zgetrf.\\
+\hline
+\mbox{\tt in,out}  & {\em B} & On entry, the N-\/by-\/NRHS matrix of right hand side matrix B. On exit, the solution matrix X.\\
+\hline
+\mbox{\tt in}  & {\em LDB} & The leading dimension of the array B. LDB $>$= max(1,N).\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em PLASMA\_\-SUCCESS} & successful exit \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyReturn}{Returns}
+$<$0 if -\/i, the i-\/th argument had an illegal value
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{group__PLASMA__Complex64__t__Tile_ga7a5cc3d203a14369272322ed4b9922ca_ga7a5cc3d203a14369272322ed4b9922ca}{PLASMA\_\-zgetrs\_\-Tile} 
+
+\hyperlink{group__PLASMA__Complex64__t__Tile__Async_ga8c9e7f91287449767222b5156a57a384_ga8c9e7f91287449767222b5156a57a384}{PLASMA\_\-zgetrs\_\-Tile\_\-Async} 
+
+\hyperlink{group__PLASMA__Complex32__t_gaa63ca86deb84eae5320d832f5dffd2fc_gaa63ca86deb84eae5320d832f5dffd2fc}{PLASMA\_\-cgetrs} 
+
+\hyperlink{group__double_ga5b08c48445d3d72e892aceafa3f5b788_ga5b08c48445d3d72e892aceafa3f5b788}{PLASMA\_\-dgetrs} 
+
+\hyperlink{group__float_gabd57d3c25369b07e888ef602d8771285_gabd57d3c25369b07e888ef602d8771285}{PLASMA\_\-sgetrs} 
+
+\hyperlink{group__PLASMA__Complex64__t_ga03449aa4e83b2f2223dad281d122697d_ga03449aa4e83b2f2223dad281d122697d}{PLASMA\_\-zgetrf} 
+\end{DoxySeeAlso}
+\hypertarget{group__PLASMA__Complex64__t_ga03b8805f6775c6c05bac527eb47e2ffa_ga03b8805f6775c6c05bac527eb47e2ffa}{
+\index{PLASMA\_\-Complex64\_\-t@{PLASMA\_\-Complex64\_\-t}!PLASMA\_\-zgetrs\_\-incpiv@{PLASMA\_\-zgetrs\_\-incpiv}}
+\index{PLASMA\_\-zgetrs\_\-incpiv@{PLASMA\_\-zgetrs\_\-incpiv}!PLASMA_Complex64_t@{PLASMA\_\-Complex64\_\-t}}
+\subsubsection[{PLASMA\_\-zgetrs\_\-incpiv}]{\setlength{\rightskip}{0pt plus 5cm}int PLASMA\_\-zgetrs\_\-incpiv (
+\begin{DoxyParamCaption}
+\item[{PLASMA\_\-enum}]{trans, }
+\item[{int}]{N, }
+\item[{int}]{NRHS, }
+\item[{PLASMA\_\-Complex64\_\-t $\ast$}]{A, }
+\item[{int}]{LDA, }
+\item[{PLASMA\_\-Complex64\_\-t $\ast$}]{L, }
+\item[{int $\ast$}]{IPIV, }
+\item[{PLASMA\_\-Complex64\_\-t $\ast$}]{B, }
+\item[{int}]{LDB}
+\end{DoxyParamCaption}
+)}}
+\label{group__PLASMA__Complex64__t_ga03b8805f6775c6c05bac527eb47e2ffa_ga03b8805f6775c6c05bac527eb47e2ffa}
+PLASMA\_\-zgetrs\_\-incpiv -\/ Solves a system of linear equations A $\ast$ X = B, with a general N-\/by-\/N matrix A using the tile LU factorization computed by PLASMA\_\-zgetrf\_\-incpiv.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em trans} & Intended to specify the the form of the system of equations: = PlasmaNoTrans: A $\ast$ X = B (No transpose) = PlasmaTrans: A$\ast$$\ast$T $\ast$ X = B (Transpose) = PlasmaConjTrans: A$\ast$$\ast$H $\ast$ X = B (Conjugate transpose) Currently only PlasmaNoTrans is supported.\\
+\hline
+\mbox{\tt in}  & {\em N} & The order of the matrix A. N $>$= 0.\\
+\hline
+\mbox{\tt in}  & {\em NRHS} & The number of right hand sides, i.e., the number of columns of the matrix B. NRHS $>$= 0.\\
+\hline
+\mbox{\tt in}  & {\em A} & The tile factors L and U from the factorization, computed by PLASMA\_\-zgetrf\_\-incpiv.\\
+\hline
+\mbox{\tt in}  & {\em LDA} & The leading dimension of the array A. LDA $>$= max(1,N).\\
+\hline
+\mbox{\tt in}  & {\em L} & Auxiliary factorization data, related to the tile L factor, computed by PLASMA\_\-zgetrf\_\-incpiv.\\
+\hline
+\mbox{\tt in}  & {\em IPIV} & The pivot indices from PLASMA\_\-zgetrf\_\-incpiv (not equivalent to LAPACK).\\
+\hline
+\mbox{\tt in,out}  & {\em B} & On entry, the N-\/by-\/NRHS matrix of right hand side matrix B. On exit, the solution matrix X.\\
+\hline
+\mbox{\tt in}  & {\em LDB} & The leading dimension of the array B. LDB $>$= max(1,N).\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em PLASMA\_\-SUCCESS} & successful exit \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyReturn}{Returns}
+$<$0 if -\/i, the i-\/th argument had an illegal value
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{group__PLASMA__Complex64__t__Tile_ga98dfc8fc95ebd0886aaacec0694600ba_ga98dfc8fc95ebd0886aaacec0694600ba}{PLASMA\_\-zgetrs\_\-incpiv\_\-Tile} 
+
+\hyperlink{group__PLASMA__Complex64__t__Tile__Async_ga6a3ffe51ae54b35174d9f106c563ac64_ga6a3ffe51ae54b35174d9f106c563ac64}{PLASMA\_\-zgetrs\_\-incpiv\_\-Tile\_\-Async} 
+
+\hyperlink{group__PLASMA__Complex32__t_ga555f37383fd15df6d0528a987b73d937_ga555f37383fd15df6d0528a987b73d937}{PLASMA\_\-cgetrs\_\-incpiv} 
+
+\hyperlink{group__double_gabb0665c89f45df41cfdebfc5b5c1d474_gabb0665c89f45df41cfdebfc5b5c1d474}{PLASMA\_\-dgetrs\_\-incpiv} 
+
+\hyperlink{group__float_ga57a2e4791e0dc3b41588587c0ac70cc5_ga57a2e4791e0dc3b41588587c0ac70cc5}{PLASMA\_\-sgetrs\_\-incpiv} 
+
+\hyperlink{group__PLASMA__Complex64__t_ga4853b0850dddb5702b2b48f0049d933d_ga4853b0850dddb5702b2b48f0049d933d}{PLASMA\_\-zgetrf\_\-incpiv} 
+\end{DoxySeeAlso}
+\hypertarget{group__PLASMA__Complex64__t_gad148e141c13feede49709370caea9c2a_gad148e141c13feede49709370caea9c2a}{
+\index{PLASMA\_\-Complex64\_\-t@{PLASMA\_\-Complex64\_\-t}!PLASMA\_\-zheev@{PLASMA\_\-zheev}}
+\index{PLASMA\_\-zheev@{PLASMA\_\-zheev}!PLASMA_Complex64_t@{PLASMA\_\-Complex64\_\-t}}
+\subsubsection[{PLASMA\_\-zheev}]{\setlength{\rightskip}{0pt plus 5cm}int PLASMA\_\-zheev (
+\begin{DoxyParamCaption}
+\item[{PLASMA\_\-enum}]{jobz, }
+\item[{PLASMA\_\-enum}]{uplo, }
+\item[{int}]{N, }
+\item[{PLASMA\_\-Complex64\_\-t $\ast$}]{A, }
+\item[{int}]{LDA, }
+\item[{double $\ast$}]{W, }
+\item[{{\bf PLASMA\_\-desc} $\ast$}]{descT, }
+\item[{PLASMA\_\-Complex64\_\-t $\ast$}]{Q, }
+\item[{int}]{LDQ}
+\end{DoxyParamCaption}
+)}}
+\label{group__PLASMA__Complex64__t_gad148e141c13feede49709370caea9c2a_gad148e141c13feede49709370caea9c2a}
+PLASMA\_\-zheev -\/ Computes all eigenvalues and, optionally, eigenvectors of a complex Hermitian matrix A. The matrix A is preliminary reduced to tridiagonal form using a two-\/stage approach: First stage: reduction to band tridiagonal form; Second stage: reduction from band to tridiagonal form. Note: Only PlasmaNoVec supported!
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em jobz} & Intended usage: = PlasmaNoVec: computes eigenvalues only; = PlasmaVec: computes eigenvalues and eigenvectors. Note: Only PlasmaNoVec supported!\\
+\hline
+\mbox{\tt in}  & {\em uplo} & Specifies whether the matrix A is upper triangular or lower triangular: = PlasmaUpper: Upper triangle of A is stored; = PlasmaLower: Lower triangle of A is stored.\\
+\hline
+\mbox{\tt in}  & {\em N} & The order of the matrix A. N $>$= 0.\\
+\hline
+\mbox{\tt in,out}  & {\em A} & On entry, the symmetric (or Hermitian) matrix A. If uplo = PlasmaUpper, the leading N-\/by-\/N upper triangular part of A contains the upper triangular part of the matrix A, and the strictly lower triangular part of A is not referenced. If uplo = PlasmaLower, the leading N-\/by-\/N lower triangular part of A contains the lower triangular part of the matrix A, and the strictly upper triangular part of A is not referenced. On exit, the lower triangle (if uplo = PlasmaLower) or the upper triangle (if uplo = PlasmaUpper) of A, including the diagonal, is destroyed.\\
+\hline
+\mbox{\tt in}  & {\em LDA} & The leading dimension of the array A. LDA $>$= max(1,N).\\
+\hline
+\mbox{\tt out}  & {\em W} & On exit, if info = 0, the eigenvalues.\\
+\hline
+\mbox{\tt in,out}  & {\em descT} & On entry, descriptor as return by PLASMA\_\-Alloc\_\-Workspace\_\-zheev On exit, contains auxiliary factorization data.\\
+\hline
+\mbox{\tt out}  & {\em Q} & On exit, if jobz = PlasmaVec and info = 0, the eigenvectors.\\
+\hline
+\mbox{\tt in}  & {\em LDQ} & The leading dimension of the array Q. LDQ $>$= max(1,N).\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em PLASMA\_\-SUCCESS} & successful exit \\
+\hline
+{\em $<$0} & if -\/i, the i-\/th argument had an illegal value \\
+\hline
+{\em $>$0} & if INFO = i, the algorithm failed to converge; i off-\/diagonal elements of an intermediate tridiagonal form did not converge to zero.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{group__PLASMA__Complex64__t__Tile_gaba77d5a063c419b59a3e93fec64fc87c_gaba77d5a063c419b59a3e93fec64fc87c}{PLASMA\_\-zheev\_\-Tile} 
+
+\hyperlink{group__PLASMA__Complex64__t__Tile__Async_ga7e245b41a699dccc0326a9727967ad65_ga7e245b41a699dccc0326a9727967ad65}{PLASMA\_\-zheev\_\-Tile\_\-Async} 
+
+\hyperlink{group__PLASMA__Complex32__t_ga0d2fe45268be2c3d25593d80dd0c547f_ga0d2fe45268be2c3d25593d80dd0c547f}{PLASMA\_\-cheev} 
+
+\hyperlink{group__double_gac7ea19b1441c1325f45c0f6a9cfd8a8a_gac7ea19b1441c1325f45c0f6a9cfd8a8a}{PLASMA\_\-dsyev} 
+
+\hyperlink{group__float_ga92b57475b852b71b42bc39cd0d1ec356_ga92b57475b852b71b42bc39cd0d1ec356}{PLASMA\_\-ssyev} 
+\end{DoxySeeAlso}
+\hypertarget{group__PLASMA__Complex64__t_gada171b7dc0b2147ce730f716f6ebd05d_gada171b7dc0b2147ce730f716f6ebd05d}{
+\index{PLASMA\_\-Complex64\_\-t@{PLASMA\_\-Complex64\_\-t}!PLASMA\_\-zheevd@{PLASMA\_\-zheevd}}
+\index{PLASMA\_\-zheevd@{PLASMA\_\-zheevd}!PLASMA_Complex64_t@{PLASMA\_\-Complex64\_\-t}}
+\subsubsection[{PLASMA\_\-zheevd}]{\setlength{\rightskip}{0pt plus 5cm}int PLASMA\_\-zheevd (
+\begin{DoxyParamCaption}
+\item[{PLASMA\_\-enum}]{jobz, }
+\item[{PLASMA\_\-enum}]{uplo, }
+\item[{int}]{N, }
+\item[{PLASMA\_\-Complex64\_\-t $\ast$}]{A, }
+\item[{int}]{LDA, }
+\item[{double $\ast$}]{W, }
+\item[{{\bf PLASMA\_\-desc} $\ast$}]{T, }
+\item[{PLASMA\_\-Complex64\_\-t $\ast$}]{Q, }
+\item[{int}]{LDQ}
+\end{DoxyParamCaption}
+)}}
+\label{group__PLASMA__Complex64__t_gada171b7dc0b2147ce730f716f6ebd05d_gada171b7dc0b2147ce730f716f6ebd05d}
+PLASMA\_\-zheevd -\/ Computes all eigenvalues and, optionally, eigenvectors of a complex Hermitian matrix A. The matrix A is preliminary reduced to tridiagonal form using a two-\/stage approach: First stage: reduction to band tridiagonal form; Second stage: reduction from band to tridiagonal form. Note: Only PlasmaNoVec supported!
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em jobz} & Intended usage: = PlasmaNoVec: computes eigenvalues only; = PlasmaVec: computes eigenvalues and eigenvectors. Note: Only PlasmaNoVec supported!\\
+\hline
+\mbox{\tt in}  & {\em uplo} & Specifies whether the matrix A is upper triangular or lower triangular: = PlasmaUpper: Upper triangle of A is stored; = PlasmaLower: Lower triangle of A is stored.\\
+\hline
+\mbox{\tt in}  & {\em N} & The order of the matrix A. N $>$= 0.\\
+\hline
+\mbox{\tt in,out}  & {\em A} & On entry, the symmetric (or Hermitian) matrix A. If uplo = PlasmaUpper, the leading N-\/by-\/N upper triangular part of A contains the upper triangular part of the matrix A, and the strictly lower triangular part of A is not referenced. If uplo = PlasmaLower, the leading N-\/by-\/N lower triangular part of A contains the lower triangular part of the matrix A, and the strictly upper triangular part of A is not referenced. On exit, the lower triangle (if uplo = PlasmaLower) or the upper triangle (if uplo = PlasmaUpper) of A, including the diagonal, is destroyed.\\
+\hline
+\mbox{\tt in}  & {\em LDA} & The leading dimension of the array A. LDA $>$= max(1,N).\\
+\hline
+\mbox{\tt out}  & {\em W} & On exit, if info = 0, the eigenvalues.\\
+\hline
+\mbox{\tt in,out}  & {\em T} & On entry, descriptor as return by PLASMA\_\-Alloc\_\-Workspace\_\-zheev On exit, contains auxiliary factorization data.\\
+\hline
+\mbox{\tt out}  & {\em Q} & On exit, if jobz = PlasmaVec and info = 0, the eigenvectors.\\
+\hline
+\mbox{\tt in}  & {\em LDQ} & The leading dimension of the array Q. LDQ $>$= max(1,N).\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em PLASMA\_\-SUCCESS} & successful exit \\
+\hline
+{\em $<$0} & if -\/i, the i-\/th argument had an illegal value \\
+\hline
+{\em $>$0} & if INFO = i, the algorithm failed to converge; i off-\/diagonal elements of an intermediate tridiagonal form did not converge to zero.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{group__PLASMA__Complex64__t__Tile_ga9ad7fb71b332e2b4fcf74557a44ff839_ga9ad7fb71b332e2b4fcf74557a44ff839}{PLASMA\_\-zheevd\_\-Tile} 
+
+\hyperlink{group__PLASMA__Complex64__t__Tile__Async_ga622ebdf3cdd5d91d402a3b0d73eb0c41_ga622ebdf3cdd5d91d402a3b0d73eb0c41}{PLASMA\_\-zheevd\_\-Tile\_\-Async} 
+
+PLASMA\_\-cheevd 
+
+PLASMA\_\-dsyevd 
+
+PLASMA\_\-ssyevd 
+\end{DoxySeeAlso}
+\hypertarget{group__PLASMA__Complex64__t_ga387eb7a21f8b3d03aec26324255e7510_ga387eb7a21f8b3d03aec26324255e7510}{
+\index{PLASMA\_\-Complex64\_\-t@{PLASMA\_\-Complex64\_\-t}!PLASMA\_\-zhegst@{PLASMA\_\-zhegst}}
+\index{PLASMA\_\-zhegst@{PLASMA\_\-zhegst}!PLASMA_Complex64_t@{PLASMA\_\-Complex64\_\-t}}
+\subsubsection[{PLASMA\_\-zhegst}]{\setlength{\rightskip}{0pt plus 5cm}int PLASMA\_\-zhegst (
+\begin{DoxyParamCaption}
+\item[{PLASMA\_\-enum}]{itype, }
+\item[{PLASMA\_\-enum}]{uplo, }
+\item[{int}]{N, }
+\item[{PLASMA\_\-Complex64\_\-t $\ast$}]{A, }
+\item[{int}]{LDA, }
+\item[{PLASMA\_\-Complex64\_\-t $\ast$}]{B, }
+\item[{int}]{LDB}
+\end{DoxyParamCaption}
+)}}
+\label{group__PLASMA__Complex64__t_ga387eb7a21f8b3d03aec26324255e7510_ga387eb7a21f8b3d03aec26324255e7510}
+PLASMA\_\-zhegst -\/ reduces a complex Hermitian-\/definite generalized eigenproblem to standard form. If PlasmaItype == 1, the problem is A$\ast$x = lambda$\ast$B$\ast$x, and A is overwritten by inv(U$\ast$$\ast$H)$\ast$A$\ast$inv(U) or inv(L)$\ast$A$\ast$inv(L$\ast$$\ast$H) If PlasmaItype == 2 or 3, the problem is A$\ast$B$\ast$x = lambda$\ast$x or B$\ast$A$\ast$x = lambda$\ast$x, and A is overwritten by U$\ast$A$\ast$U$\ast$$\ast$H or L$\ast$$\ast$H$\ast$A$\ast$L. B must have been previously factorized as U$\ast$$\ast$H$\ast$U or L$\ast$L$\ast$$\ast$H by PLASMA\_\-ZPOTRF.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em PlasmaItype} & Intended usage: = 1: A$\ast$x=(lambda)$\ast$B$\ast$x = 2: A$\ast$Bx=(lambda)$\ast$x = 3: B$\ast$A$\ast$x=(lambda)$\ast$x\\
+\hline
+\mbox{\tt in}  & {\em uplo} & Specifies whether the matrix A is upper triangular or lower triangular: = PlasmaUpper: Upper triangle of A is stored; = PlasmaLower: Lower triangle of A is stored.\\
+\hline
+\mbox{\tt in}  & {\em N} & The order of the matrices A and B. N $>$= 0.\\
+\hline
+\mbox{\tt in,out}  & {\em A} & On entry, the symmetric (or Hermitian) matrix A. If uplo = PlasmaUpper, the leading N-\/by-\/N upper triangular part of A contains the upper triangular part of the matrix A, and the strictly lower triangular part of A is not referenced. If uplo = PlasmaLower, the leading N-\/by-\/N lower triangular part of A contains the lower triangular part of the matrix A, and the strictly upper triangular part of A is not referenced. On exit, if return value == 0, the transformed matrix, stored in the same format as A.\\
+\hline
+\mbox{\tt in}  & {\em LDA} & The leading dimension of the array A. LDA $>$= max(1,N).\\
+\hline
+\mbox{\tt in,out}  & {\em B} & On entry, the triangular factor from the Cholesky factorization of B, as returned by PLASMA\_\-ZPOTRF.\\
+\hline
+\mbox{\tt in}  & {\em LDB} & The leading dimension of the array B. LDB $>$= max(1,N).\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em PLASMA\_\-SUCCESS} & successful exit \\
+\hline
+{\em $<$0} & if -\/i, the i-\/th argument had an illegal value\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{group__PLASMA__Complex64__t__Tile_gaa28f6da2b7b8e8af7abf429f7f01047d_gaa28f6da2b7b8e8af7abf429f7f01047d}{PLASMA\_\-zhegst\_\-Tile} 
+
+\hyperlink{group__PLASMA__Complex64__t__Tile__Async_ga2b7df2f947d4f57750cf4f0145c80624_ga2b7df2f947d4f57750cf4f0145c80624}{PLASMA\_\-zhegst\_\-Tile\_\-Async} 
+
+\hyperlink{group__PLASMA__Complex32__t_gac4b81a8ac8396c84a27d8a0b719bc379_gac4b81a8ac8396c84a27d8a0b719bc379}{PLASMA\_\-chegst} 
+
+\hyperlink{group__double_ga7ab44c615960d36295086012efc45a7d_ga7ab44c615960d36295086012efc45a7d}{PLASMA\_\-dsygst} 
+
+\hyperlink{group__float_ga66b77c0de44f80760c4184756250e75e_ga66b77c0de44f80760c4184756250e75e}{PLASMA\_\-ssygst} 
+\end{DoxySeeAlso}
+\hypertarget{group__PLASMA__Complex64__t_gaec004491cb00c99f63f9604c84ef8f43_gaec004491cb00c99f63f9604c84ef8f43}{
+\index{PLASMA\_\-Complex64\_\-t@{PLASMA\_\-Complex64\_\-t}!PLASMA\_\-zhegv@{PLASMA\_\-zhegv}}
+\index{PLASMA\_\-zhegv@{PLASMA\_\-zhegv}!PLASMA_Complex64_t@{PLASMA\_\-Complex64\_\-t}}
+\subsubsection[{PLASMA\_\-zhegv}]{\setlength{\rightskip}{0pt plus 5cm}int PLASMA\_\-zhegv (
+\begin{DoxyParamCaption}
+\item[{PLASMA\_\-enum}]{itype, }
+\item[{PLASMA\_\-enum}]{jobz, }
+\item[{PLASMA\_\-enum}]{uplo, }
+\item[{int}]{N, }
+\item[{PLASMA\_\-Complex64\_\-t $\ast$}]{A, }
+\item[{int}]{LDA, }
+\item[{PLASMA\_\-Complex64\_\-t $\ast$}]{B, }
+\item[{int}]{LDB, }
+\item[{double $\ast$}]{W, }
+\item[{{\bf PLASMA\_\-desc} $\ast$}]{descT, }
+\item[{PLASMA\_\-Complex64\_\-t $\ast$}]{Q, }
+\item[{int}]{LDQ}
+\end{DoxyParamCaption}
+)}}
+\label{group__PLASMA__Complex64__t_gaec004491cb00c99f63f9604c84ef8f43_gaec004491cb00c99f63f9604c84ef8f43}
+PLASMA\_\-zhegv -\/ Computes all eigenvalues and, optionally, eigenvectors of a complex generalized Hermitian-\/definite eigenproblem of the form: A$\ast$x=(lambda)$\ast$B$\ast$x, A$\ast$Bx=(lambda)$\ast$x, or B$\ast$A$\ast$x=(lambda)$\ast$x. Here A and B are assumed to be Hermitian and B is also positive definite. Note: Only PlasmaNoVec supported!
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em PlasmaItype} & Intended usage: = 1: A$\ast$x=(lambda)$\ast$B$\ast$x = 2: A$\ast$Bx=(lambda)$\ast$x = 3: B$\ast$A$\ast$x=(lambda)$\ast$x\\
+\hline
+\mbox{\tt in}  & {\em jobz} & Intended usage: = PlasmaNoVec: computes eigenvalues only; = PlasmaVec: computes eigenvalues and eigenvectors. Note: Only PlasmaNoVec supported!\\
+\hline
+\mbox{\tt in}  & {\em uplo} & Specifies whether the matrix A is upper triangular or lower triangular: = PlasmaUpper: Upper triangle of A and B are stored; = PlasmaLower: Lower triangle of A and B are stored.\\
+\hline
+\mbox{\tt in}  & {\em N} & The order of the matrix A. N $>$= 0.\\
+\hline
+\mbox{\tt in,out}  & {\em A} & On entry, the symmetric (or Hermitian) matrix A. If uplo = PlasmaUpper, the leading N-\/by-\/N upper triangular part of A contains the upper triangular part of the matrix A, and the strictly lower triangular part of A is not referenced. If uplo = PlasmaLower, the leading N-\/by-\/N lower triangular part of A contains the lower triangular part of the matrix A, and the strictly upper triangular part of A is not referenced. On exit, if jobz = PlasmaVec, then if return value = 0, A contains the matrix Z of eigenvectors. The eigenvectors are normalized as follows: if ITYPE = 1 or 2, Z$\ast$$\ast$H$\ast$B$\ast$Z = I; if ITYPE = 3, Z$\ast$$\ast$H$\ast$inv(B)$\ast$Z = I. If jobz = PlasmaNoVec, then on exit the lower triangle (if uplo = PlasmaLower) or the upper triangle (if uplo = PlasmaUpper) of A, including the diagonal, is destroyed.\\
+\hline
+\mbox{\tt in}  & {\em LDA} & The leading dimension of the array A. LDA $>$= max(1,N).\\
+\hline
+\mbox{\tt in,out}  & {\em B} & On entry, the symmetric (or Hermitian) positive definite matrix B. If uplo = PlasmaUpper, the leading N-\/by-\/N upper triangular part of B contains the upper triangular part of the matrix B, and the strictly lower triangular part of B is not referenced. If uplo = PlasmaLower, the leading N-\/by-\/N lower triangular part of B contains the lower triangular part of the matrix B, and the strictly upper triangular part of B is not referenced. On exit, if return value $<$= N, the part of B containing the matrix is overwritten by the triangular factor U or L from the Cholesky factorization B = U$\ast$$\ast$H$\ast$U or B = L$\ast$L$\ast$$\ast$H.\\
+\hline
+\mbox{\tt in}  & {\em LDB} & The leading dimension of the array B. LDA $>$= max(1,N).\\
+\hline
+\mbox{\tt out}  & {\em W} & On exit, if info = 0, the eigenvalues.\\
+\hline
+\mbox{\tt in,out}  & {\em descT} & On entry, descriptor as return by PLASMA\_\-Alloc\_\-Workspace\_\-zhegv On exit, contains auxiliary factorization data.\\
+\hline
+\mbox{\tt out}  & {\em Q} & On exit, if jobz = PlasmaVec and info = 0, the eigenvectors.\\
+\hline
+\mbox{\tt in}  & {\em LDQ} & The leading dimension of Q.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em PLASMA\_\-SUCCESS} & successful exit \\
+\hline
+{\em $<$0} & if -\/i, the i-\/th argument had an illegal value \\
+\hline
+{\em $<$=N} & if INFO = i, plasma\_\-zhegv failed to converge; i off-\/diagonal elements of an intermediate tridiagonal form did not converge to zero. \\
+\hline
+{\em $>$N} & if INFO = N + i, for 1 $<$= i $<$= N, then the leading minor of order i of B is not positive definite. The factorization of B could not be completed and no eigenvalues or eigenvectors were computed.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{group__PLASMA__Complex64__t__Tile_gaf4bdf938225d0259e4df04006bd80655_gaf4bdf938225d0259e4df04006bd80655}{PLASMA\_\-zhegv\_\-Tile} 
+
+\hyperlink{group__PLASMA__Complex64__t__Tile__Async_ga0a534f6761d13d19f35b9944934bff2e_ga0a534f6761d13d19f35b9944934bff2e}{PLASMA\_\-zhegv\_\-Tile\_\-Async} 
+
+\hyperlink{group__PLASMA__Complex32__t_ga7d0aad7dba26173b3cc6f35a74f6eaf0_ga7d0aad7dba26173b3cc6f35a74f6eaf0}{PLASMA\_\-chegv} 
+
+\hyperlink{group__double_ga7efdf7cffbb28696c69310d1627a100d_ga7efdf7cffbb28696c69310d1627a100d}{PLASMA\_\-dsygv} 
+
+\hyperlink{group__float_gaa5deb8e85d037eff767d9a9e5e99fad9_gaa5deb8e85d037eff767d9a9e5e99fad9}{PLASMA\_\-ssygv} 
+\end{DoxySeeAlso}
+\hypertarget{group__PLASMA__Complex64__t_gad53a9ae69e0ff46c3859f19c16b97081_gad53a9ae69e0ff46c3859f19c16b97081}{
+\index{PLASMA\_\-Complex64\_\-t@{PLASMA\_\-Complex64\_\-t}!PLASMA\_\-zhemm@{PLASMA\_\-zhemm}}
+\index{PLASMA\_\-zhemm@{PLASMA\_\-zhemm}!PLASMA_Complex64_t@{PLASMA\_\-Complex64\_\-t}}
+\subsubsection[{PLASMA\_\-zhemm}]{\setlength{\rightskip}{0pt plus 5cm}int PLASMA\_\-zhemm (
+\begin{DoxyParamCaption}
+\item[{PLASMA\_\-enum}]{side, }
+\item[{PLASMA\_\-enum}]{uplo, }
+\item[{int}]{M, }
+\item[{int}]{N, }
+\item[{PLASMA\_\-Complex64\_\-t}]{alpha, }
+\item[{PLASMA\_\-Complex64\_\-t $\ast$}]{A, }
+\item[{int}]{LDA, }
+\item[{PLASMA\_\-Complex64\_\-t $\ast$}]{B, }
+\item[{int}]{LDB, }
+\item[{PLASMA\_\-Complex64\_\-t}]{beta, }
+\item[{PLASMA\_\-Complex64\_\-t $\ast$}]{C, }
+\item[{int}]{LDC}
+\end{DoxyParamCaption}
+)}}
+\label{group__PLASMA__Complex64__t_gad53a9ae69e0ff46c3859f19c16b97081_gad53a9ae69e0ff46c3859f19c16b97081}
+PLASMA\_\-zhemm -\/ Performs one of the matrix-\/matrix operations
+
+\[ C = \alpha \times A \times B + \beta \times C \]
+
+or
+
+\[ C = \alpha \times B \times A + \beta \times C \]
+
+where alpha and beta are scalars, A is an hermitian matrix and B and C are m by n matrices.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em side} & Specifies whether the hermitian matrix A appears on the left or right in the operation as follows: = PlasmaLeft: \[ C = \alpha \times A \times B + \beta \times C \] = PlasmaRight: \[ C = \alpha \times B \times A + \beta \times C \]\\
+\hline
+\mbox{\tt in}  & {\em uplo} & Specifies whether the upper or lower triangular part of the hermitian matrix A is to be referenced as follows: = PlasmaLower: Only the lower triangular part of the hermitian matrix A is to be referenced. = PlasmaUpper: Only the upper triangular part of the hermitian matrix A is to be referenced.\\
+\hline
+\mbox{\tt in}  & {\em M} & Specifies the number of rows of the matrix C. M $>$= 0.\\
+\hline
+\mbox{\tt in}  & {\em N} & Specifies the number of columns of the matrix C. N $>$= 0.\\
+\hline
+\mbox{\tt in}  & {\em alpha} & Specifies the scalar alpha.\\
+\hline
+\mbox{\tt in}  & {\em A} & A is a LDA-\/by-\/ka matrix, where ka is M when side = PlasmaLeft, and is N otherwise. Only the uplo triangular part is referenced.\\
+\hline
+\mbox{\tt in}  & {\em LDA} & The leading dimension of the array A. LDA $>$= max(1,ka).\\
+\hline
+\mbox{\tt in}  & {\em B} & B is a LDB-\/by-\/N matrix, where the leading M-\/by-\/N part of the array B must contain the matrix B.\\
+\hline
+\mbox{\tt in}  & {\em LDB} & The leading dimension of the array B. LDB $>$= max(1,M).\\
+\hline
+\mbox{\tt in}  & {\em beta} & Specifies the scalar beta.\\
+\hline
+\mbox{\tt in,out}  & {\em C} & C is a LDC-\/by-\/N matrix. On exit, the array is overwritten by the M by N updated matrix.\\
+\hline
+\mbox{\tt in}  & {\em LDC} & The leading dimension of the array C. LDC $>$= max(1,M).\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em PLASMA\_\-SUCCESS} & successful exit\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{group__PLASMA__Complex64__t__Tile_ga7f8b661b2774dd77bc0eef260f1eef3c_ga7f8b661b2774dd77bc0eef260f1eef3c}{PLASMA\_\-zhemm\_\-Tile} 
+
+\hyperlink{group__PLASMA__Complex32__t_ga5eccc301c2b8ed5497c8149d002d3ca8_ga5eccc301c2b8ed5497c8149d002d3ca8}{PLASMA\_\-chemm} 
+
+PLASMA\_\-dhemm 
+
+PLASMA\_\-shemm 
+\end{DoxySeeAlso}
+\hypertarget{group__PLASMA__Complex64__t_ga1086284f7bd6db0de2341eeaa3a3e655_ga1086284f7bd6db0de2341eeaa3a3e655}{
+\index{PLASMA\_\-Complex64\_\-t@{PLASMA\_\-Complex64\_\-t}!PLASMA\_\-zher2k@{PLASMA\_\-zher2k}}
+\index{PLASMA\_\-zher2k@{PLASMA\_\-zher2k}!PLASMA_Complex64_t@{PLASMA\_\-Complex64\_\-t}}
+\subsubsection[{PLASMA\_\-zher2k}]{\setlength{\rightskip}{0pt plus 5cm}int PLASMA\_\-zher2k (
+\begin{DoxyParamCaption}
+\item[{PLASMA\_\-enum}]{uplo, }
+\item[{PLASMA\_\-enum}]{trans, }
+\item[{int}]{N, }
+\item[{int}]{K, }
+\item[{PLASMA\_\-Complex64\_\-t}]{alpha, }
+\item[{PLASMA\_\-Complex64\_\-t $\ast$}]{A, }
+\item[{int}]{LDA, }
+\item[{PLASMA\_\-Complex64\_\-t $\ast$}]{B, }
+\item[{int}]{LDB, }
+\item[{double}]{beta, }
+\item[{PLASMA\_\-Complex64\_\-t $\ast$}]{C, }
+\item[{int}]{LDC}
+\end{DoxyParamCaption}
+)}}
+\label{group__PLASMA__Complex64__t_ga1086284f7bd6db0de2341eeaa3a3e655_ga1086284f7bd6db0de2341eeaa3a3e655}
+PLASMA\_\-zher2k -\/ Performs one of the hermitian rank 2k operations
+
+\[ C = \alpha [ op( A ) \times conjg( op( B )' )] + conjg( \alpha ) [ op( B ) \times conjg( op( A )' )] + \beta C \], or \[ C = \alpha [ conjg( op( A )' ) \times op( B ) ] + conjg( \alpha ) [ conjg( op( B )' ) \times op( A ) ] + \beta C \],
+
+where op( X ) is one of
+
+op( X ) = X or op( X ) = conjg( X' )
+
+where alpha and beta are real scalars, C is an n-\/by-\/n symmetric matrix and A and B are an n-\/by-\/k matrices the first case and k-\/by-\/n matrices in the second case.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em uplo} & = PlasmaUpper: Upper triangle of C is stored; = PlasmaLower: Lower triangle of C is stored.\\
+\hline
+\mbox{\tt in}  & {\em trans} & Specifies whether the matrix A is transposed or conjugate transposed: = PlasmaNoTrans: \[ C = \alpha [ op( A ) \times conjg( op( B )' )] + conjg( \alpha ) [ op( B ) \times conjg( op( A )' )] + \beta C \] = PlasmaConjTrans: \[ C = \alpha [ conjg( op( A )' ) \times op( B ) ] + conjg( \alpha ) [ conjg( op( B )' ) \times op( A ) ] + \beta C \]\\
+\hline
+\mbox{\tt in}  & {\em N} & N specifies the order of the matrix C. N must be at least zero.\\
+\hline
+\mbox{\tt in}  & {\em K} & K specifies the number of columns of the A and B matrices with trans = PlasmaNoTrans. K specifies the number of rows of the A and B matrices with trans = PlasmaTrans.\\
+\hline
+\mbox{\tt in}  & {\em alpha} & alpha specifies the scalar alpha.\\
+\hline
+\mbox{\tt in}  & {\em A} & A is a LDA-\/by-\/ka matrix, where ka is K when trans = PlasmaNoTrans, and is N otherwise.\\
+\hline
+\mbox{\tt in}  & {\em LDA} & The leading dimension of the array A. LDA must be at least max( 1, N ), otherwise LDA must be at least max( 1, K ).\\
+\hline
+\mbox{\tt in}  & {\em B} & B is a LDB-\/by-\/kb matrix, where kb is K when trans = PlasmaNoTrans, and is N otherwise.\\
+\hline
+\mbox{\tt in}  & {\em LDB} & The leading dimension of the array B. LDB must be at least max( 1, N ), otherwise LDB must be at least max( 1, K ).\\
+\hline
+\mbox{\tt in}  & {\em beta} & beta specifies the scalar beta.\\
+\hline
+\mbox{\tt in,out}  & {\em C} & C is a LDC-\/by-\/N matrix. On exit, the array uplo part of the matrix is overwritten by the uplo part of the updated matrix.\\
+\hline
+\mbox{\tt in}  & {\em LDC} & The leading dimension of the array C. LDC $>$= max( 1, N ).\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em PLASMA\_\-SUCCESS} & successful exit\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{group__PLASMA__Complex64__t__Tile_gad2435eb3d2c1e66f89023aae6089cd04_gad2435eb3d2c1e66f89023aae6089cd04}{PLASMA\_\-zher2k\_\-Tile} 
+
+\hyperlink{group__PLASMA__Complex32__t_ga2174f460c8b3a319d83f5890688c53af_ga2174f460c8b3a319d83f5890688c53af}{PLASMA\_\-cher2k} 
+
+PLASMA\_\-dher2k 
+
+PLASMA\_\-sher2k 
+\end{DoxySeeAlso}
+\hypertarget{group__PLASMA__Complex64__t_ga37897923ff4fb613bbd5a69a58b12fb8_ga37897923ff4fb613bbd5a69a58b12fb8}{
+\index{PLASMA\_\-Complex64\_\-t@{PLASMA\_\-Complex64\_\-t}!PLASMA\_\-zherk@{PLASMA\_\-zherk}}
+\index{PLASMA\_\-zherk@{PLASMA\_\-zherk}!PLASMA_Complex64_t@{PLASMA\_\-Complex64\_\-t}}
+\subsubsection[{PLASMA\_\-zherk}]{\setlength{\rightskip}{0pt plus 5cm}int PLASMA\_\-zherk (
+\begin{DoxyParamCaption}
+\item[{PLASMA\_\-enum}]{uplo, }
+\item[{PLASMA\_\-enum}]{trans, }
+\item[{int}]{N, }
+\item[{int}]{K, }
+\item[{double}]{alpha, }
+\item[{PLASMA\_\-Complex64\_\-t $\ast$}]{A, }
+\item[{int}]{LDA, }
+\item[{double}]{beta, }
+\item[{PLASMA\_\-Complex64\_\-t $\ast$}]{C, }
+\item[{int}]{LDC}
+\end{DoxyParamCaption}
+)}}
+\label{group__PLASMA__Complex64__t_ga37897923ff4fb613bbd5a69a58b12fb8_ga37897923ff4fb613bbd5a69a58b12fb8}
+PLASMA\_\-zherk -\/ Performs one of the hermitian rank k operations
+
+\[ C = \alpha [ op( A ) \times conjg( op( A )' )] + \beta C \],
+
+where op( X ) is one of
+
+op( X ) = X or op( X ) = conjg( X' )
+
+where alpha and beta are real scalars, C is an n-\/by-\/n hermitian matrix and A is an n-\/by-\/k matrix in the first case and a k-\/by-\/n matrix in the second case.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em uplo} & = PlasmaUpper: Upper triangle of C is stored; = PlasmaLower: Lower triangle of C is stored.\\
+\hline
+\mbox{\tt in}  & {\em trans} & Specifies whether the matrix A is transposed or conjugate transposed: = PlasmaNoTrans: A is not transposed; = PlasmaConjTrans: A is conjugate transposed.\\
+\hline
+\mbox{\tt in}  & {\em N} & N specifies the order of the matrix C. N must be at least zero.\\
+\hline
+\mbox{\tt in}  & {\em K} & K specifies the number of columns of the matrix op( A ).\\
+\hline
+\mbox{\tt in}  & {\em alpha} & alpha specifies the scalar alpha.\\
+\hline
+\mbox{\tt in}  & {\em A} & A is a LDA-\/by-\/ka matrix, where ka is K when trans = PlasmaNoTrans, and is N otherwise.\\
+\hline
+\mbox{\tt in}  & {\em LDA} & The leading dimension of the array A. LDA must be at least max( 1, N ), otherwise LDA must be at least max( 1, K ).\\
+\hline
+\mbox{\tt in}  & {\em beta} & beta specifies the scalar beta\\
+\hline
+\mbox{\tt in,out}  & {\em C} & C is a LDC-\/by-\/N matrix. On exit, the array uplo part of the matrix is overwritten by the uplo part of the updated matrix.\\
+\hline
+\mbox{\tt in}  & {\em LDC} & The leading dimension of the array C. LDC $>$= max( 1, N ).\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em PLASMA\_\-SUCCESS} & successful exit\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{group__PLASMA__Complex64__t__Tile_ga01560f3e4d486a5576c6ed9b67756d67_ga01560f3e4d486a5576c6ed9b67756d67}{PLASMA\_\-zherk\_\-Tile} 
+
+\hyperlink{group__PLASMA__Complex32__t_ga218b2a902b2a05b10c19161c88b2065a_ga218b2a902b2a05b10c19161c88b2065a}{PLASMA\_\-cherk} 
+
+PLASMA\_\-dherk 
+
+PLASMA\_\-sherk 
+\end{DoxySeeAlso}
+\hypertarget{group__PLASMA__Complex64__t_gadeaa16b417f2033a10685c130db081fb_gadeaa16b417f2033a10685c130db081fb}{
+\index{PLASMA\_\-Complex64\_\-t@{PLASMA\_\-Complex64\_\-t}!PLASMA\_\-zhetrd@{PLASMA\_\-zhetrd}}
+\index{PLASMA\_\-zhetrd@{PLASMA\_\-zhetrd}!PLASMA_Complex64_t@{PLASMA\_\-Complex64\_\-t}}
+\subsubsection[{PLASMA\_\-zhetrd}]{\setlength{\rightskip}{0pt plus 5cm}int PLASMA\_\-zhetrd (
+\begin{DoxyParamCaption}
+\item[{PLASMA\_\-enum}]{jobz, }
+\item[{PLASMA\_\-enum}]{uplo, }
+\item[{int}]{N, }
+\item[{PLASMA\_\-Complex64\_\-t $\ast$}]{A, }
+\item[{int}]{LDA, }
+\item[{double $\ast$}]{D, }
+\item[{double $\ast$}]{E, }
+\item[{{\bf PLASMA\_\-desc} $\ast$}]{descT, }
+\item[{PLASMA\_\-Complex64\_\-t $\ast$}]{Q, }
+\item[{int}]{LDQ}
+\end{DoxyParamCaption}
+)}}
+\label{group__PLASMA__Complex64__t_gadeaa16b417f2033a10685c130db081fb_gadeaa16b417f2033a10685c130db081fb}
+PLASMA\_\-zhetrd -\/ reduces a complex Hermitian matrix A to real symmetric tridiagonal form S using a two-\/stage approach First stage: reduction to band tridiagonal form (unitary Q1); Second stage: reduction from band to tridiagonal form (unitary Q2). Let Q = Q1 $\ast$ Q2 be the global unitary transformation; Q$\ast$$\ast$H $\ast$ A $\ast$ Q = S. Not LAPACK compliant as A does not contain the T elements Note: Only PlasmaNoVec supported!
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em jobz} & Intended usage: = PlasmaNoVec: computes eigenvalues only; = PlasmaVec: computes eigenvalues and eigenvectors. Note: Only PlasmaNoVec supported!\\
+\hline
+\mbox{\tt in}  & {\em uplo} & Specifies whether the matrix A is upper triangular or lower triangular: = PlasmaUpper: Upper triangle of A is stored; = PlasmaLower: Lower triangle of A is stored.\\
+\hline
+\mbox{\tt in}  & {\em N} & The order of the matrix A. N $>$= 0.\\
+\hline
+\mbox{\tt in,out}  & {\em A} & On entry, the symmetric (or Hermitian) matrix A. If uplo = PlasmaUpper, the leading N-\/by-\/N upper triangular part of A contains the upper triangular part of the matrix A, and the strictly lower triangular part of A is not referenced. If uplo = PlasmaLower, the leading N-\/by-\/N lower triangular part of A contains the lower triangular part of the matrix A, and the strictly upper triangular part of A is not referenced. On exit, the lower triangle (if uplo = PlasmaLower) or the upper triangle (if uplo = PlasmaUpper) of A, including the diagonal, is destroyed.\\
+\hline
+\mbox{\tt in}  & {\em LDA} & The leading dimension of the array A. LDA $>$= max(1,N).\\
+\hline
+\mbox{\tt out}  & {\em D} & On exit, the diagonal elements of the tridiagonal matrix: D(i) = A(i,i).\\
+\hline
+\mbox{\tt out}  & {\em E} & On exit, he off-\/diagonal elements of the tridiagonal matrix: E(i) = A(i,i+1) if uplo = PlasmaUpper, E(i) = A(i+1,i) if uplo = PlasmaLower.\\
+\hline
+\mbox{\tt in,out}  & {\em descT} & On entry, descriptor as return by PLASMA\_\-Alloc\_\-Workspace\_\-zheev On exit, contains auxiliary factorization data.\\
+\hline
+\mbox{\tt out}  & {\em Q} & On exit, if jobz = PlasmaVec and info = 0, the eigenvectors.\\
+\hline
+\mbox{\tt in}  & {\em LDQ} & The leading dimension of the array Q. LDQ $>$= max(1,N).\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em PLASMA\_\-SUCCESS} & successful exit \\
+\hline
+{\em $<$0} & if -\/i, the i-\/th argument had an illegal value \\
+\hline
+{\em $>$0} & if INFO = i, the algorithm failed to converge; i off-\/diagonal elements of an intermediate tridiagonal form did not converge to zero.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{group__PLASMA__Complex64__t__Tile_ga174096ee76265b017bd6510563639599_ga174096ee76265b017bd6510563639599}{PLASMA\_\-zhetrd\_\-Tile} 
+
+\hyperlink{group__PLASMA__Complex64__t__Tile__Async_ga0005c200d9f0dddd0087bfb5fd1a8c7f_ga0005c200d9f0dddd0087bfb5fd1a8c7f}{PLASMA\_\-zhetrd\_\-Tile\_\-Async} 
+
+\hyperlink{group__PLASMA__Complex32__t_ga72efb6e6664acbda79f267c167eae41c_ga72efb6e6664acbda79f267c167eae41c}{PLASMA\_\-chetrd} 
+
+\hyperlink{group__double_gaebb037c30606f77404ffef513f255d5c_gaebb037c30606f77404ffef513f255d5c}{PLASMA\_\-dsytrd} 
+
+\hyperlink{group__float_gadfee26871dee9a24b201bc329fccd81b_gadfee26871dee9a24b201bc329fccd81b}{PLASMA\_\-ssytrd} 
+\end{DoxySeeAlso}
+\hypertarget{group__PLASMA__Complex64__t_ga89327462733d7b77d403e9612954474d_ga89327462733d7b77d403e9612954474d}{
+\index{PLASMA\_\-Complex64\_\-t@{PLASMA\_\-Complex64\_\-t}!PLASMA\_\-zlange@{PLASMA\_\-zlange}}
+\index{PLASMA\_\-zlange@{PLASMA\_\-zlange}!PLASMA_Complex64_t@{PLASMA\_\-Complex64\_\-t}}
+\subsubsection[{PLASMA\_\-zlange}]{\setlength{\rightskip}{0pt plus 5cm}double PLASMA\_\-zlange (
+\begin{DoxyParamCaption}
+\item[{PLASMA\_\-enum}]{norm, }
+\item[{int}]{M, }
+\item[{int}]{N, }
+\item[{PLASMA\_\-Complex64\_\-t $\ast$}]{A, }
+\item[{int}]{LDA, }
+\item[{double $\ast$}]{work}
+\end{DoxyParamCaption}
+)}}
+\label{group__PLASMA__Complex64__t_ga89327462733d7b77d403e9612954474d_ga89327462733d7b77d403e9612954474d}
+PLASMA\_\-zlange returns the value
+
+zlange = ( max(abs(A(i,j))), NORM = PlasmaMaxNorm ( ( norm1(A), NORM = PlasmaOneNorm ( ( normI(A), NORM = PlasmaInfNorm ( ( normF(A), NORM = PlasmaFrobeniusNorm
+
+where norm1 denotes the one norm of a matrix (maximum column sum), normI denotes the infinity norm of a matrix (maximum row sum) and normF denotes the Frobenius norm of a matrix (square root of sum of squares). Note that max(abs(A(i,j))) is not a consistent matrix norm.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em norm} & = PlasmaMaxNorm: Max norm = PlasmaOneNorm: One norm = PlasmaInfNorm: Infinity norm = PlasmaFrobeniusNorm: Frobenius norm\\
+\hline
+\mbox{\tt in}  & {\em M} & The number of rows of the matrix A. M $>$= 0. When M = 0, the returned value is set to zero.\\
+\hline
+\mbox{\tt in}  & {\em N} & The number of columns of the matrix A. N $>$= 0. When N = 0, the returned value is set to zero.\\
+\hline
+\mbox{\tt in}  & {\em A} & The M-\/by-\/N matrix A.\\
+\hline
+\mbox{\tt in}  & {\em LDA} & The leading dimension of the array A. LDA $>$= max(1,M).\\
+\hline
+\mbox{\tt in}  & {\em work} & double precision array of dimension (MAX(1,LWORK)), where LWORK $>$= M when NORM = PlasmaInfNorm; otherwise, WORK is not referenced.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em the} & norm described above.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{group__PLASMA__Complex64__t__Tile_ga0f059e1eba1f049750759097e441a1a4_ga0f059e1eba1f049750759097e441a1a4}{PLASMA\_\-zlange\_\-Tile} 
+
+\hyperlink{group__PLASMA__Complex64__t__Tile__Async_ga57d6df0183911637315c83c07820d56d_ga57d6df0183911637315c83c07820d56d}{PLASMA\_\-zlange\_\-Tile\_\-Async} 
+
+\hyperlink{group__PLASMA__Complex32__t_ga4520d4c444c0e4966fe0d261b175c3cd_ga4520d4c444c0e4966fe0d261b175c3cd}{PLASMA\_\-clange} 
+
+\hyperlink{group__double_gae51aee6b673e80bd606956ae6af92fbd_gae51aee6b673e80bd606956ae6af92fbd}{PLASMA\_\-dlange} 
+
+\hyperlink{group__float_ga778abdd6cc24bde2e6c7d41a2a563479_ga778abdd6cc24bde2e6c7d41a2a563479}{PLASMA\_\-slange} 
+\end{DoxySeeAlso}
+\hypertarget{group__PLASMA__Complex64__t_ga3667b32ec418aa44fe1e28b78a670af6_ga3667b32ec418aa44fe1e28b78a670af6}{
+\index{PLASMA\_\-Complex64\_\-t@{PLASMA\_\-Complex64\_\-t}!PLASMA\_\-zlanhe@{PLASMA\_\-zlanhe}}
+\index{PLASMA\_\-zlanhe@{PLASMA\_\-zlanhe}!PLASMA_Complex64_t@{PLASMA\_\-Complex64\_\-t}}
+\subsubsection[{PLASMA\_\-zlanhe}]{\setlength{\rightskip}{0pt plus 5cm}double PLASMA\_\-zlanhe (
+\begin{DoxyParamCaption}
+\item[{PLASMA\_\-enum}]{norm, }
+\item[{PLASMA\_\-enum}]{uplo, }
+\item[{int}]{N, }
+\item[{PLASMA\_\-Complex64\_\-t $\ast$}]{A, }
+\item[{int}]{LDA, }
+\item[{double $\ast$}]{work}
+\end{DoxyParamCaption}
+)}}
+\label{group__PLASMA__Complex64__t_ga3667b32ec418aa44fe1e28b78a670af6_ga3667b32ec418aa44fe1e28b78a670af6}
+PLASMA\_\-zlanhe returns the value
+
+zlanhe = ( max(abs(A(i,j))), NORM = PlasmaMaxNorm ( ( norm1(A), NORM = PlasmaOneNorm ( ( normI(A), NORM = PlasmaInfNorm ( ( normF(A), NORM = PlasmaFrobeniusNorm
+
+where norm1 denotes the one norm of a matrix (maximum column sum), normI denotes the infinity norm of a matrix (maximum row sum) and normF denotes the Frobenius norm of a matrix (square root of sum of squares). Note that max(abs(A(i,j))) is not a consistent matrix norm.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em norm} & = PlasmaMaxNorm: Max norm = PlasmaOneNorm: One norm = PlasmaInfNorm: Infinity norm = PlasmaFrobeniusNorm: Frobenius norm\\
+\hline
+\mbox{\tt in}  & {\em uplo} & = PlasmaUpper: Upper triangle of A is stored; = PlasmaLower: Lower triangle of A is stored.\\
+\hline
+\mbox{\tt in}  & {\em N} & The number of columns/rows of the matrix A. N $>$= 0. When N = 0, the returned value is set to zero.\\
+\hline
+\mbox{\tt in}  & {\em A} & The N-\/by-\/N matrix A.\\
+\hline
+\mbox{\tt in}  & {\em LDA} & The leading dimension of the array A. LDA $>$= max(1,N).\\
+\hline
+\mbox{\tt in}  & {\em work} & double precision array of dimension PLASMA\_\-SIZE is PLASMA\_\-STATIC\_\-SCHEDULING is used, and NULL otherwise.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em the} & norm described above.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{group__PLASMA__Complex64__t__Tile_ga8ae849081c7c03c3f94169cdb9210db3_ga8ae849081c7c03c3f94169cdb9210db3}{PLASMA\_\-zlanhe\_\-Tile} 
+
+\hyperlink{group__PLASMA__Complex64__t__Tile__Async_gaa6c26d48d48916841db34110002146c6_gaa6c26d48d48916841db34110002146c6}{PLASMA\_\-zlanhe\_\-Tile\_\-Async} 
+
+\hyperlink{group__PLASMA__Complex32__t_gaf609bd2319064273abdfacf8c733340f_gaf609bd2319064273abdfacf8c733340f}{PLASMA\_\-clanhe} 
+
+PLASMA\_\-dlanhe 
+
+PLASMA\_\-slanhe 
+\end{DoxySeeAlso}
+\hypertarget{group__PLASMA__Complex64__t_ga56ed091feed59f955ba15b8c6204e06a_ga56ed091feed59f955ba15b8c6204e06a}{
+\index{PLASMA\_\-Complex64\_\-t@{PLASMA\_\-Complex64\_\-t}!PLASMA\_\-zlansy@{PLASMA\_\-zlansy}}
+\index{PLASMA\_\-zlansy@{PLASMA\_\-zlansy}!PLASMA_Complex64_t@{PLASMA\_\-Complex64\_\-t}}
+\subsubsection[{PLASMA\_\-zlansy}]{\setlength{\rightskip}{0pt plus 5cm}double PLASMA\_\-zlansy (
+\begin{DoxyParamCaption}
+\item[{PLASMA\_\-enum}]{norm, }
+\item[{PLASMA\_\-enum}]{uplo, }
+\item[{int}]{N, }
+\item[{PLASMA\_\-Complex64\_\-t $\ast$}]{A, }
+\item[{int}]{LDA, }
+\item[{double $\ast$}]{work}
+\end{DoxyParamCaption}
+)}}
+\label{group__PLASMA__Complex64__t_ga56ed091feed59f955ba15b8c6204e06a_ga56ed091feed59f955ba15b8c6204e06a}
+PLASMA\_\-zlansy returns the value
+
+zlansy = ( max(abs(A(i,j))), NORM = PlasmaMaxNorm ( ( norm1(A), NORM = PlasmaOneNorm ( ( normI(A), NORM = PlasmaInfNorm ( ( normF(A), NORM = PlasmaFrobeniusNorm
+
+where norm1 denotes the one norm of a matrix (maximum column sum), normI denotes the infinity norm of a matrix (maximum row sum) and normF denotes the Frobenius norm of a matrix (square root of sum of squares). Note that max(abs(A(i,j))) is not a consistent matrix norm.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em norm} & = PlasmaMaxNorm: Max norm = PlasmaOneNorm: One norm = PlasmaInfNorm: Infinity norm = PlasmaFrobeniusNorm: Frobenius norm\\
+\hline
+\mbox{\tt in}  & {\em uplo} & = PlasmaUpper: Upper triangle of A is stored; = PlasmaLower: Lower triangle of A is stored.\\
+\hline
+\mbox{\tt in}  & {\em N} & The number of columns/rows of the matrix A. N $>$= 0. When N = 0, the returned value is set to zero.\\
+\hline
+\mbox{\tt in}  & {\em A} & The N-\/by-\/N matrix A.\\
+\hline
+\mbox{\tt in}  & {\em LDA} & The leading dimension of the array A. LDA $>$= max(1,N).\\
+\hline
+\mbox{\tt in}  & {\em work} & double precision array of dimension PLASMA\_\-SIZE is PLASMA\_\-STATIC\_\-SCHEDULING is used, and NULL otherwise.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em the} & norm described above.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{group__PLASMA__Complex64__t__Tile_ga857a208027710b6bd8f92a4706c2cb69_ga857a208027710b6bd8f92a4706c2cb69}{PLASMA\_\-zlansy\_\-Tile} 
+
+\hyperlink{group__PLASMA__Complex64__t__Tile__Async_gac8468328525f1254a6b83925d71c62cf_gac8468328525f1254a6b83925d71c62cf}{PLASMA\_\-zlansy\_\-Tile\_\-Async} 
+
+\hyperlink{group__PLASMA__Complex32__t_ga4c705dba935087686f8fdaa1e676b9f8_ga4c705dba935087686f8fdaa1e676b9f8}{PLASMA\_\-clansy} 
+
+\hyperlink{group__double_ga541f5864b15b169ab01998abb2c776ec_ga541f5864b15b169ab01998abb2c776ec}{PLASMA\_\-dlansy} 
+
+\hyperlink{group__float_gaa06de2986c0e12814a57e4def6110223_gaa06de2986c0e12814a57e4def6110223}{PLASMA\_\-slansy} 
+\end{DoxySeeAlso}
+\hypertarget{group__PLASMA__Complex64__t_ga54817e0733e678bcdfdfeaa76ab486f6_ga54817e0733e678bcdfdfeaa76ab486f6}{
+\index{PLASMA\_\-Complex64\_\-t@{PLASMA\_\-Complex64\_\-t}!PLASMA\_\-zLapack\_\-to\_\-Tile@{PLASMA\_\-zLapack\_\-to\_\-Tile}}
+\index{PLASMA\_\-zLapack\_\-to\_\-Tile@{PLASMA\_\-zLapack\_\-to\_\-Tile}!PLASMA_Complex64_t@{PLASMA\_\-Complex64\_\-t}}
+\subsubsection[{PLASMA\_\-zLapack\_\-to\_\-Tile}]{\setlength{\rightskip}{0pt plus 5cm}int PLASMA\_\-zLapack\_\-to\_\-Tile (
+\begin{DoxyParamCaption}
+\item[{PLASMA\_\-Complex64\_\-t $\ast$}]{Af77, }
+\item[{int}]{LDA, }
+\item[{{\bf PLASMA\_\-desc} $\ast$}]{A}
+\end{DoxyParamCaption}
+)}}
+\label{group__PLASMA__Complex64__t_ga54817e0733e678bcdfdfeaa76ab486f6_ga54817e0733e678bcdfdfeaa76ab486f6}
+PLASMA\_\-zLapack\_\-to\_\-Tile -\/ Conversion from LAPACK layout to tile layout.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em Af77} & LAPACK matrix.\\
+\hline
+\mbox{\tt in}  & {\em LDA} & The leading dimension of the matrix Af77.\\
+\hline
+\mbox{\tt in,out}  & {\em A} & Descriptor of the PLASMA matrix in tile layout. If PLASMA\_\-TRANSLATION\_\-MODE is set to PLASMA\_\-INPLACE, A-\/$>$mat is not used and set to Af77 when returns, else if PLASMA\_\-TRANSLATION\_\-MODE is set to PLASMA\_\-OUTOFPLACE, A-\/$>$mat has to be allocated before.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em PLASMA\_\-SUCCESS} & successful exit\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{group__PLASMA__Complex64__t__Tile__Async_ga3a85e3d7fff8991650e1b1f9761c9153_ga3a85e3d7fff8991650e1b1f9761c9153}{PLASMA\_\-zLapack\_\-to\_\-Tile\_\-Async} 
+
+\hyperlink{group__PLASMA__Complex64__t_ga8df0b9fdc5537a648d7544b528c9e6e3_ga8df0b9fdc5537a648d7544b528c9e6e3}{PLASMA\_\-zTile\_\-to\_\-Lapack} 
+
+\hyperlink{group__PLASMA__Complex32__t_ga44c99c1388a7830a6efbc4fc1ab328f3_ga44c99c1388a7830a6efbc4fc1ab328f3}{PLASMA\_\-cLapack\_\-to\_\-Tile} 
+
+\hyperlink{group__double_ga36e9254b8f24778e1aed6bcee1165450_ga36e9254b8f24778e1aed6bcee1165450}{PLASMA\_\-dLapack\_\-to\_\-Tile} 
+
+\hyperlink{group__float_gaad3dd3212d3d774f44094c3f0835ef22_gaad3dd3212d3d774f44094c3f0835ef22}{PLASMA\_\-sLapack\_\-to\_\-Tile} 
+\end{DoxySeeAlso}
+\hypertarget{group__PLASMA__Complex64__t_ga33f553c60d1f95a0d7da9e7e17e2a160_ga33f553c60d1f95a0d7da9e7e17e2a160}{
+\index{PLASMA\_\-Complex64\_\-t@{PLASMA\_\-Complex64\_\-t}!PLASMA\_\-zlaswp@{PLASMA\_\-zlaswp}}
+\index{PLASMA\_\-zlaswp@{PLASMA\_\-zlaswp}!PLASMA_Complex64_t@{PLASMA\_\-Complex64\_\-t}}
+\subsubsection[{PLASMA\_\-zlaswp}]{\setlength{\rightskip}{0pt plus 5cm}int PLASMA\_\-zlaswp (
+\begin{DoxyParamCaption}
+\item[{int}]{N, }
+\item[{PLASMA\_\-Complex64\_\-t $\ast$}]{A, }
+\item[{int}]{LDA, }
+\item[{int}]{K1, }
+\item[{int}]{K2, }
+\item[{int $\ast$}]{IPIV, }
+\item[{int}]{INCX}
+\end{DoxyParamCaption}
+)}}
+\label{group__PLASMA__Complex64__t_ga33f553c60d1f95a0d7da9e7e17e2a160_ga33f553c60d1f95a0d7da9e7e17e2a160}
+PLASMA\_\-zlaswp -\/ performs a series of row interchanges on the matrix A. One row interchange is initiated for each of rows K1 through K2 of A.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em N} & The order of the matrix A. N $>$= 0.\\
+\hline
+\mbox{\tt in}  & {\em A} & The tile factors L and U from the factorization, computed by PLASMA\_\-zgetrf.\\
+\hline
+\mbox{\tt in}  & {\em LDA} & The leading dimension of the array A. LDA $>$= max(1,N).\\
+\hline
+\mbox{\tt in}  & {\em K1} & The first element of IPIV for which a row interchange will be done.\\
+\hline
+\mbox{\tt in}  & {\em K2} & The last element of IPIV for which a row interchange will be done.\\
+\hline
+\mbox{\tt in}  & {\em IPIV} & The pivot indices from PLASMA\_\-zgetrf.\\
+\hline
+\mbox{\tt in}  & {\em INCX} & The increment between successive values of IPIV. If IPIV is negative, the pivots are applied in reverse order.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em PLASMA\_\-SUCCESS} & successful exit \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyReturn}{Returns}
+$<$0 if -\/i, the i-\/th argument had an illegal value
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{group__PLASMA__Complex64__t__Tile_ga8b7d50bff2ba16b61f69e14f70ff79b7_ga8b7d50bff2ba16b61f69e14f70ff79b7}{PLASMA\_\-zlaswp\_\-Tile} 
+
+\hyperlink{group__PLASMA__Complex64__t__Tile__Async_gac1b6a0ba1f451d1b3e60bb8bce8f086b_gac1b6a0ba1f451d1b3e60bb8bce8f086b}{PLASMA\_\-zlaswp\_\-Tile\_\-Async} 
+
+\hyperlink{group__PLASMA__Complex32__t_gace22856d1d438d8d04c90b7423eac23c_gace22856d1d438d8d04c90b7423eac23c}{PLASMA\_\-claswp} 
+
+\hyperlink{group__double_ga69516426acd62eb6dadfc92097b9f624_ga69516426acd62eb6dadfc92097b9f624}{PLASMA\_\-dlaswp} 
+
+\hyperlink{group__float_ga871c63746a94adb61e6c06ebc9126671_ga871c63746a94adb61e6c06ebc9126671}{PLASMA\_\-slaswp} 
+
+\hyperlink{group__PLASMA__Complex64__t_ga03449aa4e83b2f2223dad281d122697d_ga03449aa4e83b2f2223dad281d122697d}{PLASMA\_\-zgetrf} 
+\end{DoxySeeAlso}
+\hypertarget{group__PLASMA__Complex64__t_ga0e1f064db19e3855c590172274fbdf43_ga0e1f064db19e3855c590172274fbdf43}{
+\index{PLASMA\_\-Complex64\_\-t@{PLASMA\_\-Complex64\_\-t}!PLASMA\_\-zlauum@{PLASMA\_\-zlauum}}
+\index{PLASMA\_\-zlauum@{PLASMA\_\-zlauum}!PLASMA_Complex64_t@{PLASMA\_\-Complex64\_\-t}}
+\subsubsection[{PLASMA\_\-zlauum}]{\setlength{\rightskip}{0pt plus 5cm}int PLASMA\_\-zlauum (
+\begin{DoxyParamCaption}
+\item[{PLASMA\_\-enum}]{uplo, }
+\item[{int}]{N, }
+\item[{PLASMA\_\-Complex64\_\-t $\ast$}]{A, }
+\item[{int}]{LDA}
+\end{DoxyParamCaption}
+)}}
+\label{group__PLASMA__Complex64__t_ga0e1f064db19e3855c590172274fbdf43_ga0e1f064db19e3855c590172274fbdf43}
+PLASMA\_\-zlauum -\/ Computes the product U $\ast$ U' or L' $\ast$ L, where the triangular factor U or L is stored in the upper or lower triangular part of the array A.
+
+If UPLO = 'U' or 'u' then the upper triangle of the result is stored, overwriting the factor U in A. If UPLO = 'L' or 'l' then the lower triangle of the result is stored, overwriting the factor L in A.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em uplo} & = PlasmaUpper: Upper triangle of A is stored; = PlasmaLower: Lower triangle of A is stored.\\
+\hline
+\mbox{\tt in}  & {\em N} & The order of the triangular factor U or L. N $>$= 0.\\
+\hline
+\mbox{\tt in,out}  & {\em A} & On entry, the triangular factor U or L. On exit, if UPLO = 'U', the upper triangle of A is overwritten with the upper triangle of the product U $\ast$ U'; if UPLO = 'L', the lower triangle of A is overwritten with the lower triangle of the product L' $\ast$ L.\\
+\hline
+\mbox{\tt in}  & {\em LDA} & The leading dimension of the array A. LDA $>$= max(1,N).\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em PLASMA\_\-SUCCESS} & successful exit \\
+\hline
+{\em $<$0} & if -\/i, the i-\/th argument had an illegal value\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{group__PLASMA__Complex64__t__Tile_ga50322b286ba5e26cfa918ed2be8860c9_ga50322b286ba5e26cfa918ed2be8860c9}{PLASMA\_\-zlauum\_\-Tile} 
+
+\hyperlink{group__PLASMA__Complex64__t__Tile__Async_ga425208ce23f59b3120b5bfa7923b50ae_ga425208ce23f59b3120b5bfa7923b50ae}{PLASMA\_\-zlauum\_\-Tile\_\-Async} 
+
+\hyperlink{group__PLASMA__Complex32__t_ga937589f5f8ae6b95a4e81589f5471d3e_ga937589f5f8ae6b95a4e81589f5471d3e}{PLASMA\_\-clauum} 
+
+\hyperlink{group__double_ga67ff8abfce111a501fb5cec37333756f_ga67ff8abfce111a501fb5cec37333756f}{PLASMA\_\-dlauum} 
+
+\hyperlink{group__float_gaafb49f230a9c4dbdc635144f46f680f6_gaafb49f230a9c4dbdc635144f46f680f6}{PLASMA\_\-slauum} 
+
+\hyperlink{group__PLASMA__Complex64__t_ga6dd563144dd8c7f29a58659f220f44a0_ga6dd563144dd8c7f29a58659f220f44a0}{PLASMA\_\-zpotri} 
+\end{DoxySeeAlso}
+\hypertarget{group__PLASMA__Complex64__t_ga3a50559a69450b4f13a23c4af092c60e_ga3a50559a69450b4f13a23c4af092c60e}{
+\index{PLASMA\_\-Complex64\_\-t@{PLASMA\_\-Complex64\_\-t}!PLASMA\_\-zplghe@{PLASMA\_\-zplghe}}
+\index{PLASMA\_\-zplghe@{PLASMA\_\-zplghe}!PLASMA_Complex64_t@{PLASMA\_\-Complex64\_\-t}}
+\subsubsection[{PLASMA\_\-zplghe}]{\setlength{\rightskip}{0pt plus 5cm}int PLASMA\_\-zplghe (
+\begin{DoxyParamCaption}
+\item[{double}]{bump, }
+\item[{int}]{N, }
+\item[{PLASMA\_\-Complex64\_\-t $\ast$}]{A, }
+\item[{int}]{LDA, }
+\item[{unsigned long long int}]{seed}
+\end{DoxyParamCaption}
+)}}
+\label{group__PLASMA__Complex64__t_ga3a50559a69450b4f13a23c4af092c60e_ga3a50559a69450b4f13a23c4af092c60e}
+PLASMA\_\-zplghe -\/ Generate a random hermitian matrix by tiles.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em bump} & The value to add to the diagonal to be sure to have a positive definite matrix.\\
+\hline
+\mbox{\tt in}  & {\em N} & The order of the matrix A. N $>$= 0.\\
+\hline
+\mbox{\tt out}  & {\em A} & On exit, The random hermitian matrix A generated.\\
+\hline
+\mbox{\tt in}  & {\em LDA} & The leading dimension of the array A. LDA $>$= max(1,M).\\
+\hline
+\mbox{\tt in}  & {\em seed} & The seed used in the random generation.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em PLASMA\_\-SUCCESS} & successful exit \\
+\hline
+{\em $<$0} & if -\/i, the i-\/th argument had an illegal value\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{group__PLASMA__Complex64__t__Tile_gaf494256f8af8223468c1e0a2315dbfb7_gaf494256f8af8223468c1e0a2315dbfb7}{PLASMA\_\-zplghe\_\-Tile} 
+
+\hyperlink{group__PLASMA__Complex64__t__Tile__Async_ga87167295ebd4bad3452479a53981bb9b_ga87167295ebd4bad3452479a53981bb9b}{PLASMA\_\-zplghe\_\-Tile\_\-Async} 
+
+\hyperlink{group__PLASMA__Complex32__t_gab2e8cb228186ddf8555009ee5b678b1c_gab2e8cb228186ddf8555009ee5b678b1c}{PLASMA\_\-cplghe} 
+
+PLASMA\_\-dplghe 
+
+PLASMA\_\-splghe 
+
+\hyperlink{group__PLASMA__Complex64__t_gaed78cffc7c2835c485ef7c8e3761d127_gaed78cffc7c2835c485ef7c8e3761d127}{PLASMA\_\-zplrnt} 
+
+\hyperlink{group__PLASMA__Complex64__t_ga065c2bc2190fc079035e1de4d16e4e60_ga065c2bc2190fc079035e1de4d16e4e60}{PLASMA\_\-zplgsy} 
+\end{DoxySeeAlso}
+\hypertarget{group__PLASMA__Complex64__t_ga065c2bc2190fc079035e1de4d16e4e60_ga065c2bc2190fc079035e1de4d16e4e60}{
+\index{PLASMA\_\-Complex64\_\-t@{PLASMA\_\-Complex64\_\-t}!PLASMA\_\-zplgsy@{PLASMA\_\-zplgsy}}
+\index{PLASMA\_\-zplgsy@{PLASMA\_\-zplgsy}!PLASMA_Complex64_t@{PLASMA\_\-Complex64\_\-t}}
+\subsubsection[{PLASMA\_\-zplgsy}]{\setlength{\rightskip}{0pt plus 5cm}int PLASMA\_\-zplgsy (
+\begin{DoxyParamCaption}
+\item[{PLASMA\_\-Complex64\_\-t}]{bump, }
+\item[{int}]{N, }
+\item[{PLASMA\_\-Complex64\_\-t $\ast$}]{A, }
+\item[{int}]{LDA, }
+\item[{unsigned long long int}]{seed}
+\end{DoxyParamCaption}
+)}}
+\label{group__PLASMA__Complex64__t_ga065c2bc2190fc079035e1de4d16e4e60_ga065c2bc2190fc079035e1de4d16e4e60}
+PLASMA\_\-zplgsy -\/ Generate a random hermitian matrix by tiles.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em bump} & The value to add to the diagonal to be sure to have a positive definite matrix.\\
+\hline
+\mbox{\tt in}  & {\em N} & The order of the matrix A. N $>$= 0.\\
+\hline
+\mbox{\tt out}  & {\em A} & On exit, The random hermitian matrix A generated.\\
+\hline
+\mbox{\tt in}  & {\em LDA} & The leading dimension of the array A. LDA $>$= max(1,M).\\
+\hline
+\mbox{\tt in}  & {\em seed} & The seed used in the random generation.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em PLASMA\_\-SUCCESS} & successful exit \\
+\hline
+{\em $<$0} & if -\/i, the i-\/th argument had an illegal value\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{group__PLASMA__Complex64__t__Tile_ga5009d502bba79bde803f883aff293921_ga5009d502bba79bde803f883aff293921}{PLASMA\_\-zplgsy\_\-Tile} 
+
+\hyperlink{group__PLASMA__Complex64__t__Tile__Async_gadd20ad669ca318409d2ac938bb13afa2_gadd20ad669ca318409d2ac938bb13afa2}{PLASMA\_\-zplgsy\_\-Tile\_\-Async} 
+
+\hyperlink{group__PLASMA__Complex32__t_ga3fc244eb71f8484ede01d0a8fb8b7243_ga3fc244eb71f8484ede01d0a8fb8b7243}{PLASMA\_\-cplgsy} 
+
+\hyperlink{group__double_ga267c9f85256181c2024279e1dc55e84b_ga267c9f85256181c2024279e1dc55e84b}{PLASMA\_\-dplgsy} 
+
+\hyperlink{group__float_ga949e065a6843e3d20ebc74741ccec2e2_ga949e065a6843e3d20ebc74741ccec2e2}{PLASMA\_\-splgsy} 
+
+\hyperlink{group__PLASMA__Complex64__t_gaed78cffc7c2835c485ef7c8e3761d127_gaed78cffc7c2835c485ef7c8e3761d127}{PLASMA\_\-zplrnt} 
+
+\hyperlink{group__PLASMA__Complex64__t_ga065c2bc2190fc079035e1de4d16e4e60_ga065c2bc2190fc079035e1de4d16e4e60}{PLASMA\_\-zplgsy} 
+\end{DoxySeeAlso}
+\hypertarget{group__PLASMA__Complex64__t_gaed78cffc7c2835c485ef7c8e3761d127_gaed78cffc7c2835c485ef7c8e3761d127}{
+\index{PLASMA\_\-Complex64\_\-t@{PLASMA\_\-Complex64\_\-t}!PLASMA\_\-zplrnt@{PLASMA\_\-zplrnt}}
+\index{PLASMA\_\-zplrnt@{PLASMA\_\-zplrnt}!PLASMA_Complex64_t@{PLASMA\_\-Complex64\_\-t}}
+\subsubsection[{PLASMA\_\-zplrnt}]{\setlength{\rightskip}{0pt plus 5cm}int PLASMA\_\-zplrnt (
+\begin{DoxyParamCaption}
+\item[{int}]{M, }
+\item[{int}]{N, }
+\item[{PLASMA\_\-Complex64\_\-t $\ast$}]{A, }
+\item[{int}]{LDA, }
+\item[{unsigned long long int}]{seed}
+\end{DoxyParamCaption}
+)}}
+\label{group__PLASMA__Complex64__t_gaed78cffc7c2835c485ef7c8e3761d127_gaed78cffc7c2835c485ef7c8e3761d127}
+PLASMA\_\-zplrnt -\/ Generate a random matrix by tiles.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em M} & The number of rows of A.\\
+\hline
+\mbox{\tt in}  & {\em N} & The order of the matrix A. N $>$= 0.\\
+\hline
+\mbox{\tt out}  & {\em A} & On exit, The random matrix A generated.\\
+\hline
+\mbox{\tt in}  & {\em LDA} & The leading dimension of the array A. LDA $>$= max(1,M).\\
+\hline
+\mbox{\tt in}  & {\em seed} & The seed used in the random generation.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em PLASMA\_\-SUCCESS} & successful exit \\
+\hline
+{\em $<$0} & if -\/i, the i-\/th argument had an illegal value\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{group__PLASMA__Complex64__t__Tile_ga7e7cf88c4295f8b364b66cbadd023557_ga7e7cf88c4295f8b364b66cbadd023557}{PLASMA\_\-zplrnt\_\-Tile} 
+
+\hyperlink{group__PLASMA__Complex64__t__Tile__Async_ga9c7ab272adb91b3c38af66f649223e4e_ga9c7ab272adb91b3c38af66f649223e4e}{PLASMA\_\-zplrnt\_\-Tile\_\-Async} 
+
+\hyperlink{group__PLASMA__Complex32__t_gadc1ab86fbc4e1acd67411bcf7d18ccc1_gadc1ab86fbc4e1acd67411bcf7d18ccc1}{PLASMA\_\-cplrnt} 
+
+\hyperlink{group__double_gafca5b7ac3183e0a107df9f88ecde4cdf_gafca5b7ac3183e0a107df9f88ecde4cdf}{PLASMA\_\-dplrnt} 
+
+\hyperlink{group__float_ga1ab9b8f017c16245b0f44ab6f4798dfd_ga1ab9b8f017c16245b0f44ab6f4798dfd}{PLASMA\_\-splrnt} 
+
+\hyperlink{group__PLASMA__Complex64__t_ga3a50559a69450b4f13a23c4af092c60e_ga3a50559a69450b4f13a23c4af092c60e}{PLASMA\_\-zplghe} 
+
+\hyperlink{group__PLASMA__Complex64__t_ga065c2bc2190fc079035e1de4d16e4e60_ga065c2bc2190fc079035e1de4d16e4e60}{PLASMA\_\-zplgsy} 
+\end{DoxySeeAlso}
+\hypertarget{group__PLASMA__Complex64__t_gaed71622155778ea4372e34879184e742_gaed71622155778ea4372e34879184e742}{
+\index{PLASMA\_\-Complex64\_\-t@{PLASMA\_\-Complex64\_\-t}!PLASMA\_\-zposv@{PLASMA\_\-zposv}}
+\index{PLASMA\_\-zposv@{PLASMA\_\-zposv}!PLASMA_Complex64_t@{PLASMA\_\-Complex64\_\-t}}
+\subsubsection[{PLASMA\_\-zposv}]{\setlength{\rightskip}{0pt plus 5cm}int PLASMA\_\-zposv (
+\begin{DoxyParamCaption}
+\item[{PLASMA\_\-enum}]{uplo, }
+\item[{int}]{N, }
+\item[{int}]{NRHS, }
+\item[{PLASMA\_\-Complex64\_\-t $\ast$}]{A, }
+\item[{int}]{LDA, }
+\item[{PLASMA\_\-Complex64\_\-t $\ast$}]{B, }
+\item[{int}]{LDB}
+\end{DoxyParamCaption}
+)}}
+\label{group__PLASMA__Complex64__t_gaed71622155778ea4372e34879184e742_gaed71622155778ea4372e34879184e742}
+PLASMA\_\-zposv -\/ Computes the solution to a system of linear equations A $\ast$ X = B, where A is an N-\/by-\/N symmetric positive definite (or Hermitian positive definite in the complex case) matrix and X and B are N-\/by-\/NRHS matrices. The Cholesky decomposition is used to factor A as
+
+\[ A = \{_{L\times L^H, if uplo = PlasmaLower}^{U^H\times U, if uplo = PlasmaUpper} \]
+
+where U is an upper triangular matrix and L is a lower triangular matrix. The factored form of A is then used to solve the system of equations A $\ast$ X = B.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em uplo} & Specifies whether the matrix A is upper triangular or lower triangular: = PlasmaUpper: Upper triangle of A is stored; = PlasmaLower: Lower triangle of A is stored.\\
+\hline
+\mbox{\tt in}  & {\em N} & The number of linear equations, i.e., the order of the matrix A. N $>$= 0.\\
+\hline
+\mbox{\tt in}  & {\em NRHS} & The number of right hand sides, i.e., the number of columns of the matrix B. NRHS $>$= 0.\\
+\hline
+\mbox{\tt in,out}  & {\em A} & On entry, the symmetric positive definite (or Hermitian) matrix A. If uplo = PlasmaUpper, the leading N-\/by-\/N upper triangular part of A contains the upper triangular part of the matrix A, and the strictly lower triangular part of A is not referenced. If UPLO = 'L', the leading N-\/by-\/N lower triangular part of A contains the lower triangular part of the matrix A, and the strictly upper triangular part of A is not referenced. On exit, if return value = 0, the factor U or L from the Cholesky factorization A = U$\ast$$\ast$H$\ast$U or A = L$\ast$L$\ast$$\ast$H.\\
+\hline
+\mbox{\tt in}  & {\em LDA} & The leading dimension of the array A. LDA $>$= max(1,N).\\
+\hline
+\mbox{\tt in,out}  & {\em B} & On entry, the N-\/by-\/NRHS right hand side matrix B. On exit, if return value = 0, the N-\/by-\/NRHS solution matrix X.\\
+\hline
+\mbox{\tt in}  & {\em LDB} & The leading dimension of the array B. LDB $>$= max(1,N).\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em PLASMA\_\-SUCCESS} & successful exit \\
+\hline
+{\em $<$0} & if -\/i, the i-\/th argument had an illegal value \\
+\hline
+{\em $>$0} & if i, the leading minor of order i of A is not positive definite, so the factorization could not be completed, and the solution has not been computed.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{group__PLASMA__Complex64__t__Tile_gaf7050f109b30dcdea1cedd1a6577d2b9_gaf7050f109b30dcdea1cedd1a6577d2b9}{PLASMA\_\-zposv\_\-Tile} 
+
+\hyperlink{group__PLASMA__Complex64__t__Tile__Async_gaf25c91026a678c4b6489edf98d8f02b1_gaf25c91026a678c4b6489edf98d8f02b1}{PLASMA\_\-zposv\_\-Tile\_\-Async} 
+
+\hyperlink{group__PLASMA__Complex32__t_gacb9e52ca26891e283878a10c6b7f24b7_gacb9e52ca26891e283878a10c6b7f24b7}{PLASMA\_\-cposv} 
+
+\hyperlink{group__double_ga83015e9476d13f0c9f056eac9b54804f_ga83015e9476d13f0c9f056eac9b54804f}{PLASMA\_\-dposv} 
+
+\hyperlink{group__float_ga113c09b4a9f41fc4c19358a52477d685_ga113c09b4a9f41fc4c19358a52477d685}{PLASMA\_\-sposv} 
+\end{DoxySeeAlso}
+\hypertarget{group__PLASMA__Complex64__t_ga850a6c9da7c5632d160b28f211cdf2eb_ga850a6c9da7c5632d160b28f211cdf2eb}{
+\index{PLASMA\_\-Complex64\_\-t@{PLASMA\_\-Complex64\_\-t}!PLASMA\_\-zpotrf@{PLASMA\_\-zpotrf}}
+\index{PLASMA\_\-zpotrf@{PLASMA\_\-zpotrf}!PLASMA_Complex64_t@{PLASMA\_\-Complex64\_\-t}}
+\subsubsection[{PLASMA\_\-zpotrf}]{\setlength{\rightskip}{0pt plus 5cm}int PLASMA\_\-zpotrf (
+\begin{DoxyParamCaption}
+\item[{PLASMA\_\-enum}]{uplo, }
+\item[{int}]{N, }
+\item[{PLASMA\_\-Complex64\_\-t $\ast$}]{A, }
+\item[{int}]{LDA}
+\end{DoxyParamCaption}
+)}}
+\label{group__PLASMA__Complex64__t_ga850a6c9da7c5632d160b28f211cdf2eb_ga850a6c9da7c5632d160b28f211cdf2eb}
+PLASMA\_\-zpotrf -\/ Computes the Cholesky factorization of a symmetric positive definite (or Hermitian positive definite in the complex case) matrix A. The factorization has the form
+
+\[ A = \{_{L\times L^H, if uplo = PlasmaLower}^{U^H\times U, if uplo = PlasmaUpper} \]
+
+where U is an upper triangular matrix and L is a lower triangular matrix.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em uplo} & = PlasmaUpper: Upper triangle of A is stored; = PlasmaLower: Lower triangle of A is stored.\\
+\hline
+\mbox{\tt in}  & {\em N} & The order of the matrix A. N $>$= 0.\\
+\hline
+\mbox{\tt in,out}  & {\em A} & On entry, the symmetric positive definite (or Hermitian) matrix A. If uplo = PlasmaUpper, the leading N-\/by-\/N upper triangular part of A contains the upper triangular part of the matrix A, and the strictly lower triangular part of A is not referenced. If UPLO = 'L', the leading N-\/by-\/N lower triangular part of A contains the lower triangular part of the matrix A, and the strictly upper triangular part of A is not referenced. On exit, if return value = 0, the factor U or L from the Cholesky factorization A = U$\ast$$\ast$H$\ast$U or A = L$\ast$L$\ast$$\ast$H.\\
+\hline
+\mbox{\tt in}  & {\em LDA} & The leading dimension of the array A. LDA $>$= max(1,N).\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em PLASMA\_\-SUCCESS} & successful exit \\
+\hline
+{\em $<$0} & if -\/i, the i-\/th argument had an illegal value \\
+\hline
+{\em $>$0} & if i, the leading minor of order i of A is not positive definite, so the factorization could not be completed, and the solution has not been computed.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{group__PLASMA__Complex64__t__Tile_gaf062088380cfda1a7dc01bf9596c91e3_gaf062088380cfda1a7dc01bf9596c91e3}{PLASMA\_\-zpotrf\_\-Tile} 
+
+\hyperlink{group__PLASMA__Complex64__t__Tile__Async_gaecab84c31c6e1658b18868b33478de53_gaecab84c31c6e1658b18868b33478de53}{PLASMA\_\-zpotrf\_\-Tile\_\-Async} 
+
+\hyperlink{group__PLASMA__Complex32__t_ga9a02052646386252f5b41c09c8d18684_ga9a02052646386252f5b41c09c8d18684}{PLASMA\_\-cpotrf} 
+
+\hyperlink{group__double_ga08c3851e861086761123a375b8472df2_ga08c3851e861086761123a375b8472df2}{PLASMA\_\-dpotrf} 
+
+\hyperlink{group__float_ga3ada27ebefe8e378bc6f9d25ab72d217_ga3ada27ebefe8e378bc6f9d25ab72d217}{PLASMA\_\-spotrf} 
+
+\hyperlink{group__PLASMA__Complex64__t_gafa3392d835a508f57674c601c46eb331_gafa3392d835a508f57674c601c46eb331}{PLASMA\_\-zpotrs} 
+\end{DoxySeeAlso}
+\hypertarget{group__PLASMA__Complex64__t_ga6dd563144dd8c7f29a58659f220f44a0_ga6dd563144dd8c7f29a58659f220f44a0}{
+\index{PLASMA\_\-Complex64\_\-t@{PLASMA\_\-Complex64\_\-t}!PLASMA\_\-zpotri@{PLASMA\_\-zpotri}}
+\index{PLASMA\_\-zpotri@{PLASMA\_\-zpotri}!PLASMA_Complex64_t@{PLASMA\_\-Complex64\_\-t}}
+\subsubsection[{PLASMA\_\-zpotri}]{\setlength{\rightskip}{0pt plus 5cm}int PLASMA\_\-zpotri (
+\begin{DoxyParamCaption}
+\item[{PLASMA\_\-enum}]{uplo, }
+\item[{int}]{N, }
+\item[{PLASMA\_\-Complex64\_\-t $\ast$}]{A, }
+\item[{int}]{LDA}
+\end{DoxyParamCaption}
+)}}
+\label{group__PLASMA__Complex64__t_ga6dd563144dd8c7f29a58659f220f44a0_ga6dd563144dd8c7f29a58659f220f44a0}
+PLASMA\_\-zpotri -\/ Computes the inverse of a complex Hermitian positive definite matrix A using the Cholesky factorization A = U$\ast$$\ast$H$\ast$U or A = L$\ast$L$\ast$$\ast$H computed by PLASMA\_\-zpotrf.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em uplo} & = PlasmaUpper: Upper triangle of A is stored; = PlasmaLower: Lower triangle of A is stored.\\
+\hline
+\mbox{\tt in}  & {\em N} & The order of the matrix A. N $>$= 0.\\
+\hline
+\mbox{\tt in,out}  & {\em A} & On entry, the triangular factor U or L from the Cholesky factorization A = U$\ast$$\ast$H$\ast$U or A = L$\ast$L$\ast$$\ast$H, as computed by PLASMA\_\-zpotrf. On exit, the upper or lower triangle of the (Hermitian) inverse of A, overwriting the input factor U or L.\\
+\hline
+\mbox{\tt in}  & {\em LDA} & The leading dimension of the array A. LDA $>$= max(1,N).\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em PLASMA\_\-SUCCESS} & successful exit \\
+\hline
+{\em $<$0} & if -\/i, the i-\/th argument had an illegal value \\
+\hline
+{\em $>$0} & if i, the (i,i) element of the factor U or L is zero, and the inverse could not be computed.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{group__PLASMA__Complex64__t__Tile_ga30d9bbba83e9e9098c6444553d20f47a_ga30d9bbba83e9e9098c6444553d20f47a}{PLASMA\_\-zpotri\_\-Tile} 
+
+\hyperlink{group__PLASMA__Complex64__t__Tile__Async_ga9c9b672c28f4f191528f07cd0d66774e_ga9c9b672c28f4f191528f07cd0d66774e}{PLASMA\_\-zpotri\_\-Tile\_\-Async} 
+
+\hyperlink{group__PLASMA__Complex32__t_ga2bbe242c5e06f243640fb6287b4a85ab_ga2bbe242c5e06f243640fb6287b4a85ab}{PLASMA\_\-cpotri} 
+
+\hyperlink{group__double_ga01b70786730b5e4c314b4584fe3697c5_ga01b70786730b5e4c314b4584fe3697c5}{PLASMA\_\-dpotri} 
+
+\hyperlink{group__float_gaf35cf8d73bf326a683f4be4943ef9b38_gaf35cf8d73bf326a683f4be4943ef9b38}{PLASMA\_\-spotri} 
+
+\hyperlink{group__PLASMA__Complex64__t_ga850a6c9da7c5632d160b28f211cdf2eb_ga850a6c9da7c5632d160b28f211cdf2eb}{PLASMA\_\-zpotrf} 
+\end{DoxySeeAlso}
+\hypertarget{group__PLASMA__Complex64__t_gafa3392d835a508f57674c601c46eb331_gafa3392d835a508f57674c601c46eb331}{
+\index{PLASMA\_\-Complex64\_\-t@{PLASMA\_\-Complex64\_\-t}!PLASMA\_\-zpotrs@{PLASMA\_\-zpotrs}}
+\index{PLASMA\_\-zpotrs@{PLASMA\_\-zpotrs}!PLASMA_Complex64_t@{PLASMA\_\-Complex64\_\-t}}
+\subsubsection[{PLASMA\_\-zpotrs}]{\setlength{\rightskip}{0pt plus 5cm}int PLASMA\_\-zpotrs (
+\begin{DoxyParamCaption}
+\item[{PLASMA\_\-enum}]{uplo, }
+\item[{int}]{N, }
+\item[{int}]{NRHS, }
+\item[{PLASMA\_\-Complex64\_\-t $\ast$}]{A, }
+\item[{int}]{LDA, }
+\item[{PLASMA\_\-Complex64\_\-t $\ast$}]{B, }
+\item[{int}]{LDB}
+\end{DoxyParamCaption}
+)}}
+\label{group__PLASMA__Complex64__t_gafa3392d835a508f57674c601c46eb331_gafa3392d835a508f57674c601c46eb331}
+PLASMA\_\-zpotrs -\/ Solves a system of linear equations A $\ast$ X = B with a symmetric positive definite (or Hermitian positive definite in the complex case) matrix A using the Cholesky factorization A = U$\ast$$\ast$H$\ast$U or A = L$\ast$L$\ast$$\ast$H computed by PLASMA\_\-zpotrf.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em uplo} & = PlasmaUpper: Upper triangle of A is stored; = PlasmaLower: Lower triangle of A is stored.\\
+\hline
+\mbox{\tt in}  & {\em N} & The order of the matrix A. N $>$= 0.\\
+\hline
+\mbox{\tt in}  & {\em NRHS} & The number of right hand sides, i.e., the number of columns of the matrix B. NRHS $>$= 0.\\
+\hline
+\mbox{\tt in}  & {\em A} & The triangular factor U or L from the Cholesky factorization A = U$\ast$$\ast$H$\ast$U or A = L$\ast$L$\ast$$\ast$H, computed by PLASMA\_\-zpotrf.\\
+\hline
+\mbox{\tt in}  & {\em LDA} & The leading dimension of the array A. LDA $>$= max(1,N).\\
+\hline
+\mbox{\tt in,out}  & {\em B} & On entry, the N-\/by-\/NRHS right hand side matrix B. On exit, if return value = 0, the N-\/by-\/NRHS solution matrix X.\\
+\hline
+\mbox{\tt in}  & {\em LDB} & The leading dimension of the array B. LDB $>$= max(1,N).\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em PLASMA\_\-SUCCESS} & successful exit \\
+\hline
+{\em $<$0} & if -\/i, the i-\/th argument had an illegal value\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{group__PLASMA__Complex64__t__Tile_gad13147593a1970092f560e8cb54925b8_gad13147593a1970092f560e8cb54925b8}{PLASMA\_\-zpotrs\_\-Tile} 
+
+\hyperlink{group__PLASMA__Complex64__t__Tile__Async_ga493aec60380a3935c89f40c976fbb705_ga493aec60380a3935c89f40c976fbb705}{PLASMA\_\-zpotrs\_\-Tile\_\-Async} 
+
+\hyperlink{group__PLASMA__Complex32__t_gaf429b7116507625912226d3c91bdfecc_gaf429b7116507625912226d3c91bdfecc}{PLASMA\_\-cpotrs} 
+
+\hyperlink{group__double_ga2d3c0509f11f1e9a9cf06b95109e62f5_ga2d3c0509f11f1e9a9cf06b95109e62f5}{PLASMA\_\-dpotrs} 
+
+\hyperlink{group__float_gab813bd6d81c21feae7ce6553c9ba255a_gab813bd6d81c21feae7ce6553c9ba255a}{PLASMA\_\-spotrs} 
+
+\hyperlink{group__PLASMA__Complex64__t_ga850a6c9da7c5632d160b28f211cdf2eb_ga850a6c9da7c5632d160b28f211cdf2eb}{PLASMA\_\-zpotrf} 
+\end{DoxySeeAlso}
+\hypertarget{group__PLASMA__Complex64__t_ga78d0974b51b7d019e0606422b3292b46_ga78d0974b51b7d019e0606422b3292b46}{
+\index{PLASMA\_\-Complex64\_\-t@{PLASMA\_\-Complex64\_\-t}!PLASMA\_\-zsymm@{PLASMA\_\-zsymm}}
+\index{PLASMA\_\-zsymm@{PLASMA\_\-zsymm}!PLASMA_Complex64_t@{PLASMA\_\-Complex64\_\-t}}
+\subsubsection[{PLASMA\_\-zsymm}]{\setlength{\rightskip}{0pt plus 5cm}int PLASMA\_\-zsymm (
+\begin{DoxyParamCaption}
+\item[{PLASMA\_\-enum}]{side, }
+\item[{PLASMA\_\-enum}]{uplo, }
+\item[{int}]{M, }
+\item[{int}]{N, }
+\item[{PLASMA\_\-Complex64\_\-t}]{alpha, }
+\item[{PLASMA\_\-Complex64\_\-t $\ast$}]{A, }
+\item[{int}]{LDA, }
+\item[{PLASMA\_\-Complex64\_\-t $\ast$}]{B, }
+\item[{int}]{LDB, }
+\item[{PLASMA\_\-Complex64\_\-t}]{beta, }
+\item[{PLASMA\_\-Complex64\_\-t $\ast$}]{C, }
+\item[{int}]{LDC}
+\end{DoxyParamCaption}
+)}}
+\label{group__PLASMA__Complex64__t_ga78d0974b51b7d019e0606422b3292b46_ga78d0974b51b7d019e0606422b3292b46}
+PLASMA\_\-zsymm -\/ Performs one of the matrix-\/matrix operations
+
+\[ C = \alpha \times A \times B + \beta \times C \]
+
+or
+
+\[ C = \alpha \times B \times A + \beta \times C \]
+
+where alpha and beta are scalars, A is an symmetric matrix and B and C are m by n matrices.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em side} & Specifies whether the symmetric matrix A appears on the left or right in the operation as follows: = PlasmaLeft: \[ C = \alpha \times A \times B + \beta \times C \] = PlasmaRight: \[ C = \alpha \times B \times A + \beta \times C \]\\
+\hline
+\mbox{\tt in}  & {\em uplo} & Specifies whether the upper or lower triangular part of the symmetric matrix A is to be referenced as follows: = PlasmaLower: Only the lower triangular part of the symmetric matrix A is to be referenced. = PlasmaUpper: Only the upper triangular part of the symmetric matrix A is to be referenced.\\
+\hline
+\mbox{\tt in}  & {\em M} & Specifies the number of rows of the matrix C. M $>$= 0.\\
+\hline
+\mbox{\tt in}  & {\em N} & Specifies the number of columns of the matrix C. N $>$= 0.\\
+\hline
+\mbox{\tt in}  & {\em alpha} & Specifies the scalar alpha.\\
+\hline
+\mbox{\tt in}  & {\em A} & A is a LDA-\/by-\/ka matrix, where ka is M when side = PlasmaLeft, and is N otherwise. Only the uplo triangular part is referenced.\\
+\hline
+\mbox{\tt in}  & {\em LDA} & The leading dimension of the array A. LDA $>$= max(1,ka).\\
+\hline
+\mbox{\tt in}  & {\em B} & B is a LDB-\/by-\/N matrix, where the leading M-\/by-\/N part of the array B must contain the matrix B.\\
+\hline
+\mbox{\tt in}  & {\em LDB} & The leading dimension of the array B. LDB $>$= max(1,M).\\
+\hline
+\mbox{\tt in}  & {\em beta} & Specifies the scalar beta.\\
+\hline
+\mbox{\tt in,out}  & {\em C} & C is a LDC-\/by-\/N matrix. On exit, the array is overwritten by the M by N updated matrix.\\
+\hline
+\mbox{\tt in}  & {\em LDC} & The leading dimension of the array C. LDC $>$= max(1,M).\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em PLASMA\_\-SUCCESS} & successful exit\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{group__PLASMA__Complex64__t__Tile_ga87921acde0e9798ffdb9f011b083385b_ga87921acde0e9798ffdb9f011b083385b}{PLASMA\_\-zsymm\_\-Tile} 
+
+\hyperlink{group__PLASMA__Complex32__t_gac62cd0bd5b290a074c3af371972266a4_gac62cd0bd5b290a074c3af371972266a4}{PLASMA\_\-csymm} 
+
+\hyperlink{group__double_ga1ab6ee29131efe4804f5ff940eeb699a_ga1ab6ee29131efe4804f5ff940eeb699a}{PLASMA\_\-dsymm} 
+
+\hyperlink{group__float_gaaffcd386f207f3e3a3073a803e27e3f1_gaaffcd386f207f3e3a3073a803e27e3f1}{PLASMA\_\-ssymm} 
+\end{DoxySeeAlso}
+\hypertarget{group__PLASMA__Complex64__t_ga575230c6f1629fabf7ba151a09e4c7a7_ga575230c6f1629fabf7ba151a09e4c7a7}{
+\index{PLASMA\_\-Complex64\_\-t@{PLASMA\_\-Complex64\_\-t}!PLASMA\_\-zsyr2k@{PLASMA\_\-zsyr2k}}
+\index{PLASMA\_\-zsyr2k@{PLASMA\_\-zsyr2k}!PLASMA_Complex64_t@{PLASMA\_\-Complex64\_\-t}}
+\subsubsection[{PLASMA\_\-zsyr2k}]{\setlength{\rightskip}{0pt plus 5cm}int PLASMA\_\-zsyr2k (
+\begin{DoxyParamCaption}
+\item[{PLASMA\_\-enum}]{uplo, }
+\item[{PLASMA\_\-enum}]{trans, }
+\item[{int}]{N, }
+\item[{int}]{K, }
+\item[{PLASMA\_\-Complex64\_\-t}]{alpha, }
+\item[{PLASMA\_\-Complex64\_\-t $\ast$}]{A, }
+\item[{int}]{LDA, }
+\item[{PLASMA\_\-Complex64\_\-t $\ast$}]{B, }
+\item[{int}]{LDB, }
+\item[{PLASMA\_\-Complex64\_\-t}]{beta, }
+\item[{PLASMA\_\-Complex64\_\-t $\ast$}]{C, }
+\item[{int}]{LDC}
+\end{DoxyParamCaption}
+)}}
+\label{group__PLASMA__Complex64__t_ga575230c6f1629fabf7ba151a09e4c7a7_ga575230c6f1629fabf7ba151a09e4c7a7}
+PLASMA\_\-zsyr2k -\/ Performs one of the symmetric rank 2k operations
+
+\[ C = \alpha [ op( A ) \times conjg( op( B )' )] + \alpha [ op( B ) \times conjg( op( A )' )] + \beta C \], or \[ C = \alpha [ conjg( op( A )' ) \times op( B ) ] + \alpha [ conjg( op( B )' ) \times op( A ) ] + \beta C \],
+
+where op( X ) is one of
+
+op( X ) = X or op( X ) = conjg( X' )
+
+where alpha and beta are real scalars, C is an n-\/by-\/n symmetric matrix and A and B are an n-\/by-\/k matrices the first case and k-\/by-\/n matrices in the second case.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em uplo} & = PlasmaUpper: Upper triangle of C is stored; = PlasmaLower: Lower triangle of C is stored.\\
+\hline
+\mbox{\tt in}  & {\em trans} & Specifies whether the matrix A is transposed or conjugate transposed: = PlasmaNoTrans: \[ C = \alpha [ op( A ) \times conjg( op( B )' )] + \alpha [ op( B ) \times conjg( op( A )' )] + \beta C \] = PlasmaTrans: \[ C = \alpha [ conjg( op( A )' ) \times op( B ) ] + \alpha [ conjg( op( B )' ) \times op( A ) ] + \beta C \]\\
+\hline
+\mbox{\tt in}  & {\em N} & N specifies the order of the matrix C. N must be at least zero.\\
+\hline
+\mbox{\tt in}  & {\em K} & K specifies the number of columns of the A and B matrices with trans = PlasmaNoTrans. K specifies the number of rows of the A and B matrices with trans = PlasmaTrans.\\
+\hline
+\mbox{\tt in}  & {\em alpha} & alpha specifies the scalar alpha.\\
+\hline
+\mbox{\tt in}  & {\em A} & A is a LDA-\/by-\/ka matrix, where ka is K when trans = PlasmaNoTrans, and is N otherwise.\\
+\hline
+\mbox{\tt in}  & {\em LDA} & The leading dimension of the array A. LDA must be at least max( 1, N ), otherwise LDA must be at least max( 1, K ).\\
+\hline
+\mbox{\tt in}  & {\em B} & B is a LDB-\/by-\/kb matrix, where kb is K when trans = PlasmaNoTrans, and is N otherwise.\\
+\hline
+\mbox{\tt in}  & {\em LDB} & The leading dimension of the array B. LDB must be at least max( 1, N ), otherwise LDB must be at least max( 1, K ).\\
+\hline
+\mbox{\tt in}  & {\em beta} & beta specifies the scalar beta.\\
+\hline
+\mbox{\tt in,out}  & {\em C} & C is a LDC-\/by-\/N matrix. On exit, the array uplo part of the matrix is overwritten by the uplo part of the updated matrix.\\
+\hline
+\mbox{\tt in}  & {\em LDC} & The leading dimension of the array C. LDC $>$= max( 1, N ).\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em PLASMA\_\-SUCCESS} & successful exit\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{group__PLASMA__Complex64__t__Tile_ga84266642d3b1d97fafcfc81d695cc3d5_ga84266642d3b1d97fafcfc81d695cc3d5}{PLASMA\_\-zsyr2k\_\-Tile} 
+
+\hyperlink{group__PLASMA__Complex32__t_ga5a48c1ff1b73920651249deb75b9d0b7_ga5a48c1ff1b73920651249deb75b9d0b7}{PLASMA\_\-csyr2k} 
+
+\hyperlink{group__double_gaf9fa0e62110092a132cd17d8f48561f0_gaf9fa0e62110092a132cd17d8f48561f0}{PLASMA\_\-dsyr2k} 
+
+\hyperlink{group__float_gafac964a38a7c62696c3b95d35108ad9b_gafac964a38a7c62696c3b95d35108ad9b}{PLASMA\_\-ssyr2k} 
+\end{DoxySeeAlso}
+\hypertarget{group__PLASMA__Complex64__t_gaae2f934da463e7256c82500587c3042b_gaae2f934da463e7256c82500587c3042b}{
+\index{PLASMA\_\-Complex64\_\-t@{PLASMA\_\-Complex64\_\-t}!PLASMA\_\-zsyrk@{PLASMA\_\-zsyrk}}
+\index{PLASMA\_\-zsyrk@{PLASMA\_\-zsyrk}!PLASMA_Complex64_t@{PLASMA\_\-Complex64\_\-t}}
+\subsubsection[{PLASMA\_\-zsyrk}]{\setlength{\rightskip}{0pt plus 5cm}int PLASMA\_\-zsyrk (
+\begin{DoxyParamCaption}
+\item[{PLASMA\_\-enum}]{uplo, }
+\item[{PLASMA\_\-enum}]{trans, }
+\item[{int}]{N, }
+\item[{int}]{K, }
+\item[{PLASMA\_\-Complex64\_\-t}]{alpha, }
+\item[{PLASMA\_\-Complex64\_\-t $\ast$}]{A, }
+\item[{int}]{LDA, }
+\item[{PLASMA\_\-Complex64\_\-t}]{beta, }
+\item[{PLASMA\_\-Complex64\_\-t $\ast$}]{C, }
+\item[{int}]{LDC}
+\end{DoxyParamCaption}
+)}}
+\label{group__PLASMA__Complex64__t_gaae2f934da463e7256c82500587c3042b_gaae2f934da463e7256c82500587c3042b}
+PLASMA\_\-zsyrk -\/ Performs one of the hermitian rank k operations
+
+\[ C = \alpha [ op( A ) \times conjg( op( A )' )] + \beta C \],
+
+where op( X ) is one of
+
+op( X ) = X or op( X ) = conjg( X' )
+
+where alpha and beta are real scalars, C is an n-\/by-\/n hermitian matrix and A is an n-\/by-\/k matrix in the first case and a k-\/by-\/n matrix in the second case.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em uplo} & = PlasmaUpper: Upper triangle of C is stored; = PlasmaLower: Lower triangle of C is stored.\\
+\hline
+\mbox{\tt in}  & {\em trans} & Specifies whether the matrix A is transposed or conjugate transposed: = PlasmaNoTrans: A is not transposed; = PlasmaTrans : A is transposed.\\
+\hline
+\mbox{\tt in}  & {\em N} & N specifies the order of the matrix C. N must be at least zero.\\
+\hline
+\mbox{\tt in}  & {\em K} & K specifies the number of columns of the matrix op( A ).\\
+\hline
+\mbox{\tt in}  & {\em alpha} & alpha specifies the scalar alpha.\\
+\hline
+\mbox{\tt in}  & {\em A} & A is a LDA-\/by-\/ka matrix, where ka is K when trans = PlasmaNoTrans, and is N otherwise.\\
+\hline
+\mbox{\tt in}  & {\em LDA} & The leading dimension of the array A. LDA must be at least max( 1, N ), otherwise LDA must be at least max( 1, K ).\\
+\hline
+\mbox{\tt in}  & {\em beta} & beta specifies the scalar beta\\
+\hline
+\mbox{\tt in,out}  & {\em C} & C is a LDC-\/by-\/N matrix. On exit, the array uplo part of the matrix is overwritten by the uplo part of the updated matrix.\\
+\hline
+\mbox{\tt in}  & {\em LDC} & The leading dimension of the array C. LDC $>$= max( 1, N ).\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em PLASMA\_\-SUCCESS} & successful exit\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{group__PLASMA__Complex64__t__Tile_ga562df1ff0cbc44d96feff13cb26cd8ec_ga562df1ff0cbc44d96feff13cb26cd8ec}{PLASMA\_\-zsyrk\_\-Tile} 
+
+\hyperlink{group__PLASMA__Complex32__t_gad7bae1673afbf5b73da18c20f376cb89_gad7bae1673afbf5b73da18c20f376cb89}{PLASMA\_\-csyrk} 
+
+\hyperlink{group__double_gacfdac462cfb1b2d6696e353bec9fd079_gacfdac462cfb1b2d6696e353bec9fd079}{PLASMA\_\-dsyrk} 
+
+\hyperlink{group__float_gae83f0347570d23dc62dd8b298eb14ad6_gae83f0347570d23dc62dd8b298eb14ad6}{PLASMA\_\-ssyrk} 
+\end{DoxySeeAlso}
+\hypertarget{group__PLASMA__Complex64__t_ga8df0b9fdc5537a648d7544b528c9e6e3_ga8df0b9fdc5537a648d7544b528c9e6e3}{
+\index{PLASMA\_\-Complex64\_\-t@{PLASMA\_\-Complex64\_\-t}!PLASMA\_\-zTile\_\-to\_\-Lapack@{PLASMA\_\-zTile\_\-to\_\-Lapack}}
+\index{PLASMA\_\-zTile\_\-to\_\-Lapack@{PLASMA\_\-zTile\_\-to\_\-Lapack}!PLASMA_Complex64_t@{PLASMA\_\-Complex64\_\-t}}
+\subsubsection[{PLASMA\_\-zTile\_\-to\_\-Lapack}]{\setlength{\rightskip}{0pt plus 5cm}int PLASMA\_\-zTile\_\-to\_\-Lapack (
+\begin{DoxyParamCaption}
+\item[{{\bf PLASMA\_\-desc} $\ast$}]{A, }
+\item[{PLASMA\_\-Complex64\_\-t $\ast$}]{Af77, }
+\item[{int}]{LDA}
+\end{DoxyParamCaption}
+)}}
+\label{group__PLASMA__Complex64__t_ga8df0b9fdc5537a648d7544b528c9e6e3_ga8df0b9fdc5537a648d7544b528c9e6e3}
+PLASMA\_\-Tile\_\-to\_\-Lapack -\/ Conversion from tile layout to LAPACK layout.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em A} & Descriptor of the PLASMA matrix in tile layout.\\
+\hline
+\mbox{\tt in,out}  & {\em Af77} & LAPACK matrix. If PLASMA\_\-TRANSLATION\_\-MODE is set to PLASMA\_\-INPLACE, Af77 has to be A-\/$>$mat, else if PLASMA\_\-TRANSLATION\_\-MODE is set to PLASMA\_\-OUTOFPLACE, Af77 has to be allocated before.\\
+\hline
+\mbox{\tt in}  & {\em LDA} & The leading dimension of the matrix Af77.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em PLASMA\_\-SUCCESS} & successful exit\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{group__PLASMA__Complex64__t__Tile__Async_ga27044f3ec4b95defcb842009096ff2a3_ga27044f3ec4b95defcb842009096ff2a3}{PLASMA\_\-zTile\_\-to\_\-Lapack\_\-Async} 
+
+\hyperlink{group__PLASMA__Complex64__t_ga54817e0733e678bcdfdfeaa76ab486f6_ga54817e0733e678bcdfdfeaa76ab486f6}{PLASMA\_\-zLapack\_\-to\_\-Tile} 
+
+\hyperlink{group__PLASMA__Complex32__t_ga7dce142b920d792a0443efcc922c71fc_ga7dce142b920d792a0443efcc922c71fc}{PLASMA\_\-cTile\_\-to\_\-Lapack} 
+
+\hyperlink{group__double_ga1a9152c4ac00de6cafe8a5a4ad6718df_ga1a9152c4ac00de6cafe8a5a4ad6718df}{PLASMA\_\-dTile\_\-to\_\-Lapack} 
+
+\hyperlink{group__float_gacfc6859eb0da6e5c246a70178b5567be_gacfc6859eb0da6e5c246a70178b5567be}{PLASMA\_\-sTile\_\-to\_\-Lapack} 
+\end{DoxySeeAlso}
+\hypertarget{group__PLASMA__Complex64__t_ga9d25baa9dfdb84cd69270558338ce9b1_ga9d25baa9dfdb84cd69270558338ce9b1}{
+\index{PLASMA\_\-Complex64\_\-t@{PLASMA\_\-Complex64\_\-t}!PLASMA\_\-ztrmm@{PLASMA\_\-ztrmm}}
+\index{PLASMA\_\-ztrmm@{PLASMA\_\-ztrmm}!PLASMA_Complex64_t@{PLASMA\_\-Complex64\_\-t}}
+\subsubsection[{PLASMA\_\-ztrmm}]{\setlength{\rightskip}{0pt plus 5cm}int PLASMA\_\-ztrmm (
+\begin{DoxyParamCaption}
+\item[{PLASMA\_\-enum}]{side, }
+\item[{PLASMA\_\-enum}]{uplo, }
+\item[{PLASMA\_\-enum}]{transA, }
+\item[{PLASMA\_\-enum}]{diag, }
+\item[{int}]{N, }
+\item[{int}]{NRHS, }
+\item[{PLASMA\_\-Complex64\_\-t}]{alpha, }
+\item[{PLASMA\_\-Complex64\_\-t $\ast$}]{A, }
+\item[{int}]{LDA, }
+\item[{PLASMA\_\-Complex64\_\-t $\ast$}]{B, }
+\item[{int}]{LDB}
+\end{DoxyParamCaption}
+)}}
+\label{group__PLASMA__Complex64__t_ga9d25baa9dfdb84cd69270558338ce9b1_ga9d25baa9dfdb84cd69270558338ce9b1}
+PLASMA\_\-ztrmm -\/ Computes B = alpha$\ast$op( A )$\ast$B or B = alpha$\ast$B$\ast$op( A ).
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em side} & Specifies whether A appears on the left or on the right of X: = PlasmaLeft: A$\ast$X = B = PlasmaRight: X$\ast$A = B\\
+\hline
+\mbox{\tt in}  & {\em uplo} & Specifies whether the matrix A is upper triangular or lower triangular: = PlasmaUpper: Upper triangle of A is stored; = PlasmaLower: Lower triangle of A is stored.\\
+\hline
+\mbox{\tt in}  & {\em transA} & Specifies whether the matrix A is transposed, not transposed or conjugate transposed: = PlasmaNoTrans: A is transposed; = PlasmaTrans: A is not transposed; = PlasmaConjTrans: A is conjugate transposed.\\
+\hline
+\mbox{\tt in}  & {\em diag} & Specifies whether or not A is unit triangular: = PlasmaNonUnit: A is non unit; = PlasmaUnit: A us unit.\\
+\hline
+\mbox{\tt in}  & {\em N} & The order of the matrix A. N $>$= 0.\\
+\hline
+\mbox{\tt in}  & {\em NRHS} & The number of right hand sides, i.e., the number of columns of the matrix B. NRHS $>$= 0.\\
+\hline
+\mbox{\tt in}  & {\em alpha} & alpha specifies the scalar alpha.\\
+\hline
+\mbox{\tt in}  & {\em A} & The triangular matrix A. If uplo = PlasmaUpper, the leading N-\/by-\/N upper triangular part of the array A contains the upper triangular matrix, and the strictly lower triangular part of A is not referenced. If uplo = PlasmaLower, the leading N-\/by-\/N lower triangular part of the array A contains the lower triangular matrix, and the strictly upper triangular part of A is not referenced. If diag = PlasmaUnit, the diagonal elements of A are also not referenced and are assumed to be 1.\\
+\hline
+\mbox{\tt in}  & {\em LDA} & The leading dimension of the array A. LDA $>$= max(1,N).\\
+\hline
+\mbox{\tt in,out}  & {\em B} & On entry, the N-\/by-\/NRHS right hand side matrix B. On exit, if return value = 0, the N-\/by-\/NRHS solution matrix X.\\
+\hline
+\mbox{\tt in}  & {\em LDB} & The leading dimension of the array B. LDB $>$= max(1,N).\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em PLASMA\_\-SUCCESS} & successful exit \\
+\hline
+{\em $<$0} & if -\/i, the i-\/th argument had an illegal value\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{group__PLASMA__Complex64__t__Tile_ga4ecbc28dd8c924fff262c73b5662eba7_ga4ecbc28dd8c924fff262c73b5662eba7}{PLASMA\_\-ztrmm\_\-Tile} 
+
+\hyperlink{group__PLASMA__Complex64__t__Tile__Async_ga6fe9ba44646a8e7bc93a7a2cd20bf862_ga6fe9ba44646a8e7bc93a7a2cd20bf862}{PLASMA\_\-ztrmm\_\-Tile\_\-Async} 
+
+\hyperlink{group__PLASMA__Complex32__t_ga17234cfdde42bd11866b3435a9a8295a_ga17234cfdde42bd11866b3435a9a8295a}{PLASMA\_\-ctrmm} 
+
+\hyperlink{group__double_ga16876a8b4e9148ba2c8f4d37dca9eef4_ga16876a8b4e9148ba2c8f4d37dca9eef4}{PLASMA\_\-dtrmm} 
+
+\hyperlink{group__float_gabbc2cf7c018815bd2c1ce8a6623b2813_gabbc2cf7c018815bd2c1ce8a6623b2813}{PLASMA\_\-strmm} 
+\end{DoxySeeAlso}
+\hypertarget{group__PLASMA__Complex64__t_ga36cf60d55716c7ab0c2fba7fb8833e2c_ga36cf60d55716c7ab0c2fba7fb8833e2c}{
+\index{PLASMA\_\-Complex64\_\-t@{PLASMA\_\-Complex64\_\-t}!PLASMA\_\-ztrsm@{PLASMA\_\-ztrsm}}
+\index{PLASMA\_\-ztrsm@{PLASMA\_\-ztrsm}!PLASMA_Complex64_t@{PLASMA\_\-Complex64\_\-t}}
+\subsubsection[{PLASMA\_\-ztrsm}]{\setlength{\rightskip}{0pt plus 5cm}int PLASMA\_\-ztrsm (
+\begin{DoxyParamCaption}
+\item[{PLASMA\_\-enum}]{side, }
+\item[{PLASMA\_\-enum}]{uplo, }
+\item[{PLASMA\_\-enum}]{transA, }
+\item[{PLASMA\_\-enum}]{diag, }
+\item[{int}]{N, }
+\item[{int}]{NRHS, }
+\item[{PLASMA\_\-Complex64\_\-t}]{alpha, }
+\item[{PLASMA\_\-Complex64\_\-t $\ast$}]{A, }
+\item[{int}]{LDA, }
+\item[{PLASMA\_\-Complex64\_\-t $\ast$}]{B, }
+\item[{int}]{LDB}
+\end{DoxyParamCaption}
+)}}
+\label{group__PLASMA__Complex64__t_ga36cf60d55716c7ab0c2fba7fb8833e2c_ga36cf60d55716c7ab0c2fba7fb8833e2c}
+PLASMA\_\-ztrsm -\/ Computes triangular solve A$\ast$X = B or X$\ast$A = B.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em side} & Specifies whether A appears on the left or on the right of X: = PlasmaLeft: A$\ast$X = B = PlasmaRight: X$\ast$A = B\\
+\hline
+\mbox{\tt in}  & {\em uplo} & Specifies whether the matrix A is upper triangular or lower triangular: = PlasmaUpper: Upper triangle of A is stored; = PlasmaLower: Lower triangle of A is stored.\\
+\hline
+\mbox{\tt in}  & {\em transA} & Specifies whether the matrix A is transposed, not transposed or conjugate transposed: = PlasmaNoTrans: A is transposed; = PlasmaTrans: A is not transposed; = PlasmaConjTrans: A is conjugate transposed.\\
+\hline
+\mbox{\tt in}  & {\em diag} & Specifies whether or not A is unit triangular: = PlasmaNonUnit: A is non unit; = PlasmaUnit: A us unit.\\
+\hline
+\mbox{\tt in}  & {\em N} & The order of the matrix A. N $>$= 0.\\
+\hline
+\mbox{\tt in}  & {\em NRHS} & The number of right hand sides, i.e., the number of columns of the matrix B. NRHS $>$= 0.\\
+\hline
+\mbox{\tt in}  & {\em alpha} & alpha specifies the scalar alpha.\\
+\hline
+\mbox{\tt in}  & {\em A} & The triangular matrix A. If uplo = PlasmaUpper, the leading N-\/by-\/N upper triangular part of the array A contains the upper triangular matrix, and the strictly lower triangular part of A is not referenced. If uplo = PlasmaLower, the leading N-\/by-\/N lower triangular part of the array A contains the lower triangular matrix, and the strictly upper triangular part of A is not referenced. If diag = PlasmaUnit, the diagonal elements of A are also not referenced and are assumed to be 1.\\
+\hline
+\mbox{\tt in}  & {\em LDA} & The leading dimension of the array A. LDA $>$= max(1,N).\\
+\hline
+\mbox{\tt in,out}  & {\em B} & On entry, the N-\/by-\/NRHS right hand side matrix B. On exit, if return value = 0, the N-\/by-\/NRHS solution matrix X.\\
+\hline
+\mbox{\tt in}  & {\em LDB} & The leading dimension of the array B. LDB $>$= max(1,N).\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em PLASMA\_\-SUCCESS} & successful exit \\
+\hline
+{\em $<$0} & if -\/i, the i-\/th argument had an illegal value\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{group__PLASMA__Complex64__t__Tile_gaa30141c5d48339be52806a6d01a6de1d_gaa30141c5d48339be52806a6d01a6de1d}{PLASMA\_\-ztrsm\_\-Tile} 
+
+\hyperlink{group__PLASMA__Complex64__t__Tile__Async_gaaa1f664d00ac743bd6f9dd0c116e72a5_gaaa1f664d00ac743bd6f9dd0c116e72a5}{PLASMA\_\-ztrsm\_\-Tile\_\-Async} 
+
+\hyperlink{group__PLASMA__Complex32__t_ga59907687253f7978f60e1d56d6fe941c_ga59907687253f7978f60e1d56d6fe941c}{PLASMA\_\-ctrsm} 
+
+\hyperlink{group__double_ga7dab3739b47f3f77f68cb6166638f507_ga7dab3739b47f3f77f68cb6166638f507}{PLASMA\_\-dtrsm} 
+
+\hyperlink{group__float_ga572e80d04d4e9701bf3dd73d1f96d54c_ga572e80d04d4e9701bf3dd73d1f96d54c}{PLASMA\_\-strsm} 
+\end{DoxySeeAlso}
+\hypertarget{group__PLASMA__Complex64__t_gab63ff4bc17759efb017c4a34556e5818_gab63ff4bc17759efb017c4a34556e5818}{
+\index{PLASMA\_\-Complex64\_\-t@{PLASMA\_\-Complex64\_\-t}!PLASMA\_\-ztrsmpl@{PLASMA\_\-ztrsmpl}}
+\index{PLASMA\_\-ztrsmpl@{PLASMA\_\-ztrsmpl}!PLASMA_Complex64_t@{PLASMA\_\-Complex64\_\-t}}
+\subsubsection[{PLASMA\_\-ztrsmpl}]{\setlength{\rightskip}{0pt plus 5cm}int PLASMA\_\-ztrsmpl (
+\begin{DoxyParamCaption}
+\item[{int}]{N, }
+\item[{int}]{NRHS, }
+\item[{PLASMA\_\-Complex64\_\-t $\ast$}]{A, }
+\item[{int}]{LDA, }
+\item[{PLASMA\_\-Complex64\_\-t $\ast$}]{L, }
+\item[{int $\ast$}]{IPIV, }
+\item[{PLASMA\_\-Complex64\_\-t $\ast$}]{B, }
+\item[{int}]{LDB}
+\end{DoxyParamCaption}
+)}}
+\label{group__PLASMA__Complex64__t_gab63ff4bc17759efb017c4a34556e5818_gab63ff4bc17759efb017c4a34556e5818}
+PLASMA\_\-ztrsmpl -\/ Performs the forward substitution step of solving a system of linear equations after the tile LU factorization of the matrix.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em N} & The order of the matrix A. N $>$= 0.\\
+\hline
+\mbox{\tt in}  & {\em NRHS} & The number of right hand sides, i.e., the number of columns of the matrix B. NRHS $>$= 0.\\
+\hline
+\mbox{\tt in}  & {\em A} & The tile factor L from the factorization, computed by PLASMA\_\-zgetrf\_\-incpiv.\\
+\hline
+\mbox{\tt in}  & {\em LDA} & The leading dimension of the array A. LDA $>$= max(1,N).\\
+\hline
+\mbox{\tt in}  & {\em L} & Auxiliary factorization data, related to the tile L factor, computed by PLASMA\_\-zgetrf\_\-incpiv.\\
+\hline
+\mbox{\tt in}  & {\em IPIV} & The pivot indices from PLASMA\_\-zgetrf\_\-incpiv (not equivalent to LAPACK).\\
+\hline
+\mbox{\tt in,out}  & {\em B} & On entry, the N-\/by-\/NRHS right hand side matrix B. On exit, if return value = 0, the N-\/by-\/NRHS solution matrix X.\\
+\hline
+\mbox{\tt in}  & {\em LDB} & The leading dimension of the array B. LDB $>$= max(1,N).\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em PLASMA\_\-SUCCESS} & successful exit \\
+\hline
+{\em $<$0} & if -\/i, the i-\/th argument had an illegal value\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{group__PLASMA__Complex64__t__Tile_ga4d6411e08ef6faaf5b407ae7e9b46378_ga4d6411e08ef6faaf5b407ae7e9b46378}{PLASMA\_\-ztrsmpl\_\-Tile} 
+
+\hyperlink{group__PLASMA__Complex64__t__Tile__Async_ga53d217149357f44e30add1d419e30475_ga53d217149357f44e30add1d419e30475}{PLASMA\_\-ztrsmpl\_\-Tile\_\-Async} 
+
+\hyperlink{group__PLASMA__Complex32__t_ga09078a3a91c79af80bc87d2b933dd396_ga09078a3a91c79af80bc87d2b933dd396}{PLASMA\_\-ctrsmpl} 
+
+\hyperlink{group__double_gaca4fbd32be668181a7f4a18d3b933bed_gaca4fbd32be668181a7f4a18d3b933bed}{PLASMA\_\-dtrsmpl} 
+
+\hyperlink{group__float_gad96dc913d30c9db06f05d9518a64b809_gad96dc913d30c9db06f05d9518a64b809}{PLASMA\_\-strsmpl} 
+
+\hyperlink{group__PLASMA__Complex64__t_ga4853b0850dddb5702b2b48f0049d933d_ga4853b0850dddb5702b2b48f0049d933d}{PLASMA\_\-zgetrf\_\-incpiv} 
+\end{DoxySeeAlso}
+\hypertarget{group__PLASMA__Complex64__t_gaf634d0dec7f2b59a571b5aafa19892d1_gaf634d0dec7f2b59a571b5aafa19892d1}{
+\index{PLASMA\_\-Complex64\_\-t@{PLASMA\_\-Complex64\_\-t}!PLASMA\_\-ztrtri@{PLASMA\_\-ztrtri}}
+\index{PLASMA\_\-ztrtri@{PLASMA\_\-ztrtri}!PLASMA_Complex64_t@{PLASMA\_\-Complex64\_\-t}}
+\subsubsection[{PLASMA\_\-ztrtri}]{\setlength{\rightskip}{0pt plus 5cm}int PLASMA\_\-ztrtri (
+\begin{DoxyParamCaption}
+\item[{PLASMA\_\-enum}]{uplo, }
+\item[{PLASMA\_\-enum}]{diag, }
+\item[{int}]{N, }
+\item[{PLASMA\_\-Complex64\_\-t $\ast$}]{A, }
+\item[{int}]{LDA}
+\end{DoxyParamCaption}
+)}}
+\label{group__PLASMA__Complex64__t_gaf634d0dec7f2b59a571b5aafa19892d1_gaf634d0dec7f2b59a571b5aafa19892d1}
+PLASMA\_\-ztrtri -\/ Computes the inverse of a complex upper or lower triangular matrix A.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em uplo} & = PlasmaUpper: Upper triangle of A is stored; = PlasmaLower: Lower triangle of A is stored.\\
+\hline
+\mbox{\tt in}  & {\em diag} & = PlasmaNonUnit: A is non-\/unit triangular; = PlasmaUnit: A is unit triangular.\\
+\hline
+\mbox{\tt in}  & {\em N} & The order of the matrix A. N $>$= 0.\\
+\hline
+\mbox{\tt in,out}  & {\em A} & On entry, the triangular matrix A. If UPLO = 'U', the leading N-\/by-\/N upper triangular part of the array A contains the upper triangular matrix, and the strictly lower triangular part of A is not referenced. If UPLO = 'L', the leading N-\/by-\/N lower triangular part of the array A contains the lower triangular matrix, and the strictly upper triangular part of A is not referenced. If DIAG = 'U', the diagonal elements of A are also not referenced and are assumed to be 1. On exit, the (triangular) inverse of the original matrix, in the same storage format.\\
+\hline
+\mbox{\tt in}  & {\em LDA} & The leading dimension of the array A. LDA $>$= max(1,N).\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em PLASMA\_\-SUCCESS} & successful exit \\
+\hline
+{\em $<$0} & if -\/i, the i-\/th argument had an illegal value \\
+\hline
+{\em $>$0} & if i, A(i,i) is exactly zero. The triangular matrix is singular and its inverse can not be computed.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{group__PLASMA__Complex64__t__Tile_ga3f573d99647fde05cf8db6dca201a564_ga3f573d99647fde05cf8db6dca201a564}{PLASMA\_\-ztrtri\_\-Tile} 
+
+\hyperlink{group__PLASMA__Complex64__t__Tile__Async_gadfb88a401f30764bde58c38748e894bd_gadfb88a401f30764bde58c38748e894bd}{PLASMA\_\-ztrtri\_\-Tile\_\-Async} 
+
+\hyperlink{group__PLASMA__Complex32__t_ga25e718997c7c1fd6f599d7b3a04fddad_ga25e718997c7c1fd6f599d7b3a04fddad}{PLASMA\_\-ctrtri} 
+
+\hyperlink{group__double_ga3968f78f69610b681ab7d6c411f92796_ga3968f78f69610b681ab7d6c411f92796}{PLASMA\_\-dtrtri} 
+
+\hyperlink{group__float_gaaf0df7b8ff03a270a25da71b9f133abb_gaaf0df7b8ff03a270a25da71b9f133abb}{PLASMA\_\-strtri} 
+
+\hyperlink{group__PLASMA__Complex64__t_ga6dd563144dd8c7f29a58659f220f44a0_ga6dd563144dd8c7f29a58659f220f44a0}{PLASMA\_\-zpotri} 
+\end{DoxySeeAlso}
+\hypertarget{group__PLASMA__Complex64__t_ga7071ad423d20fe7e0fc8f3869dda7ecb_ga7071ad423d20fe7e0fc8f3869dda7ecb}{
+\index{PLASMA\_\-Complex64\_\-t@{PLASMA\_\-Complex64\_\-t}!PLASMA\_\-zunglq@{PLASMA\_\-zunglq}}
+\index{PLASMA\_\-zunglq@{PLASMA\_\-zunglq}!PLASMA_Complex64_t@{PLASMA\_\-Complex64\_\-t}}
+\subsubsection[{PLASMA\_\-zunglq}]{\setlength{\rightskip}{0pt plus 5cm}int PLASMA\_\-zunglq (
+\begin{DoxyParamCaption}
+\item[{int}]{M, }
+\item[{int}]{N, }
+\item[{int}]{K, }
+\item[{PLASMA\_\-Complex64\_\-t $\ast$}]{A, }
+\item[{int}]{LDA, }
+\item[{PLASMA\_\-Complex64\_\-t $\ast$}]{T, }
+\item[{PLASMA\_\-Complex64\_\-t $\ast$}]{Q, }
+\item[{int}]{LDQ}
+\end{DoxyParamCaption}
+)}}
+\label{group__PLASMA__Complex64__t_ga7071ad423d20fe7e0fc8f3869dda7ecb_ga7071ad423d20fe7e0fc8f3869dda7ecb}
+PLASMA\_\-zunglq -\/ Generates an M-\/by-\/N matrix Q with orthonormal rows, which is defined as the first M rows of a product of the elementary reflectors returned by PLASMA\_\-zgelqf.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em M} & The number of rows of the matrix Q. M $>$= 0.\\
+\hline
+\mbox{\tt in}  & {\em N} & The number of columns of the matrix Q. N $>$= M.\\
+\hline
+\mbox{\tt in}  & {\em K} & The number of rows of elementary tile reflectors whose product defines the matrix Q. M $>$= K $>$= 0.\\
+\hline
+\mbox{\tt in}  & {\em A} & Details of the LQ factorization of the original matrix A as returned by PLASMA\_\-zgelqf.\\
+\hline
+\mbox{\tt in}  & {\em LDA} & The leading dimension of the array A. LDA $>$= max(1,M).\\
+\hline
+\mbox{\tt in}  & {\em T} & Auxiliary factorization data, computed by PLASMA\_\-zgelqf.\\
+\hline
+\mbox{\tt out}  & {\em Q} & On exit, the M-\/by-\/N matrix Q.\\
+\hline
+\mbox{\tt in}  & {\em LDQ} & The leading dimension of the array Q. LDQ $>$= max(1,M).\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em PLASMA\_\-SUCCESS} & successful exit \\
+\hline
+{\em PLASMA\_\-SUCCESS} & $<$0 if -\/i, the i-\/th argument had an illegal value\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{group__PLASMA__Complex64__t__Tile_ga6369f42d4303190d90f18626a5dcf04e_ga6369f42d4303190d90f18626a5dcf04e}{PLASMA\_\-zunglq\_\-Tile} 
+
+\hyperlink{group__PLASMA__Complex64__t__Tile__Async_ga88e23a6307f8d2f1de2343b33954be5b_ga88e23a6307f8d2f1de2343b33954be5b}{PLASMA\_\-zunglq\_\-Tile\_\-Async} 
+
+\hyperlink{group__PLASMA__Complex32__t_gabec395009ccf35830e93cfdab1fecc58_gabec395009ccf35830e93cfdab1fecc58}{PLASMA\_\-cunglq} 
+
+\hyperlink{group__double_ga2b04bc4a30b95dad0bfe2f4bbb120688_ga2b04bc4a30b95dad0bfe2f4bbb120688}{PLASMA\_\-dorglq} 
+
+\hyperlink{group__float_ga8549a9c910026c29372133caffc0e354_ga8549a9c910026c29372133caffc0e354}{PLASMA\_\-sorglq} 
+
+\hyperlink{group__PLASMA__Complex64__t_ga848678454b9e0462625fd9fd77568edf_ga848678454b9e0462625fd9fd77568edf}{PLASMA\_\-zgelqf} 
+\end{DoxySeeAlso}
+\hypertarget{group__PLASMA__Complex64__t_ga32c6138471c324fe0788bdcecea66ca8_ga32c6138471c324fe0788bdcecea66ca8}{
+\index{PLASMA\_\-Complex64\_\-t@{PLASMA\_\-Complex64\_\-t}!PLASMA\_\-zungqr@{PLASMA\_\-zungqr}}
+\index{PLASMA\_\-zungqr@{PLASMA\_\-zungqr}!PLASMA_Complex64_t@{PLASMA\_\-Complex64\_\-t}}
+\subsubsection[{PLASMA\_\-zungqr}]{\setlength{\rightskip}{0pt plus 5cm}int PLASMA\_\-zungqr (
+\begin{DoxyParamCaption}
+\item[{int}]{M, }
+\item[{int}]{N, }
+\item[{int}]{K, }
+\item[{PLASMA\_\-Complex64\_\-t $\ast$}]{A, }
+\item[{int}]{LDA, }
+\item[{PLASMA\_\-Complex64\_\-t $\ast$}]{T, }
+\item[{PLASMA\_\-Complex64\_\-t $\ast$}]{Q, }
+\item[{int}]{LDQ}
+\end{DoxyParamCaption}
+)}}
+\label{group__PLASMA__Complex64__t_ga32c6138471c324fe0788bdcecea66ca8_ga32c6138471c324fe0788bdcecea66ca8}
+PLASMA\_\-zungqr -\/ Generates an M-\/by-\/N matrix Q with orthonormal columns, which is defined as the first N columns of a product of the elementary reflectors returned by PLASMA\_\-zgeqrf.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em M} & The number of rows of the matrix Q. M $>$= 0.\\
+\hline
+\mbox{\tt in}  & {\em N} & The number of columns of the matrix Q. N $>$= M.\\
+\hline
+\mbox{\tt in}  & {\em K} & The number of columns of elementary tile reflectors whose product defines the matrix Q. M $>$= K $>$= 0.\\
+\hline
+\mbox{\tt in}  & {\em A} & Details of the QR factorization of the original matrix A as returned by PLASMA\_\-zgeqrf.\\
+\hline
+\mbox{\tt in}  & {\em LDA} & The leading dimension of the array A. LDA $>$= max(1,M).\\
+\hline
+\mbox{\tt in}  & {\em T} & Auxiliary factorization data, computed by PLASMA\_\-zgeqrf.\\
+\hline
+\mbox{\tt out}  & {\em Q} & On exit, the M-\/by-\/N matrix Q.\\
+\hline
+\mbox{\tt in}  & {\em LDQ} & The leading dimension of the array Q. LDQ $>$= max(1,M).\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em PLASMA\_\-SUCCESS} & successful exit \\
+\hline
+{\em $<$0} & if -\/i, the i-\/th argument had an illegal value\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{group__PLASMA__Complex64__t__Tile_ga95b4202db333c7547d3459d7b909fcd6_ga95b4202db333c7547d3459d7b909fcd6}{PLASMA\_\-zungqr\_\-Tile} 
+
+\hyperlink{group__PLASMA__Complex64__t__Tile__Async_gafc2a8fdc018edb78cfa3fb1e671e16f4_gafc2a8fdc018edb78cfa3fb1e671e16f4}{PLASMA\_\-zungqr\_\-Tile\_\-Async} 
+
+\hyperlink{group__PLASMA__Complex32__t_gaae045daa0b95966c7c8351b24f2076ad_gaae045daa0b95966c7c8351b24f2076ad}{PLASMA\_\-cungqr} 
+
+\hyperlink{group__double_gad4c7a1e2dcd8ca5c73f19dbc83775821_gad4c7a1e2dcd8ca5c73f19dbc83775821}{PLASMA\_\-dorgqr} 
+
+\hyperlink{group__float_ga1df39d120ffb3d2ac793fe56422d4884_ga1df39d120ffb3d2ac793fe56422d4884}{PLASMA\_\-sorgqr} 
+
+\hyperlink{group__PLASMA__Complex64__t_ga36fc6c695a8288f7ff64669c50fc4d74_ga36fc6c695a8288f7ff64669c50fc4d74}{PLASMA\_\-zgeqrf} 
+\end{DoxySeeAlso}
+\hypertarget{group__PLASMA__Complex64__t_gae34adef35948b9dfbb683f94a8d4f70e_gae34adef35948b9dfbb683f94a8d4f70e}{
+\index{PLASMA\_\-Complex64\_\-t@{PLASMA\_\-Complex64\_\-t}!PLASMA\_\-zunmlq@{PLASMA\_\-zunmlq}}
+\index{PLASMA\_\-zunmlq@{PLASMA\_\-zunmlq}!PLASMA_Complex64_t@{PLASMA\_\-Complex64\_\-t}}
+\subsubsection[{PLASMA\_\-zunmlq}]{\setlength{\rightskip}{0pt plus 5cm}int PLASMA\_\-zunmlq (
+\begin{DoxyParamCaption}
+\item[{PLASMA\_\-enum}]{side, }
+\item[{PLASMA\_\-enum}]{trans, }
+\item[{int}]{M, }
+\item[{int}]{N, }
+\item[{int}]{K, }
+\item[{PLASMA\_\-Complex64\_\-t $\ast$}]{A, }
+\item[{int}]{LDA, }
+\item[{PLASMA\_\-Complex64\_\-t $\ast$}]{T, }
+\item[{PLASMA\_\-Complex64\_\-t $\ast$}]{B, }
+\item[{int}]{LDB}
+\end{DoxyParamCaption}
+)}}
+\label{group__PLASMA__Complex64__t_gae34adef35948b9dfbb683f94a8d4f70e_gae34adef35948b9dfbb683f94a8d4f70e}
+PLASMA\_\-zunmlq -\/ overwrites the general M-\/by-\/N matrix C with Q$\ast$C, where Q is an orthogonal matrix (unitary in the complex case) defined as the product of elementary reflectors returned by PLASMA\_\-zgelqf. Q is of order M.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em side} & Intended usage: = PlasmaLeft: apply Q or Q$\ast$$\ast$H from the left; = PlasmaRight: apply Q or Q$\ast$$\ast$H from the right. Currently only PlasmaLeft is supported.\\
+\hline
+\mbox{\tt in}  & {\em trans} & Intended usage: = PlasmaNoTrans: no transpose, apply Q; = PlasmaConjTrans: conjugate transpose, apply Q$\ast$$\ast$H. Currently only PlasmaConjTrans is supported.\\
+\hline
+\mbox{\tt in}  & {\em M} & The number of rows of the matrix C. M $>$= 0.\\
+\hline
+\mbox{\tt in}  & {\em N} & The number of columns of the matrix C. N $>$= 0.\\
+\hline
+\mbox{\tt in}  & {\em K} & The number of rows of elementary tile reflectors whose product defines the matrix Q. M $>$= K $>$= 0.\\
+\hline
+\mbox{\tt in}  & {\em A} & Details of the LQ factorization of the original matrix A as returned by PLASMA\_\-zgelqf.\\
+\hline
+\mbox{\tt in}  & {\em LDA} & The leading dimension of the array A. LDA $>$= max(1,K).\\
+\hline
+\mbox{\tt in}  & {\em T} & Auxiliary factorization data, computed by PLASMA\_\-zgelqf.\\
+\hline
+\mbox{\tt in,out}  & {\em B} & On entry, the M-\/by-\/N matrix B. On exit, B is overwritten by Q$\ast$B or Q$\ast$$\ast$H$\ast$B.\\
+\hline
+\mbox{\tt in}  & {\em LDB} & The leading dimension of the array C. LDC $>$= max(1,M).\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em PLASMA\_\-SUCCESS} & successful exit \\
+\hline
+{\em $<$0} & if -\/i, the i-\/th argument had an illegal value\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{group__PLASMA__Complex64__t__Tile_gabacee58a4e080905a9a19f3b372b2020_gabacee58a4e080905a9a19f3b372b2020}{PLASMA\_\-zunmlq\_\-Tile} 
+
+\hyperlink{group__PLASMA__Complex64__t__Tile__Async_ga50b052ffb8af37294f586e1a217a4e07_ga50b052ffb8af37294f586e1a217a4e07}{PLASMA\_\-zunmlq\_\-Tile\_\-Async} 
+
+\hyperlink{group__PLASMA__Complex32__t_ga0f333c4090a73606ae95c47f3d8e7cb5_ga0f333c4090a73606ae95c47f3d8e7cb5}{PLASMA\_\-cunmlq} 
+
+\hyperlink{group__double_ga7b8a22a13c3537ee697dadc3309b317f_ga7b8a22a13c3537ee697dadc3309b317f}{PLASMA\_\-dormlq} 
+
+\hyperlink{group__float_gab3fd8a1d7a53311c2d36b93a547f0903_gab3fd8a1d7a53311c2d36b93a547f0903}{PLASMA\_\-sormlq} 
+
+\hyperlink{group__PLASMA__Complex64__t_ga848678454b9e0462625fd9fd77568edf_ga848678454b9e0462625fd9fd77568edf}{PLASMA\_\-zgelqf} 
+\end{DoxySeeAlso}
+\hypertarget{group__PLASMA__Complex64__t_ga938e8d7780d4a578fe926e3e146462ca_ga938e8d7780d4a578fe926e3e146462ca}{
+\index{PLASMA\_\-Complex64\_\-t@{PLASMA\_\-Complex64\_\-t}!PLASMA\_\-zunmqr@{PLASMA\_\-zunmqr}}
+\index{PLASMA\_\-zunmqr@{PLASMA\_\-zunmqr}!PLASMA_Complex64_t@{PLASMA\_\-Complex64\_\-t}}
+\subsubsection[{PLASMA\_\-zunmqr}]{\setlength{\rightskip}{0pt plus 5cm}int PLASMA\_\-zunmqr (
+\begin{DoxyParamCaption}
+\item[{PLASMA\_\-enum}]{side, }
+\item[{PLASMA\_\-enum}]{trans, }
+\item[{int}]{M, }
+\item[{int}]{N, }
+\item[{int}]{K, }
+\item[{PLASMA\_\-Complex64\_\-t $\ast$}]{A, }
+\item[{int}]{LDA, }
+\item[{PLASMA\_\-Complex64\_\-t $\ast$}]{T, }
+\item[{PLASMA\_\-Complex64\_\-t $\ast$}]{B, }
+\item[{int}]{LDB}
+\end{DoxyParamCaption}
+)}}
+\label{group__PLASMA__Complex64__t_ga938e8d7780d4a578fe926e3e146462ca_ga938e8d7780d4a578fe926e3e146462ca}
+PLASMA\_\-zunmqr -\/ overwrites the general M-\/by-\/N matrix C with Q$\ast$C, where Q is an orthogonal matrix (unitary in the complex case) defined as the product of elementary reflectors returned by PLASMA\_\-zgeqrf. Q is of order M.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em side} & Intended usage: = PlasmaLeft: apply Q or Q$\ast$$\ast$H from the left; = PlasmaRight: apply Q or Q$\ast$$\ast$H from the right. Currently only PlasmaLeft is supported.\\
+\hline
+\mbox{\tt in}  & {\em trans} & Intended usage: = PlasmaNoTrans: no transpose, apply Q; = PlasmaConjTrans: conjugate transpose, apply Q$\ast$$\ast$H. Currently only PlasmaConjTrans is supported.\\
+\hline
+\mbox{\tt in}  & {\em M} & The number of rows of the matrix C. M $>$= 0.\\
+\hline
+\mbox{\tt in}  & {\em N} & The number of columns of the matrix C. N $>$= 0.\\
+\hline
+\mbox{\tt in}  & {\em K} & The number of columns of elementary tile reflectors whose product defines the matrix Q. If side == PlasmaLeft, M $>$= K $>$= 0. If side == PlasmaRight, N $>$= K $>$= 0.\\
+\hline
+\mbox{\tt in}  & {\em A} & Details of the QR factorization of the original matrix A as returned by PLASMA\_\-zgeqrf.\\
+\hline
+\mbox{\tt in}  & {\em LDA} & The leading dimension of the array A. If side == PlasmaLeft, LDA $>$= max(1,M). If side == PlasmaRight, LDA $>$= max(1,N).\\
+\hline
+\mbox{\tt in}  & {\em T} & Auxiliary factorization data, computed by PLASMA\_\-zgeqrf.\\
+\hline
+\mbox{\tt in,out}  & {\em B} & On entry, the M-\/by-\/N matrix B. On exit, B is overwritten by Q$\ast$B or Q$\ast$$\ast$H$\ast$B.\\
+\hline
+\mbox{\tt in}  & {\em LDB} & The leading dimension of the array C. LDC $>$= max(1,M).\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em PLASMA\_\-SUCCESS} & successful exit \\
+\hline
+{\em $<$0} & if -\/i, the i-\/th argument had an illegal value\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{group__PLASMA__Complex64__t__Tile_gad7847b2c5996f9033b91121ce482caed_gad7847b2c5996f9033b91121ce482caed}{PLASMA\_\-zunmqr\_\-Tile} 
+
+\hyperlink{group__PLASMA__Complex64__t__Tile__Async_ga8e057c6a0faa3eb3f371e09fd91ab994_ga8e057c6a0faa3eb3f371e09fd91ab994}{PLASMA\_\-zunmqr\_\-Tile\_\-Async} 
+
+\hyperlink{group__PLASMA__Complex32__t_gaeb10283e0d173f28817f2909b9d4c02e_gaeb10283e0d173f28817f2909b9d4c02e}{PLASMA\_\-cunmqr} 
+
+\hyperlink{group__double_ga5e359c405a8e6ea3e10b525174a3a3d2_ga5e359c405a8e6ea3e10b525174a3a3d2}{PLASMA\_\-dormqr} 
+
+\hyperlink{group__float_gadfc10c1135befaa37c48b2558196999a_gadfc10c1135befaa37c48b2558196999a}{PLASMA\_\-sormqr} 
+
+\hyperlink{group__PLASMA__Complex64__t_ga36fc6c695a8288f7ff64669c50fc4d74_ga36fc6c695a8288f7ff64669c50fc4d74}{PLASMA\_\-zgeqrf} 
+\end{DoxySeeAlso}

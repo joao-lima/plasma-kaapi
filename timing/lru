@@ -1,0 +1,164 @@
+./time_dgemm_tile --threads=1 --dyn --n_range=20480:20480:20480 --nb=1024 --niter=1 	      --nowarmup --ifmt=0
+#   N NRHS threads seconds   Gflop/s Deviation
+20480    1     1 [KAAPI::INIT] use #physical cpu:12, start time:1353332402.205497
+[KAAPI::TERM] end time:1353332457.068601, delta:       57.228030(s)
+----- Performance counters, core    : 0
+Total number of tasks executed      : 0, 39
+Total number of steal OK requests   : 0, 0
+Total number of steal BAD requests  : 391004, 0
+Total number of steal operations    : 0
+Total number of input steal request : 323051
+Total number of suspend operations  : 1
+Total number of transfer H2D        : 0
+Total number of transfer D2H        : 58720256
+Total compute time                  : 5.428199e+01
+Total compute time of dependencies  : 1.097216e-02
+Total idle time                     : 5.811190e-01
+----- Performance counters, core    : 1
+Total number of tasks executed      : 0, 93
+Total number of steal OK requests   : 33, 0
+Total number of steal BAD requests  : 30915666, 0
+Total number of steal operations    : 29
+Total number of input steal request : 27378893
+Total number of suspend operations  : 0
+Total number of transfer H2D        : 0
+Total number of transfer D2H        : 8388608
+Total compute time                  : 8.328731e+00
+Total compute time of dependencies  : 0.000000e+00
+Total idle time                     : 4.653435e+01
+----- Performance counters, core    : 2
+Total number of tasks executed      : 0, 102
+Total number of steal OK requests   : 37, 0
+Total number of steal BAD requests  : 31001210, 0
+Total number of steal operations    : 28
+Total number of input steal request : 27051651
+Total number of suspend operations  : 0
+Total number of transfer H2D        : 0
+Total number of transfer D2H        : 16777216
+Total compute time                  : 8.926021e+00
+Total compute time of dependencies  : 0.000000e+00
+Total idle time                     : 4.593705e+01
+----- Performance counters, core    : 3
+Total number of tasks executed      : 0, 264
+Total number of steal OK requests   : 116, 0
+Total number of steal BAD requests  : 31487374, 0
+Total number of steal operations    : 109
+Total number of input steal request : 27096134
+Total number of suspend operations  : 0
+Total number of transfer H2D        : 0
+Total number of transfer D2H        : 8388608
+Total compute time                  : 8.842626e+00
+Total compute time of dependencies  : 0.000000e+00
+Total idle time                     : 4.602045e+01
+----- Performance counters, core    : 4
+Total number of tasks executed      : 0, 207
+Total number of steal OK requests   : 196, 0
+Total number of steal BAD requests  : 29051758, 0
+Total number of steal operations    : 192
+Total number of input steal request : 27410125
+Total number of suspend operations  : 0
+Total number of transfer H2D        : 7365197824
+Total number of transfer D2H        : 939524096
+Total compute time                  : 8.191130e+00
+Total compute time of dependencies  : 0.000000e+00
+Total idle time                     : 4.667195e+01
+----- Performance counters, core    : 5
+Total number of tasks executed      : 0, 359
+Total number of steal OK requests   : 321, 0
+Total number of steal BAD requests  : 28599673, 0
+Total number of steal operations    : 318
+Total number of input steal request : 27412867
+Total number of suspend operations  : 0
+Total number of transfer H2D        : 7449083904
+Total number of transfer D2H        : 1241513984
+Total compute time                  : 8.198997e+00
+Total compute time of dependencies  : 0.000000e+00
+Total idle time                     : 4.666408e+01
+----- Performance counters, core    : 6
+Total number of tasks executed      : 0, 259
+Total number of steal OK requests   : 246, 0
+Total number of steal BAD requests  : 28638258, 0
+Total number of steal operations    : 244
+Total number of input steal request : 27401642
+Total number of suspend operations  : 0
+Total number of transfer H2D        : 7381975040
+Total number of transfer D2H        : 1275068416
+Total compute time                  : 8.225006e+00
+Total compute time of dependencies  : 0.000000e+00
+Total idle time                     : 4.663807e+01
+----- Performance counters, core    : 7
+Total number of tasks executed      : 0, 337
+Total number of steal OK requests   : 320, 0
+Total number of steal BAD requests  : 28997022, 0
+Total number of steal operations    : 312
+Total number of input steal request : 27415555
+Total number of suspend operations  : 0
+Total number of transfer H2D        : 7516192768
+Total number of transfer D2H        : 1241513984
+Total compute time                  : 8.191852e+00
+Total compute time of dependencies  : 0.000000e+00
+Total idle time                     : 4.667123e+01
+----- Performance counters, core    : 8
+Total number of tasks executed      : 0, 194
+Total number of steal OK requests   : 182, 0
+Total number of steal BAD requests  : 30358248, 0
+Total number of steal operations    : 180
+Total number of input steal request : 27415642
+Total number of suspend operations  : 0
+Total number of transfer H2D        : 7474249728
+Total number of transfer D2H        : 1241513984
+Total compute time                  : 8.206834e+00
+Total compute time of dependencies  : 0.000000e+00
+Total idle time                     : 4.665624e+01
+----- Performance counters, core    : 9
+Total number of tasks executed      : 0, 336
+Total number of steal OK requests   : 323, 0
+Total number of steal BAD requests  : 29636283, 0
+Total number of steal operations    : 320
+Total number of input steal request : 27411370
+Total number of suspend operations  : 0
+Total number of transfer H2D        : 7759462400
+Total number of transfer D2H        : 1258291200
+Total compute time                  : 8.198526e+00
+Total compute time of dependencies  : 0.000000e+00
+Total idle time                     : 4.666455e+01
+----- Performance counters, core    : 10
+Total number of tasks executed      : 0, 278
+Total number of steal OK requests   : 270, 0
+Total number of steal BAD requests  : 29569353, 0
+Total number of steal operations    : 261
+Total number of input steal request : 27422433
+Total number of suspend operations  : 0
+Total number of transfer H2D        : 7566524416
+Total number of transfer D2H        : 1191182336
+Total compute time                  : 8.191248e+00
+Total compute time of dependencies  : 0.000000e+00
+Total idle time                     : 4.667183e+01
+----- Performance counters, core    : 11
+Total number of tasks executed      : 0, 258
+Total number of steal OK requests   : 250, 0
+Total number of steal BAD requests  : 30445616, 0
+Total number of steal operations    : 242
+Total number of input steal request : 27418301
+Total number of suspend operations  : 0
+Total number of transfer H2D        : 7516192768
+Total number of transfer D2H        : 1098907648
+Total compute time                  : 8.214838e+00
+Total compute time of dependencies  : 0.000000e+00
+Total idle time                     : 4.664824e+01
+----- Cumulated Performance counters
+Total number of tasks executed      : 2726
+Total number of steal OK requests   : 2294
+Total number of steal BAD requests  : 329091465
+Total number of steal operations    : 2235
+Total number of input steal request : 329093759
+Total number of suspend operations  : 1
+Total number of transfers H2D       : 60028878848
+Total number of transfers D2H       : 9579790336
+Total compute time                  : 1.459978e+02
+Total compute time of dependencies  : 1.097216e-02
+Total idle time                     : 5.123592e+02
+   sched idle time                  : 5.123592e+02
+   preemption idle time             : 0.000000e+00
+Average steal requests aggregation  : 1.472455e+05
+    9.260   1855.29      0.00

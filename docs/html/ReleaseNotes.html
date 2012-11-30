@@ -1,0 +1,995 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+    "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
+<meta name="generator" content="AsciiDoc 8.6.3" />
+<title>PLASMA RELEASE NOTES</title>
+<style type="text/css">
+/* Sans-serif font. */
+h1, h2, h3, h4, h5, h6,
+div.title, caption.title,
+thead, p.table.header,
+div#toctitle,
+span#author, span#revnumber, span#revdate, span#revremark,
+div#footer {
+  font-family: Arial,Helvetica,sans-serif;
+}
+
+/* Serif font. */
+div.sectionbody {
+  font-family: Georgia,"Times New Roman",Times,serif;
+}
+
+/* Monospace font. */
+tt {
+  font-size: inherit;
+}
+
+body {
+  margin: 1em 5% 1em 5%;
+}
+
+a {
+  color: blue;
+  text-decoration: underline;
+}
+a:visited {
+  color: fuchsia;
+}
+
+em {
+  font-style: italic;
+  color: navy;
+}
+
+strong {
+  font-weight: bold;
+  color: #083194;
+}
+
+tt {
+  font-size: inherit;
+  color: navy;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #527bbd;
+  margin-top: 1.2em;
+  margin-bottom: 0.5em;
+  line-height: 1.3;
+}
+
+h1, h2, h3 {
+  border-bottom: 2px solid silver;
+}
+h2 {
+  padding-top: 0.5em;
+}
+h3 {
+  float: left;
+}
+h3 + * {
+  clear: left;
+}
+
+div.sectionbody {
+  margin-left: 0;
+}
+
+hr {
+  border: 1px solid silver;
+}
+
+p {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+ul, ol, li > p {
+  margin-top: 0;
+}
+ul > li     { color: #aaa; }
+ul > li > * { color: black; }
+
+pre {
+  padding: 0;
+  margin: 0;
+}
+
+span#author {
+  color: #527bbd;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+span#email {
+}
+span#revnumber, span#revdate, span#revremark {
+}
+
+div#footer {
+  font-size: small;
+  border-top: 2px solid silver;
+  padding-top: 0.5em;
+  margin-top: 4.0em;
+}
+div#footer-text {
+  float: left;
+  padding-bottom: 0.5em;
+}
+div#footer-badges {
+  float: right;
+  padding-bottom: 0.5em;
+}
+
+div#preamble {
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+div.tableblock, div.imageblock, div.exampleblock, div.verseblock,
+div.quoteblock, div.literalblock, div.listingblock, div.sidebarblock,
+div.admonitionblock {
+  margin-top: 1.0em;
+  margin-bottom: 1.5em;
+}
+div.admonitionblock {
+  margin-top: 2.0em;
+  margin-bottom: 2.0em;
+  margin-right: 10%;
+  color: #606060;
+}
+
+div.content { /* Block element content. */
+  padding: 0;
+}
+
+/* Block element titles. */
+div.title, caption.title {
+  color: #527bbd;
+  font-weight: bold;
+  text-align: left;
+  margin-top: 1.0em;
+  margin-bottom: 0.5em;
+}
+div.title + * {
+  margin-top: 0;
+}
+
+td div.title:first-child {
+  margin-top: 0.0em;
+}
+div.content div.title:first-child {
+  margin-top: 0.0em;
+}
+div.content + div.title {
+  margin-top: 0.0em;
+}
+
+div.sidebarblock > div.content {
+  background: #ffffee;
+  border: 1px solid #dddddd;
+  border-left: 4px solid #f0f0f0;
+  padding: 0.5em;
+}
+
+div.listingblock > div.content {
+  border: 1px solid #dddddd;
+  border-left: 5px solid #f0f0f0;
+  background: #f8f8f8;
+  padding: 0.5em;
+}
+
+div.quoteblock, div.verseblock {
+  padding-left: 1.0em;
+  margin-left: 1.0em;
+  margin-right: 10%;
+  border-left: 5px solid #f0f0f0;
+  color: #777777;
+}
+
+div.quoteblock > div.attribution {
+  padding-top: 0.5em;
+  text-align: right;
+}
+
+div.verseblock > pre.content {
+  font-family: inherit;
+  font-size: inherit;
+}
+div.verseblock > div.attribution {
+  padding-top: 0.75em;
+  text-align: left;
+}
+/* DEPRECATED: Pre version 8.2.7 verse style literal block. */
+div.verseblock + div.attribution {
+  text-align: left;
+}
+
+div.admonitionblock .icon {
+  vertical-align: top;
+  font-size: 1.1em;
+  font-weight: bold;
+  text-decoration: underline;
+  color: #527bbd;
+  padding-right: 0.5em;
+}
+div.admonitionblock td.content {
+  padding-left: 0.5em;
+  border-left: 3px solid #dddddd;
+}
+
+div.exampleblock > div.content {
+  border-left: 3px solid #dddddd;
+  padding-left: 0.5em;
+}
+
+div.imageblock div.content { padding-left: 0; }
+span.image img { border-style: none; }
+a.image:visited { color: white; }
+
+dl {
+  margin-top: 0.8em;
+  margin-bottom: 0.8em;
+}
+dt {
+  margin-top: 0.5em;
+  margin-bottom: 0;
+  font-style: normal;
+  color: navy;
+}
+dd > *:first-child {
+  margin-top: 0.1em;
+}
+
+ul, ol {
+    list-style-position: outside;
+}
+ol.arabic {
+  list-style-type: decimal;
+}
+ol.loweralpha {
+  list-style-type: lower-alpha;
+}
+ol.upperalpha {
+  list-style-type: upper-alpha;
+}
+ol.lowerroman {
+  list-style-type: lower-roman;
+}
+ol.upperroman {
+  list-style-type: upper-roman;
+}
+
+div.compact ul, div.compact ol,
+div.compact p, div.compact p,
+div.compact div, div.compact div {
+  margin-top: 0.1em;
+  margin-bottom: 0.1em;
+}
+
+div.tableblock > table {
+  border: 3px solid #527bbd;
+}
+thead, p.table.header {
+  font-weight: bold;
+  color: #527bbd;
+}
+tfoot {
+  font-weight: bold;
+}
+td > div.verse {
+  white-space: pre;
+}
+p.table {
+  margin-top: 0;
+}
+/* Because the table frame attribute is overriden by CSS in most browsers. */
+div.tableblock > table[frame="void"] {
+  border-style: none;
+}
+div.tableblock > table[frame="hsides"] {
+  border-left-style: none;
+  border-right-style: none;
+}
+div.tableblock > table[frame="vsides"] {
+  border-top-style: none;
+  border-bottom-style: none;
+}
+
+
+div.hdlist {
+  margin-top: 0.8em;
+  margin-bottom: 0.8em;
+}
+div.hdlist tr {
+  padding-bottom: 15px;
+}
+dt.hdlist1.strong, td.hdlist1.strong {
+  font-weight: bold;
+}
+td.hdlist1 {
+  vertical-align: top;
+  font-style: normal;
+  padding-right: 0.8em;
+  color: navy;
+}
+td.hdlist2 {
+  vertical-align: top;
+}
+div.hdlist.compact tr {
+  margin: 0;
+  padding-bottom: 0;
+}
+
+.comment {
+  background: yellow;
+}
+
+.footnote, .footnoteref {
+  font-size: 0.8em;
+}
+
+span.footnote, span.footnoteref {
+  vertical-align: super;
+}
+
+#footnotes {
+  margin: 20px 0 20px 0;
+  padding: 7px 0 0 0;
+}
+
+#footnotes div.footnote {
+  margin: 0 0 5px 0;
+}
+
+#footnotes hr {
+  border: none;
+  border-top: 1px solid silver;
+  height: 1px;
+  text-align: left;
+  margin-left: 0;
+  width: 20%;
+  min-width: 100px;
+}
+
+div.colist td {
+  padding-right: 0.5em;
+  padding-bottom: 0.3em;
+  vertical-align: top;
+}
+div.colist td img {
+  margin-top: 0.3em;
+}
+
+@media print {
+  div#footer-badges { display: none; }
+}
+
+div#toc {
+  margin-bottom: 2.5em;
+}
+
+div#toctitle {
+  color: #527bbd;
+  font-size: 1.1em;
+  font-weight: bold;
+  margin-top: 1.0em;
+  margin-bottom: 0.1em;
+}
+
+div.toclevel1, div.toclevel2, div.toclevel3, div.toclevel4 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+div.toclevel2 {
+  margin-left: 2em;
+  font-size: 0.9em;
+}
+div.toclevel3 {
+  margin-left: 4em;
+  font-size: 0.9em;
+}
+div.toclevel4 {
+  margin-left: 6em;
+  font-size: 0.9em;
+}
+
+</style>
+<script type="text/javascript">
+/*<![CDATA[*/
+window.onload = function(){asciidoc.footnotes(); asciidoc.toc(2);}
+var asciidoc = {  // Namespace.
+
+/////////////////////////////////////////////////////////////////////
+// Table Of Contents generator
+/////////////////////////////////////////////////////////////////////
+
+/* Author: Mihai Bazon, September 2002
+ * http://students.infoiasi.ro/~mishoo
+ *
+ * Table Of Content generator
+ * Version: 0.4
+ *
+ * Feel free to use this script under the terms of the GNU General Public
+ * License, as long as you do not remove or alter this notice.
+ */
+
+ /* modified by Troy D. Hanson, September 2006. License: GPL */
+ /* modified by Stuart Rackham, 2006, 2009. License: GPL */
+
+// toclevels = 1..4.
+toc: function (toclevels) {
+
+  function getText(el) {
+    var text = "";
+    for (var i = el.firstChild; i != null; i = i.nextSibling) {
+      if (i.nodeType == 3 /* Node.TEXT_NODE */) // IE doesn't speak constants.
+        text += i.data;
+      else if (i.firstChild != null)
+        text += getText(i);
+    }
+    return text;
+  }
+
+  function TocEntry(el, text, toclevel) {
+    this.element = el;
+    this.text = text;
+    this.toclevel = toclevel;
+  }
+
+  function tocEntries(el, toclevels) {
+    var result = new Array;
+    var re = new RegExp('[hH]([2-'+(toclevels+1)+'])');
+    // Function that scans the DOM tree for header elements (the DOM2
+    // nodeIterator API would be a better technique but not supported by all
+    // browsers).
+    var iterate = function (el) {
+      for (var i = el.firstChild; i != null; i = i.nextSibling) {
+        if (i.nodeType == 1 /* Node.ELEMENT_NODE */) {
+          var mo = re.exec(i.tagName);
+          if (mo && (i.getAttribute("class") || i.getAttribute("className")) != "float") {
+            result[result.length] = new TocEntry(i, getText(i), mo[1]-1);
+          }
+          iterate(i);
+        }
+      }
+    }
+    iterate(el);
+    return result;
+  }
+
+  var toc = document.getElementById("toc");
+  var entries = tocEntries(document.getElementById("content"), toclevels);
+  for (var i = 0; i < entries.length; ++i) {
+    var entry = entries[i];
+    if (entry.element.id == "")
+      entry.element.id = "_toc_" + i;
+    var a = document.createElement("a");
+    a.href = "#" + entry.element.id;
+    a.appendChild(document.createTextNode(entry.text));
+    var div = document.createElement("div");
+    div.appendChild(a);
+    div.className = "toclevel" + entry.toclevel;
+    toc.appendChild(div);
+  }
+  if (entries.length == 0)
+    toc.parentNode.removeChild(toc);
+},
+
+
+/////////////////////////////////////////////////////////////////////
+// Footnotes generator
+/////////////////////////////////////////////////////////////////////
+
+/* Based on footnote generation code from:
+ * http://www.brandspankingnew.net/archive/2005/07/format_footnote.html
+ */
+
+footnotes: function () {
+  var cont = document.getElementById("content");
+  var noteholder = document.getElementById("footnotes");
+  var spans = cont.getElementsByTagName("span");
+  var refs = {};
+  var n = 0;
+  for (i=0; i<spans.length; i++) {
+    if (spans[i].className == "footnote") {
+      n++;
+      // Use [\s\S] in place of . so multi-line matches work.
+      // Because JavaScript has no s (dotall) regex flag.
+      note = spans[i].innerHTML.match(/\s*\[([\s\S]*)]\s*/)[1];
+      noteholder.innerHTML +=
+        "<div class='footnote' id='_footnote_" + n + "'>" +
+        "<a href='#_footnoteref_" + n + "' title='Return to text'>" +
+        n + "</a>. " + note + "</div>";
+      spans[i].innerHTML =
+        "[<a id='_footnoteref_" + n + "' href='#_footnote_" + n +
+        "' title='View footnote' class='footnote'>" + n + "</a>]";
+      var id =spans[i].getAttribute("id");
+      if (id != null) refs["#"+id] = n;
+    }
+  }
+  if (n == 0)
+    noteholder.parentNode.removeChild(noteholder);
+  else {
+    // Process footnoterefs.
+    for (i=0; i<spans.length; i++) {
+      if (spans[i].className == "footnoteref") {
+        var href = spans[i].getElementsByTagName("a")[0].getAttribute("href");
+        href = href.match(/#.*/)[0];  // Because IE return full URL.
+        n = refs[href];
+        spans[i].innerHTML =
+          "[<a href='#_footnote_" + n +
+          "' title='View footnote' class='footnote'>" + n + "</a>]";
+      }
+    }
+  }
+}
+
+}
+/*]]>*/
+</script>
+</head>
+<body class="article">
+<div id="header">
+<h1>PLASMA RELEASE NOTES</h1>
+<div id="toc">
+  <div id="toctitle">Table of Contents</div>
+  <noscript><p><b>JavaScript must be enabled in your browser to display the table of contents.</b></p></noscript>
+</div>
+</div>
+<div id="content">
+<div class="sect1">
+<h2 id="_summary_of_current_features">Summary of Current Features</h2>
+<div class="sectionbody">
+<div class="ulist"><ul>
+<li>
+<p>
+Solution of dense systems of linear equations and least square problems
+  in real space and complex space, using single precision and double precision,
+  via the Cholesky, LU, QR and LQ factorizations
+</p>
+</li>
+<li>
+<p>
+Solution of standard and generalized dense symmetric Eigenvalue Problem in real space and complex space,
+  using single precision and double precision, via two-stage tridiagonal reduction
+  followed by QR iteration (eigenvalues only, no eigenvectors yet)
+</p>
+</li>
+<li>
+<p>
+Dense Singular Value Decomposition in real space and complex space, using single
+  precision and double precision, via two-stage bidiagonal reduction followed by QR iteration
+  (singular values only, no singular vectors yet)
+</p>
+</li>
+<li>
+<p>
+Solution of dense linear systems of equations in real space and complex space
+  using the mixed-precision algorithm based on the Cholesky, LU, QR and LQ factorizations
+</p>
+</li>
+<li>
+<p>
+Tree-based QR and LQ factorizations and Q matrix generation and application (&#8220;tall and skinny&#8221;)
+</p>
+</li>
+<li>
+<p>
+Tree-based bidiagonal reduction (&#8220;tall and skinny&#8221;)
+</p>
+</li>
+<li>
+<p>
+Explicit matrix inversion based on Cholesky factorization (symmetric positive definite)
+</p>
+</li>
+<li>
+<p>
+Parallel and cache-efficient in-place layout translations (Gustavson et at.)
+</p>
+</li>
+<li>
+<p>
+Complete set of Level 3 BLAS routines for matrices stored in tile layout
+</p>
+</li>
+<li>
+<p>
+Simple LAPACK-like interface for greater productivity and advanced (tile) interface
+  for full control and maximum performance;
+  Routines for conversion between LAPACK matrix layout and PLASMA&#8217;s tile layout
+</p>
+</li>
+<li>
+<p>
+Dynamic scheduler QUARK (QUeuing And Runtime for Kernels) and dynamically scheduled
+  versions of all computational routines (alongside statically scheduled ones)
+</p>
+</li>
+<li>
+<p>
+Asynchronous interface for launching dynamically scheduled routines in a non-blocking mode.
+  Sequence and request constructs for controlling progress and checking errors
+</p>
+</li>
+<li>
+<p>
+Automatic handling of workspace allocation; A set of auxiliary functions to assist the user
+  with workspace allocation
+</p>
+</li>
+<li>
+<p>
+A simple set of "sanity" tests for all numerical routines including Level 3 BLAS routines
+  for matrices in tile layout
+</p>
+</li>
+<li>
+<p>
+An advanced testing suite for exhaustive numerical testing of all the routines in all precisions
+  (based on the testing suite of the LAPACK library)
+</p>
+</li>
+<li>
+<p>
+Basic timing suite for most of the routines in all precisions
+</p>
+</li>
+<li>
+<p>
+Thread safety
+</p>
+</li>
+<li>
+<p>
+Support for Make and CMake build systems
+</p>
+</li>
+<li>
+<p>
+LAPACK-style comments in the source code using the Doxygen system
+</p>
+</li>
+<li>
+<p>
+Native support for Microsoft Windows using WinThreads through a thin OS interaction layer
+</p>
+</li>
+<li>
+<p>
+Installer capable of downloading from Netlib and installing missing components of PLASMA&#8217;s
+  software stack (BLAS, CBLAS, LAPACK, LAPACKE C API)
+</p>
+</li>
+<li>
+<p>
+Extensive documentation including Installation Guide, Users' Guide, Reference Manual
+  and an HTML code browser, a guide on running PLASMA with the TAU package, Contributors' Guide,
+  a README and Release Notes.
+</p>
+</li>
+<li>
+<p>
+A comprehensive set of usage examples
+</p>
+</li>
+</ul></div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_new_features_by_release">New Features by Release</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_2_4_2_september_14th_2011">2.4.2, September 14th, 2011</h3>
+<div class="ulist"><ul>
+<li>
+<p>
+New version of quark removing active waiting and allowing user to
+  bind tasks to set of cores.
+</p>
+</li>
+<li>
+<p>
+Installer: Fix compatibility issues between plasma-installer and
+  PGI compiler reported on Kraken by A. Bouteiller.
+</p>
+</li>
+<li>
+<p>
+Fix one memory leak with Hwloc.
+</p>
+</li>
+<li>
+<p>
+Introduce a new kernel for the recursive LU operation on tile layout
+  which reduces cache misses.
+</p>
+</li>
+<li>
+<p>
+Fix several bugs and introduce new features thanks to people from Fujitsu and NAG :
+</p>
+<div class="ulist"><ul>
+<li>
+<p>
+The new LU factorization with partial pivoting introduced in
+    release 2.4 is now working on rectangular matrices.
+</p>
+</li>
+<li>
+<p>
+Add missing functions to Fortran 77 interface.
+</p>
+</li>
+<li>
+<p>
+Add a new Fortran 90 interface to all LAPACK and Tile
+    interface. Asynchronous interface and mixed precision routines are
+    not available yet.
+</p>
+</li>
+<li>
+<p>
+Fix arguments order in header files to fit implementation.
+</p>
+</li>
+</ul></div>
+</li>
+</ul></div>
+</div>
+<div class="sect2">
+<h3 id="_2_4_1_july_8th_2011">2.4.1, July 8th, 2011</h3>
+<div class="ulist"><ul>
+<li>
+<p>
+Fix bug with Fujitsu compiler reported on the forum
+  (<a href="http://icl.cs.utk.edu/plasma/forum/viewtopic.php?f=2&amp;t=108">http://icl.cs.utk.edu/plasma/forum/viewtopic.php?f=2&amp;t=108</a>)
+</p>
+</li>
+<li>
+<p>
+Unbind threads in PLASMA_Finalize to avoid problem of binding in
+  OpenMP section following PLASMA calls (still possible on Mac and AIX
+  without hwloc).
+  A better fix is to create the OpenMP thread in the user code before
+  any call to PLASMA thanks to a fake parallel section.
+</p>
+</li>
+</ul></div>
+</div>
+<div class="sect2">
+<h3 id="_2_4_0_june_6th_2011">2.4.0, June 6th, 2011</h3>
+<div class="ulist"><ul>
+<li>
+<p>
+Tree-based QR and LQ factorizations: routines for application of the Q matrix support
+  all combinations of input parameters: Left/Right, NoTrans/Trans/ConjTrans
+</p>
+</li>
+<li>
+<p>
+Symmetric Engenvalue Problem using: tile reduction to band-tridiagonal form, reduction
+  to "standard" tridiagonal form by bulge chasing, finding eigenvalues using the QR algorithm
+  (eigenvectors currently not supported)
+</p>
+</li>
+<li>
+<p>
+Singular Value Decomposition using: tile reduction to band-bidiagonal form, reduction
+  to &#8220;standard&#8221; bidiagonal form by bulge chasing, finding singular values using the QR algorithm
+  (singular vectors currently no supported)
+</p>
+</li>
+<li>
+<p>
+Gaussian Elimination with partial pivoting (as opposed to the incremental pivoting in the tile
+  LU factorization) and parallel panel (using Quark extensions for nested parallelism)
+  WARNING: Following the integration of this new feature, the
+  interface to call LU factorization has changed. Now, PLASMA_zgetrf
+  follows the LAPACK interface and corresponds to the new partial
+  pivoting. Old interface related to LU factorization with incremental
+  pivoting is now renamed PLASMA_zgetrf_incpiv.
+</p>
+</li>
+</ul></div>
+</div>
+<div class="sect2">
+<h3 id="_2_3_1_november_30th_2010">2.3.1, November 30th, 2010</h3>
+<div class="ulist"><ul>
+<li>
+<p>
+Add functions to generate random matrices (plrnt, plghe and plgsy)
+  &#8658; fix the problem with time_zpotri_tile.c reported by Katayama on the forum
+  (<a href="http://icl.cs.utk.edu/plasma/forum/viewtopic.php?f=2&amp;t=59">http://icl.cs.utk.edu/plasma/forum/viewtopic.php?f=2&amp;t=59</a>)
+</p>
+</li>
+<li>
+<p>
+Fix a deadlock in norm computations with static scheduling
+</p>
+</li>
+<li>
+<p>
+Installer: fix the LAPACK version when libtmg is the only library to be install
+  Thanks to Henc. (<a href="http://icl.cs.utk.edu/plasma/forum/viewtopic.php?f=2&amp;t=60">http://icl.cs.utk.edu/plasma/forum/viewtopic.php?f=2&amp;t=60</a>)
+</p>
+</li>
+</ul></div>
+</div>
+<div class="sect2">
+<h3 id="_2_3_0_november_15th_2010">2.3.0, November 15th, 2010</h3>
+<div class="ulist"><ul>
+<li>
+<p>
+Parallel and cache-efficient in-place layout translations (Gustavson et al.)
+</p>
+</li>
+<li>
+<p>
+Tree-based QR factorization and Q matrix generation (&#8220;tall and skinny&#8221;)
+</p>
+</li>
+<li>
+<p>
+Explicit matrix inversion based on Cholesky factorization (symmetric positive definite)
+</p>
+</li>
+<li>
+<p>
+Replacement of LAPACK C Wrapper with LAPACKE C API by Intel
+</p>
+</li>
+</ul></div>
+</div>
+<div class="sect2">
+<h3 id="_2_2_0_july_9th_2010">2.2.0, July 9th, 2010</h3>
+<div class="ulist"><ul>
+<li>
+<p>
+Dynamic scheduler QUARK (QUeuing And Runtime for Kernels) and dynamically scheduled
+  versions of all computational routines (alongside statically scheduled ones)
+</p>
+</li>
+<li>
+<p>
+Asynchronous interface for launching dynamically scheduled routines in a non-blocking mode.
+  Sequence and request constructs for controlling progress and checking errors
+</p>
+</li>
+<li>
+<p>
+Removal of CBLAS and pieces of LAPACK from PLASMA&#8217;s source tree.
+  BLAS, CBLAS, LAPACK and Netlib LAPACK C Wrapper become PLASMA&#8217;s software dependencies
+  required prior to the installation of PLASMA
+</p>
+</li>
+<li>
+<p>
+Installer capable of downloading from Netlib and installing missing components of PLASMA&#8217;s
+  software stack (BLAS, CBLAS, LAPACK, LAPACK C Wrapper)
+</p>
+</li>
+<li>
+<p>
+Complete set of Level 3 BLAS routines for matrices stored in tile layout
+</p>
+</li>
+</ul></div>
+</div>
+<div class="sect2">
+<h3 id="_2_1_0_november_15th_2009">2.1.0, November 15th, 2009</h3>
+<div class="ulist"><ul>
+<li>
+<p>
+Native support for Microsoft Windows using WinThreads
+</p>
+</li>
+<li>
+<p>
+Support for Make and CMake build systems
+</p>
+</li>
+<li>
+<p>
+Performance-optimized mixed-precision routine for the solution of linear systems of equations
+  using the LU factorization
+</p>
+</li>
+<li>
+<p>
+Initial timing code (PLASMA_dgesv only)
+</p>
+</li>
+<li>
+<p>
+Release notes
+</p>
+</li>
+</ul></div>
+</div>
+<div class="sect2">
+<h3 id="_2_0_0_july_4th_2008">2.0.0, July 4th, 2008</h3>
+<div class="ulist"><ul>
+<li>
+<p>
+Support for real and complex arithmetic in single and double precision
+</p>
+</li>
+<li>
+<p>
+Generation and application of the Q matrix from the QR and LQ factorizations
+</p>
+</li>
+<li>
+<p>
+Prototype of mixed-precision routine for the solution of linear systems of equations
+  using the LU factorization (not optimized for performance)
+</p>
+</li>
+<li>
+<p>
+Simple interface and native interface
+</p>
+</li>
+<li>
+<p>
+Major code cleanup and restructuring
+</p>
+</li>
+<li>
+<p>
+Redesigned workspace allocation
+</p>
+</li>
+<li>
+<p>
+LAPACK testing
+</p>
+</li>
+<li>
+<p>
+Examples
+</p>
+</li>
+<li>
+<p>
+Thread safety
+</p>
+</li>
+<li>
+<p>
+Python installer
+</p>
+</li>
+<li>
+<p>
+Documentation: Installation Guide, Users' Guide with routine reference and an HTML code browser,
+  a guide on running PLASMA with the TAU package, initial draft of Contributors' Guide, a README file
+  and a LICENSE file
+</p>
+</li>
+</ul></div>
+</div>
+<div class="sect2">
+<h3 id="_1_0_0_november_15th_2008">1.0.0, November 15th, 2008</h3>
+<div class="ulist"><ul>
+<li>
+<p>
+Double precision routines for the solution of linear systems of equations and least square problems
+  using Cholesky, LU, QR and LQ factorizations
+</p>
+</li>
+</ul></div>
+</div>
+</div>
+</div>
+</div>
+<div id="footnotes"><hr /></div>
+<div id="footer">
+<div id="footer-text">
+Last updated 2011-09-14 18:44:12 EDT
+</div>
+</div>
+</body>
+</html>
