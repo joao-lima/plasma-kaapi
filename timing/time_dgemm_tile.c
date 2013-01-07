@@ -14,7 +14,9 @@
 
 #include "./timing.c"
 
+#if defined(CONFIG_USE_CUDA)
 #include "core_cublas.h"
+#endif
 
 static int
 RunTest(int *iparam, double *dparam, real_Double_t *t_) 
@@ -57,10 +59,12 @@ RunTest(int *iparam, double *dparam, real_Double_t *t_)
         printf("Out of Memory \n ");
         exit(0);
     }
-    
+  
+#if defined(CONFIG_USE_CUDA)
     cudaHostRegister(AT, nt*nt*nb2*sizeof(double), cudaHostRegisterPortable);
     cudaHostRegister(BT, nt*nt*nb2*sizeof(double), cudaHostRegisterPortable);
     cudaHostRegister(CT, nt*nt*nb2*sizeof(double), cudaHostRegisterPortable);
+#endif
 
      /* Initialiaze Data */
     LAPACKE_dlarnv_work(1, ISEED, 1, &alpha);
@@ -124,7 +128,9 @@ RunTest(int *iparam, double *dparam, real_Double_t *t_)
     PLASMA_Desc_Destroy(&descB);
     PLASMA_Desc_Destroy(&descC);
     PLASMA_Finalize();
+#if defined(CONFIG_USE_CUDA)
     kaapi_finalize();
+#endif
 
     return 0;
 }

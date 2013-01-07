@@ -14,7 +14,9 @@
 
 #include "./timing.c"
 
+#if defined(CONFIG_USE_CUDA)
 #include "core_cublas.h"
+#endif
 
 static int
 RunTest(int *iparam, double *dparam, real_Double_t *t_) 
@@ -62,7 +64,9 @@ RunTest(int *iparam, double *dparam, real_Double_t *t_)
         exit(0);
     }
 
+#if defined(CONFIG_USE_CUDA)
     cudaHostRegister(AT, nt*nt*nb2*sizeof(double), cudaHostRegisterPortable);
+#endif
 
     /* Initialiaze Data */
     PLASMA_Desc_Create(&descA, AT, PlasmaRealDouble, nb, nb, nb*nb, n, n, 0, 0, n, n);
@@ -78,9 +82,13 @@ RunTest(int *iparam, double *dparam, real_Double_t *t_)
       NT = (n%NB==0) ? (n/NB) : ((n/NB)+1);
       MT = (n%NB==0) ? (n/NB) : ((n/NB)+1);
       size = (size_t)MT*NT*NB * sizeof(int);
+#if defined(CONFIG_USE_CUDA)
       cudaHostRegister((void*)piv, size, cudaHostRegisterPortable);
+#endif
     }
+#if defined(CONFIG_USE_CUDA)
     cudaHostRegister((void*)descL->mat, descL->lm*descL->ln*sizeof(double), cudaHostRegisterPortable);
+#endif
 
     /* Save AT in lapack layout for check */
     if ( check ) {
@@ -122,8 +130,10 @@ RunTest(int *iparam, double *dparam, real_Double_t *t_)
     PLASMA_Desc_Destroy(&descA);
 
     PLASMA_Finalize();
+#if defined(CONFIG_USE_CUDA)
     cudaHostUnregister(AT);
     cudaHostUnregister(piv);
+#endif
     free( AT );
     free( piv );
 

@@ -14,6 +14,10 @@
 
 #include "./timing.c"
 
+#if defined(CONFIG_USE_CUDA)
+#include "core_cublas.h"
+#endif
+
 static int
 RunTest(int *iparam, double *dparam, real_Double_t *t_) 
 {
@@ -33,6 +37,10 @@ RunTest(int *iparam, double *dparam, real_Double_t *t_)
         PLASMA_Set(PLASMA_SCHEDULING_MODE, PLASMA_DYNAMIC_SCHEDULING );
     else
         PLASMA_Set(PLASMA_SCHEDULING_MODE, PLASMA_STATIC_SCHEDULING );
+  
+#if defined(_CORE_CUBLAS_H_)
+  core_cublas_init();
+#endif
 
     /*if ( !iparam[TIMING_AUTOTUNING] ) {*/
         PLASMA_Disable(PLASMA_AUTOTUNING);
@@ -54,6 +62,10 @@ RunTest(int *iparam, double *dparam, real_Double_t *t_)
         printf("Out of Memory \n ");
         exit(0);
     }
+  
+#if defined(CONFIG_USE_CUDA)
+    cudaHostRegister((void*)AT, nt*nt*nb2*sizeof(double), cudaHostRegisterPortable);
+#endif
 
     /* Initialiaze Data */
     PLASMA_Desc_Create(&descA, AT, PlasmaRealDouble, nb, nb, nb*nb, n, n, 0, 0, n, n);
@@ -61,6 +73,10 @@ RunTest(int *iparam, double *dparam, real_Double_t *t_)
 
     /* Allocate Workspace */
     PLASMA_Alloc_Workspace_dgels_Tile(n, n, &descT);
+  
+#if defined(CONFIG_USE_CUDA)
+    cudaHostRegister((void*)descT->mat, descT->lm*descT->ln*sizeof(double), cudaHostRegisterPortable);
+#endif
 
     /* Save AT in lapack layout for check */
     if ( check ) {
@@ -106,6 +122,9 @@ RunTest(int *iparam, double *dparam, real_Double_t *t_)
 
     free( AT );
     PLASMA_Finalize();
-
+#if defined(CONFIG_USE_CUDA)
+    kaapi_finalize();
+#endif
+  
     return 0;
 }

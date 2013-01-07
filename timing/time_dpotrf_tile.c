@@ -14,7 +14,9 @@
 
 #include "./timing.c"
 
+#if defined(CONFIG_USE_CUDA)
 #include "core_cublas.h"
+#endif
 
 static int
 RunTest(int *iparam, double *dparam, real_Double_t *t_) 
@@ -47,8 +49,12 @@ RunTest(int *iparam, double *dparam, real_Double_t *t_)
     nt  = n / nb + ((n % nb == 0) ? 0 : 1);
     
     /* Allocate Data */
-//    AT = (double *)malloc(nt*nt*nb2*sizeof(double));
+
+#if defined(CONFIG_USE_CUDA)
     cudaHostAlloc((void**)&AT, nt*nt*nb2*sizeof(double), cudaHostAllocPortable);
+#else
+    AT = (double *)malloc(nt*nt*nb2*sizeof(double));  
+#endif
 
     /* Check if unable to allocate memory */
     if ( !AT ){
@@ -102,10 +108,13 @@ RunTest(int *iparam, double *dparam, real_Double_t *t_)
     PLASMA_Desc_Destroy(&descA);
     PLASMA_Finalize();
 
+#if defined(CONFIG_USE_CUDA)
     cudaFreeHost(AT);
     kaapi_finalize();
+#else
+    free(AT);  
+#endif
 //    cudaHostUnregister(AT);
- //   free(AT);
 
     return 0;
 }

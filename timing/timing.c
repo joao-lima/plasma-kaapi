@@ -219,12 +219,16 @@ Test(int64_t n, int *iparam) {
     sd = sqrt((sumgf2 - (sumgf*sumgf)/niter)/niter);
 
     if ( iparam[TIMING_CHECK] )
-        printf( "%.10f,%.10f,%.10f,%8.5e,%8.5e,%8.5e,%8.5e,%8.5e,%8.5e\n",
+    {
+        printf( "%s,%.10f,%.10f,%.10f,%8.5e,%8.5e,%8.5e,%8.5e,%8.5e,%8.5e\n",
+               _NAME,
                 sumt/niter, gflops, sd, dparam[TIMING_RES], dparam[TIMING_ANORM], dparam[TIMING_XNORM], dparam[TIMING_BNORM], eps, 
                 dparam[TIMING_RES] / n / eps / (dparam[TIMING_ANORM] * dparam[TIMING_XNORM] + dparam[TIMING_BNORM] ));
+    }
     else
-        printf( "%d,%d,%d,%d,%d,%.10f,%.10f,%.10f\n", iparam[TIMING_N], iparam[TIMING_NB], iparam[TIMING_IB], iparam[TIMING_NRHS], iparam[TIMING_THRDNBR] ,sumt/niter, gflops, sd );
-
+    {
+        printf( "%s,%d,%d,%d,%d,%d,%.10f,%.10f,%.10f\n", _NAME, iparam[TIMING_N], iparam[TIMING_NB], iparam[TIMING_IB], iparam[TIMING_NRHS], iparam[TIMING_THRDNBR] ,sumt/niter, gflops, sd );
+    }
     fflush( stdout );
     free(t);
 

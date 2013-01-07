@@ -1,10 +1,9 @@
 #!/bin/bash
 
-export LD_LIBRARY_PATH=$HOME/install/xkaapi/default/lib:$LD_LIBRARY_PATH
 version="$(date +%s)"
 
-#dorun="yes"
-ALLITER=1
+dorun="yes"
+ALLITER=10
 
 #verif="--check"
 #debug=1
@@ -112,51 +111,25 @@ function run_test {
 
 function generic_plasma {
   ncpu="$1"
-  cpuset="$2"
-  ngpu="$3"
-  gpuset="$4"
-  testing="$5"
-  cache_policy="$6"
-  range="$7"
-  nblocks="$8"
-  niter="$9"
-
-  export KAAPI_CPUSET="$cpuset"
-  export KAAPI_GPUSET="$gpuset"
-  export KAAPI_WINDOW_SIZE=2
+  testing="$2"
+  range="$3"
+  niter="$4"
 
   for test in $testing
   do
-    for cache in $cache_policy
+    output="$HOME/res/plasma-${test}-quark-${ncpu}cpu-${version}.csv"
+
+    echo "(ncpu=$ncpu,niter=$niter) ./$test --threads=${ncpu} --dyn --n_range=$range \
+	      --niter=$niter --nowarmup --ifmt=0 $options $verif $output"
+
+    for i in `seq 1 $niter`
     do
-      for nb in $nblocks
-      do
-	output="$HOME/res/plasma-${test}-${cache}-${ncpu}cpu${ngpu}gpu-${version}.csv"
-
-	echo "(ncpu=$ncpu,ngpu=$ngpu,niter=$niter) KAAPI_GPU_CACHE_POLICY=$cache ./$test --threads=1 --dyn --n_range=$range --nb=$nb \
-		  --niter=$niter --nowarmup --ifmt=0 $options $verif $output"
-
-	if [ -n "$debug" ]
-	then
-	  echo "debug"
-	  KAAPI_STACKSIZE_MASTER=536870912 \
-		    gdb ./$test 
-
-	else
-    #     KAAPI_STACKSIZE_MASTER=1073741824 
-	  for i in `seq 1 $niter`
-	  do
-	    if [ -n "$dorun" ]
-	    then
-	       KAAPI_STACKSIZE_MASTER=536870912 \
-	       KAAPI_GPU_CACHE_POLICY=$cache \
-			./$test --threads=1 --dyn --n_range=$range --niter=1 \
-			--nowarmup --ifmt=0  --nb=$nb $options $verif  &>> $output
-	     fi
-	   done
-	fi
-      done
-    done
+      if [ -n "$dorun" ]
+      then
+	./$test --threads=${ncpu} --dyn --n_range=$range --niter=1 \
+	--nowarmup --ifmt=0 $options $verif   &>> $output
+       fi
+     done
   done
 }
 
@@ -265,11 +238,10 @@ function hybrid_strong {
 #    testing="time_dgemm_tile"
 #    testing="time_dgeqrf_tile"
     #testing="time_sgemm_tile"
-    testing="time_dpotrf_tile time_dgemm_tile"
-
-    #cache_policy="lru_double lru"
-    cache_policy="lru_double"
-    #cache_policy="lru"
+    testing="
+    time_dpotrf_tile time_dgetrf_incpiv_tile time_dgeqrf_tile time_dgeqrfrh_tile time_dgemm_tile
+    time_spotrf_tile time_sgetrf_incpiv_tile time_sgeqrf_tile time_sgeqrfrh_tile time_sgemm_tile
+    "
 
     #range="20480:20480:20480"
     #range="32768:32768:32768"
@@ -282,22 +254,16 @@ function hybrid_strong {
     #nblocks="2048"
     #nblocks="1024"
 #    nblocks="512 1024"
-    nblocks="512"
+#    nblocks="512"
 #    nblocks=" $(seq 400 100 1200)"
     niter=$ALLITER
     ninputs="$(seq 4096 4096 20480)"
 
-    ncpu=4
-    cpuset="0,5,6,11"
-    export KAAPI_NCPU=$ncpu
-    ngpu=8
-    export KAAPI_NGPU=$ngpu
-    gpuset="0~1,1~2,2~3,3~4,4~7,5~8,6~9,7~10"
-
+    ncpu=12
     for n in $ninputs
     do
       range="$n:$n:$n"
-      generic_plasma "$ncpu" "$cpuset" "$ngpu" "$gpuset" "$testing" "$cache_policy" "$range" "$nblocks" "$niter"
+      generic_plasma "$ncpu" "$testing" "$range" "$niter"
     done
 }
 
