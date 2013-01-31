@@ -3,8 +3,8 @@
 export LD_LIBRARY_PATH=$HOME/install/xkaapi/default/lib:$LD_LIBRARY_PATH
 version="$(date +%s)"
 
-#dorun="yes"
-ALLITER=1
+dorun="yes"
+ALLITER=10
 
 #verif="--check"
 #debug=1
@@ -19,9 +19,11 @@ ALLITER=1
 # export KAAPI_DOT_NOACTIVATION_LINK=1
 # export KAAPI_DOT_NOLABEL=1
 
-#export KAAPI_DISPLAY_PERF=1
+export KAAPI_DISPLAY_PERF=1
 
 #export KAAPI_PUSH_AFFINITY="writer"
+#export KAAPI_PUSH_AFFINITY="heft"
+export KAAPI_HEFT_CALIBRATE=1
 #    export KAAPI_STEAL_AFFINITY="writer"
 #    export KAAPI_PUSH_AFFINITY="locality"
 #    export KAAPI_STEAL_AFFINITY="locality"
@@ -29,7 +31,8 @@ ALLITER=1
 #ib=1024
 #ib=512
 #ib=256
-#ib=128
+ib=128
+#ib=64
 
 options=""
 
@@ -120,41 +123,46 @@ function generic_plasma {
   range="$7"
   nblocks="$8"
   niter="$9"
+  affinity="${10}"
 
   export KAAPI_CPUSET="$cpuset"
   export KAAPI_GPUSET="$gpuset"
-  export KAAPI_WINDOW_SIZE=2
+  export KAAPI_CUDA_WINDOW_SIZE=2
 
-  for test in $testing
+  for aff in $affinity
   do
-    for cache in $cache_policy
+    for test in $testing
     do
-      for nb in $nblocks
+      for cache in $cache_policy
       do
-	output="$HOME/res/plasma-${test}-${cache}-${ncpu}cpu${ngpu}gpu-${version}.csv"
+	for nb in $nblocks
+	do
+	  output="$HOME/res/plasma-${test}-${aff}-${ncpu}cpu${ngpu}gpu-${version}.csv"
+#	output="$HOME/res/plasma-${test}-blocktest-${ncpu}cpu${ngpu}gpu-${version}.csv"
 
-	echo "(ncpu=$ncpu,ngpu=$ngpu,niter=$niter) KAAPI_GPU_CACHE_POLICY=$cache ./$test --threads=1 --dyn --n_range=$range --nb=$nb \
-		  --niter=$niter --nowarmup --ifmt=0 $options $verif $output"
+	  echo "(ncpu=$ncpu,ngpu=$ngpu,niter=$niter,$aff) ./$test --threads=1 --dyn --n_range=$range --nb=$nb --niter=$niter --nowarmup --ifmt=0 $options $verif $output"
 
-	if [ -n "$debug" ]
-	then
-	  echo "debug"
-	  KAAPI_STACKSIZE_MASTER=536870912 \
-		    gdb ./$test 
+	  if [ -n "$debug" ]
+	  then
+	    echo "debug"
+	    KAAPI_STACKSIZE_MASTER=536870912 \
+		      gdb ./$test 
 
-	else
-    #     KAAPI_STACKSIZE_MASTER=1073741824 
-	  for i in `seq 1 $niter`
-	  do
-	    if [ -n "$dorun" ]
-	    then
-	       KAAPI_STACKSIZE_MASTER=536870912 \
-	       KAAPI_GPU_CACHE_POLICY=$cache \
-			./$test --threads=1 --dyn --n_range=$range --niter=1 \
-			--nowarmup --ifmt=0  --nb=$nb $options $verif  &>> $output
-	     fi
-	   done
-	fi
+	  else
+      #     KAAPI_STACKSIZE_MASTER=1073741824 
+	    for i in `seq 1 $niter`
+	    do
+	      if [ -n "$dorun" ]
+	      then
+		 KAAPI_STACKSIZE_MASTER=536870912 \
+		 KAAPI_GPU_CACHE_POLICY=$cache \
+		 KAAPI_PUSH_AFFINITY=$aff \
+			  ./$test --threads=1 --dyn --n_range=$range --niter=1 \
+			  --nowarmup --ifmt=0  --nb=$nb $options $verif  &>> $output
+	       fi
+	     done
+	  fi
+	done
       done
     done
   done
@@ -168,13 +176,18 @@ function hybrid_weak {
     #testing="time_dgetrf"
     #testing="time_dgetrf_incpiv"
 #    testing="time_dgemm_tile"
-    testing="time_dgeqrf_tile"
+#    testing="time_dgeqrf_tile"
     #testing="time_sgemm_tile"
     #testing="time_dpotrf_tile time_dgemm_tile"
+    testing="
+    time_dpotrf_tile time_dgetrf_incpiv_tile time_dgeqrf_tile time_dgeqrfrh_tile time_dgemm_tile
+    "
 
     #cache_policy="lru_double lru"
     cache_policy="lru_double"
     #cache_policy="lru"
+
+    affinity="default writer heft"
 
     #range="20480:20480:20480"
     #range="32768:32768:32768"
@@ -186,8 +199,8 @@ function hybrid_weak {
     #range="2048:2048:2048"
     #nblocks="2048"
     #nblocks="1024"
-#    nblocks="512 1024"
-    nblocks=" $(seq 400 100 1200)"
+    nblocks="512"
+#    nblocks=" $(seq 400 100 1200)"
     niter=$ALLITER
 
     ncpu=4
@@ -196,7 +209,7 @@ function hybrid_weak {
     ngpu=8
     export KAAPI_NGPU=$ngpu
     gpuset="0~1,1~2,2~3,3~4,4~7,5~8,6~9,7~10"
-    generic_plasma "$ncpu" "$cpuset" "$ngpu" "$gpuset" "$testing" "$cache_policy" "$range" "$nblocks" "$niter"
+    generic_plasma "$ncpu" "$cpuset" "$ngpu" "$gpuset" "$testing" "$cache_policy" "$range" "$nblocks" "$niter" "$affinity"
 
     ncpu=5
     cpuset="0,5,6,9,11"
@@ -204,7 +217,7 @@ function hybrid_weak {
     ngpu=7
     export KAAPI_NGPU=$ngpu
     gpuset="0~1,1~2,2~3,3~4,4~7,5~8,7~10"
-    generic_plasma "$ncpu" "$cpuset" "$ngpu" "$gpuset" "$testing" "$cache_policy" "$range" "$nblocks" "$niter"
+    generic_plasma "$ncpu" "$cpuset" "$ngpu" "$gpuset" "$testing" "$cache_policy" "$range" "$nblocks" "$niter" "$affinity"
 
     ncpu=6
     cpuset="0,1,5,6,10,11"
@@ -212,7 +225,7 @@ function hybrid_weak {
     ngpu=6
     export KAAPI_NGPU=$ngpu
     gpuset="1~2,2~3,3~4,4~7,5~8,6~9"
-    generic_plasma "$ncpu" "$cpuset" "$ngpu" "$gpuset" "$testing" "$cache_policy" "$range" "$nblocks" "$niter"
+    generic_plasma "$ncpu" "$cpuset" "$ngpu" "$gpuset" "$testing" "$cache_policy" "$range" "$nblocks" "$niter" "$affinity"
 
     ncpu=7
     cpuset="0,1,5,6,9,10,11"
@@ -220,7 +233,7 @@ function hybrid_weak {
     ngpu=5
     export KAAPI_NGPU=$ngpu
     gpuset="1~2,2~3,3~4,4~7,5~8"
-    generic_plasma "$ncpu" "$cpuset" "$ngpu" "$gpuset" "$testing" "$cache_policy" "$range" "$nblocks" "$niter"
+    generic_plasma "$ncpu" "$cpuset" "$ngpu" "$gpuset" "$testing" "$cache_policy" "$range" "$nblocks" "$niter" "$affinity"
 
     ncpu=8
     cpuset="0,2,4,5,6,8,10,11"
@@ -228,7 +241,7 @@ function hybrid_weak {
     ngpu=4
     export KAAPI_NGPU=$ngpu
     gpuset="1~1,2~3,4~7,6~9"
-    generic_plasma "$ncpu" "$cpuset" "$ngpu" "$gpuset" "$testing" "$cache_policy" "$range" "$nblocks" "$niter"
+    generic_plasma "$ncpu" "$cpuset" "$ngpu" "$gpuset" "$testing" "$cache_policy" "$range" "$nblocks" "$niter" "$affinity"
 
     ncpu=9
     cpuset="0,2,4,5,6,8,9,10,11"
@@ -236,7 +249,7 @@ function hybrid_weak {
     ngpu=3
     export KAAPI_NGPU=$ngpu
     gpuset="1~1,2~3,4~7"
-    generic_plasma "$ncpu" "$cpuset" "$ngpu" "$gpuset" "$testing" "$cache_policy" "$range" "$nblocks" "$niter"
+    generic_plasma "$ncpu" "$cpuset" "$ngpu" "$gpuset" "$testing" "$cache_policy" "$range" "$nblocks" "$niter" "$affinity"
 
     ncpu=10
     cpuset="0,2,3,4,5,6,8,9,10,11"
@@ -244,7 +257,7 @@ function hybrid_weak {
     ngpu=2
     export KAAPI_NGPU=$ngpu
     gpuset="1~1,4~7"
-    generic_plasma "$ncpu" "$cpuset" "$ngpu" "$gpuset" "$testing" "$cache_policy" "$range" "$nblocks" "$niter"
+    generic_plasma "$ncpu" "$cpuset" "$ngpu" "$gpuset" "$testing" "$cache_policy" "$range" "$nblocks" "$niter" "$affinity"
 
     ncpu=11
     cpuset="0,2,3,4,5,6,7,8,9,10,11"
@@ -252,7 +265,7 @@ function hybrid_weak {
     ngpu=1
     export KAAPI_NGPU=$ngpu
     gpuset="1~1"
-    generic_plasma "$ncpu" "$cpuset" "$ngpu" "$gpuset" "$testing" "$cache_policy" "$range" "$nblocks" "$niter"
+    generic_plasma "$ncpu" "$cpuset" "$ngpu" "$gpuset" "$testing" "$cache_policy" "$range" "$nblocks" "$niter" "$affinity"
 }
 
 function hybrid_strong {
@@ -265,7 +278,9 @@ function hybrid_strong {
 #    testing="time_dgemm_tile"
 #    testing="time_dgeqrf_tile"
     #testing="time_sgemm_tile"
-    testing="time_dpotrf_tile time_dgemm_tile"
+    testing="
+    time_dpotrf_tile time_dgetrf_incpiv_tile time_dgeqrf_tile time_dgeqrfrh_tile time_dgemm_tile
+    "
 
     #cache_policy="lru_double lru"
     cache_policy="lru_double"
@@ -274,7 +289,7 @@ function hybrid_strong {
     #range="20480:20480:20480"
     #range="32768:32768:32768"
     #range="40960:40960:40960"
-#range="10240:10240:10240"
+    #range="10240:10240:10240"
     #range="10240:10240:20480"
     #range="8192:8192:8192"
     #range="2048:8192:2048"
@@ -285,13 +300,13 @@ function hybrid_strong {
     nblocks="512"
 #    nblocks=" $(seq 400 100 1200)"
     niter=$ALLITER
-    ninputs="$(seq 4096 4096 20480)"
+#    ninputs="$(seq 4096 4096 20480)"
+#    ninputs="$(seq 4096 4096 16384)"
+    ninputs="10240"
 
     ncpu=4
     cpuset="0,5,6,11"
-    export KAAPI_NCPU=$ncpu
     ngpu=8
-    export KAAPI_NGPU=$ngpu
     gpuset="0~1,1~2,2~3,3~4,4~7,5~8,6~9,7~10"
 
     for n in $ninputs
@@ -301,5 +316,5 @@ function hybrid_strong {
     done
 }
 
-#hybrid_weak
-hybrid_strong
+hybrid_weak
+#hybrid_strong

@@ -136,6 +136,7 @@ RunTest(int *iparam, double *dparam, real_Double_t *t_)
 #endif
     free( AT );
     free( piv );
+  kaapi_finalize();
 
     return 0;
 }
