@@ -14,10 +14,6 @@
 
 #include "./timing.c"
 
-#if defined(CONFIG_USE_CUDA)
-#include "core_cublas.h"
-#endif
-
 static int
 RunTest(int *iparam, double *dparam, real_Double_t *t_) 
 {
@@ -67,13 +63,13 @@ RunTest(int *iparam, double *dparam, real_Double_t *t_)
         LAPACKE_dlacpy_work(LAPACK_COL_MAJOR,' ', n, n, A, lda, Acpy, lda);
     }
 
-#if defined(CONFIG_USE_CUDA)
+#if defined(PLASMA_CUDA)
     cudaHostRegister(A, lda*n*sizeof(double), cudaHostRegisterPortable);
     cudaHostRegister(L, lda*n*sizeof(double), cudaHostRegisterPortable);
     cudaHostRegister(piv, n*sizeof(int), cudaHostRegisterPortable);
 #endif
 
-#if defined(_CORE_CUBLAS_H_)
+#if defined(PLASMA_CUDA)
     core_cublas_init();
 #endif
     
@@ -100,7 +96,7 @@ RunTest(int *iparam, double *dparam, real_Double_t *t_)
         free( Acpy ); free( b ); free( x );
       }
 
-#if defined(CONFIG_USE_CUDA)
+#if defined(PLASMA_CUDA)
     cudaHostUnregister(A);
     cudaHostUnregister(L);
     cudaHostUnregister(piv);

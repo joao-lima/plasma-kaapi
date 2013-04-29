@@ -14,10 +14,6 @@
 
 #include "./timing.c"
 
-#if defined(CONFIG_USE_CUDA)
-#include "core_cublas.h"
-#endif
-
 static void generate_matrix( double* A, size_t N )
 {
   size_t i, j;
@@ -54,11 +50,11 @@ RunTest(int *iparam, double *dparam, real_Double_t *t_)
     PLASMA_Init( iparam[TIMING_THRDNBR] );
     PLASMA_Set(PLASMA_SCHEDULING_MODE, PLASMA_DYNAMIC_SCHEDULING );
 
-#if defined(CONFIG_USE_CUDA)
+#if defined(PLASMA_CUDA)
     cudaHostRegister(A, lda*n*sizeof(double), cudaHostRegisterPortable);
 #endif
   
-#if defined(_CORE_CUBLAS_H_)
+#if defined(PLASMA_CUDA)
     core_cublas_init();
 #endif
 
@@ -105,7 +101,7 @@ RunTest(int *iparam, double *dparam, real_Double_t *t_)
         free(Acpy); free(b); free(x);
       }
 
-#if defined(CONFIG_USE_CUDA)
+#if defined(PLASMA_CUDA)
     cudaHostUnregister(A);
 #endif
     free(A);

@@ -14,10 +14,6 @@
 
 #include "./timing.c"
 
-#if defined(CONFIG_USE_CUDA)
-#include "core_cublas.h"
-#endif
-
 static int
 RunTest(int *iparam, double *dparam, real_Double_t *t_) 
 {
@@ -35,7 +31,7 @@ RunTest(int *iparam, double *dparam, real_Double_t *t_)
     PLASMA_Init( iparam[TIMING_THRDNBR] );
     PLASMA_Set(PLASMA_SCHEDULING_MODE, PLASMA_DYNAMIC_SCHEDULING );
 
-#if defined(_CORE_CUBLAS_H_)
+#if defined(PLASMA_CUDA)
     core_cublas_init();
 #endif
     /*if ( !iparam[TIMING_AUTOTUNING] ) {*/
@@ -50,7 +46,7 @@ RunTest(int *iparam, double *dparam, real_Double_t *t_)
   
     /* Allocate Data */
 
-#if defined(CONFIG_USE_CUDA)
+#if defined(PLASMA_CUDA)
     cudaHostAlloc((void**)&AT, nt*nt*nb2*sizeof(double), cudaHostAllocPortable);
 #else
     AT = (double *)malloc(nt*nt*nb2*sizeof(double));  
@@ -108,7 +104,7 @@ RunTest(int *iparam, double *dparam, real_Double_t *t_)
     PLASMA_Desc_Destroy(&descA);
     PLASMA_Finalize();
 
-#if defined(CONFIG_USE_CUDA)
+#if defined(PLASMA_CUDA)
     cudaFreeHost(AT);
 #else
     free(AT);  

@@ -23,6 +23,7 @@
 
 # Compilers, linker/loader, archiver, options
 CC          = gcc
+NVCC	    = nvcc
 FC          = gfortran
 LOADER      = $(FC)
 
@@ -30,23 +31,26 @@ ARCH        = ar
 ARCHFLAGS   = cr
 RANLIB      = ranlib
 
-CFLAGS      = -O2 -DADD_
-FFLAGS      = -O2
-LDFLAGS     =
+# CUDA config
 
+CFLAGS	    = -O2 -DADD_ -g -DPLASMA_CUDA $(CUDA_CFLAGS)
+FFLAGS      = -O2
+LDFLAGS     = $(CUDA_LDFLAGS) -lcublas
+
+#CFLAGS += -DCONFIG_VERBOSE
+ 
 # Enable/Disable F90 compilation
 PLASMA_F90 = 0
 
-# BLAS library
-LIBBLAS     = -L/scratch/jvlima/install/atlas3.9.69/lib -llapack -lcblas -lf77blas -latlas
+# Blas Library
+LIBBLAS     = -L/Users/jvlima/install/atlas/lib -llapack -lcblas -lf77blas -latlas
+# CBlas library
+LIBCBLAS    = -L/Users/jvlima/install/atlas/lib -llapack -lcblas -lf77blas -latlas
+# lapack and tmg library (lapack is included in acml)
+LIBLAPACK   = /Users/jvlima/install/lapack/libtmglib.a /Users/jvlima/install/lapack/liblapack.a 
+INCCLAPACK  = -I/Users/jvlima/install/lapacke/include
+LIBCLAPACK  = -L/Users/jvlima/install/lapacke/lib -llapacke 
 
-# CBLAS library
-LIBCBLAS    = -L/scratch/jvlima/install/atlas3.9.69/lib -llapack -lcblas -lf77blas -latlas 
+# XKaapi install
+XKAAPIDIR = $(HOME)/install/xkaapi/default
 
-# LAPACK and TMG library
-LIBLAPACK   = -L/scratch/jvlima/install/atlas3.9.69/lib -llapack -latlas  $(LAPACK_LDFLAGS)
-# /scratch/jvlima/install/lapack-3.4.0/libtmglib.a
-
-# LAPACK C Wrapper library
-INCCLAPACK  = -I/home/jvlima/install/lapacke/include
-LIBCLAPACK  = -L/home/jvlima/install/lapacke/lib -llapacke

@@ -21,9 +21,9 @@ prefix ?= ./install
 
 #///// D /// O ////// N /// O /// T ////// T /// O /// U /// C /// H /////
 
-QUARKDIR ?= $(PLASMA_DIR)/quark
-INCQUARK ?= -I$(QUARKDIR)
-LIBQUARK ?= -L$(QUARKDIR) -lquark
+QUARKDIR = $(XKAAPIDIR)/lib
+INCQUARK  = -I$(XKAAPIDIR)/include
+LIBQUARK  = -L$(XKAAPIDIR)/lib -lquark -lkaapi
 
 # Include directory
 INC         = -I$(PLASMA_DIR)/include $(INCQUARK) $(INCCLAPACK)
@@ -33,6 +33,7 @@ LIBDIR      = -L$(PLASMA_DIR)/lib
 
 # Location and name of the PLASMA library.
 LIBCOREBLAS = $(PLASMA_DIR)/lib/libcoreblas.a
+LIBCOREKBLAS = $(PLASMA_DIR)/lib/libcorekblas.a
 LIBPLASMA   = $(PLASMA_DIR)/lib/libplasma.a
 LIBEZT_COREBLAS = $(PLASMA_DIR)/lib/libeztrace-coreblas.a
 LIBEZT_CONVERT  = $(PLASMA_DIR)/lib/libeztrace-convert-coreblas.so
@@ -50,7 +51,7 @@ ifeq (${PLASMA_TRACE}, 1)
 endif
 
 #  All internal libraries
-LIB    = $(LIBDIR) -lplasma ${LIBTRACE} -lcoreblas -lplasma $(LIBQUARK) 
+LIB    = $(LIBDIR) -lplasma ${LIBTRACE} -lcoreblas -lcorekblas -lplasma $(LIBQUARK) 
 #  All external libraries
 LIBEXT = $(LIBCBLAS) $(LIBCLAPACK) $(LIBLAPACK) $(LIBBLAS) -lpthread -lm
 

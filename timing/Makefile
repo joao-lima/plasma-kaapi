@@ -11,20 +11,13 @@
 #
 ###
 
-XKAAPIDIR = $(HOME)/install/xkaapi/default
-QUARKDIR = $(HOME)/install/xkaapi/default/lib
-INCQUARK  = -I$(XKAAPIDIR)/include
-LIBQUARK  = -L$(XKAAPIDIR)/lib -lquark -lkaapi
 SUFFIX = xkaapi
 
 PLASMA_DIR = ..
 include ../Makefile.internal
 
-CFLAGS  += -g -DCONFIG_USE_CUDA -I../control/ $(INC) -I$(HOME)/xkaapi/api/quark/core_cublas $(CUDA_CFLAGS)
-LDFLAGS +=  -lcore_cublas $(LIB) -L$(HOME)/xkaapi/api/quark/core_cublas $(CUDA_LDFLAGS) -lcublas
-
-#CFLAGS  += -g -I../control/ $(INC)
-#LDFLAGS +=  $(LIB) 
+CFLAGS  += -g -I../control/ $(INC)
+LDFLAGS +=  $(LIB) 
 
 ZHDR =  zauxiliary.h zauxiliary.c
 CHDR = cauxiliary.h cauxiliary.c

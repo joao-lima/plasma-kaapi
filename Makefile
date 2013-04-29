@@ -18,13 +18,16 @@ include ./Makefile.internal
 
 all: lib test example timings
 
-lib: libquark libplasma libcoreblas
+lib: libquark libplasma libcoreblas libcorekblas
 
 libquark:
 	(cd quark && $(MAKE) libquark.a)
 
 libcoreblas:
 	(cd core_blas && $(MAKE))
+
+libcorekblas:
+	(cd core_kblas && $(MAKE))
 
 libplasma:
 	(cd control && $(MAKE))
@@ -47,6 +50,7 @@ timings: lib
 clean:
 	(cd quark       && $(MAKE) clean )
 	(cd core_blas   && $(MAKE) clean )
+	(cd core_kblas   && $(MAKE) clean )
 	(cd compute     && $(MAKE) clean )
 	(cd control     && $(MAKE) clean )
 	(cd testing     && $(MAKE) clean )
@@ -57,6 +61,7 @@ clean:
 cleanall: 
 	(cd quark       && $(MAKE) cleanall )
 	(cd core_blas   && $(MAKE) cleanall )
+	(cd core_kblas   && $(MAKE) cleanall )
 	(cd compute     && $(MAKE) cleanall )
 	(cd control     && $(MAKE) cleanall )
 	(cd testing     && $(MAKE) cleanall )
@@ -97,7 +102,7 @@ dir:
 	mkdir -p $(prefix)/lib
 	mkdir -p $(prefix)/lib/pkgconfig
 
-install: libquark libplasma libcoreblas dir
+install: libquark libplasma libcoreblas libcorekblas dir
 #       PLASMA
 	cp $(PLASMA_DIR)/include/*.h   $(prefix)/include
 ifeq (${PLASMA_F90}, 1)

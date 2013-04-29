@@ -85,6 +85,16 @@ int gettimeofday(struct timeval* tv, struct timezone* tz)
 #include <lapacke.h>
 #include <plasma.h>
 #include <core_blas.h>
+
+#if defined(PLASMA_CUDA)
+#include <cuda_runtime_api.h>
+#endif
+
+#if defined(PLASMA_KAAPI)
+#include "kaapi.h"
+#include <core_kblas.h>
+#endif
+
 #include <plasma_tmg.h>
 #include "flops.h"
 #include "timing.h"
