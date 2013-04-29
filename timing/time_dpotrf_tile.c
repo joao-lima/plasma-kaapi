@@ -47,7 +47,7 @@ RunTest(int *iparam, double *dparam, real_Double_t *t_)
     nb  = iparam[TIMING_NB];
     nb2 = nb * nb;
     nt  = n / nb + ((n % nb == 0) ? 0 : 1);
-    
+  
     /* Allocate Data */
 
 #if defined(CONFIG_USE_CUDA)
@@ -110,7 +110,6 @@ RunTest(int *iparam, double *dparam, real_Double_t *t_)
 
 #if defined(CONFIG_USE_CUDA)
     cudaFreeHost(AT);
-    kaapi_finalize();
 #else
     free(AT);  
 #endif

@@ -227,7 +227,67 @@ Test(int64_t n, int *iparam) {
     }
     else
     {
-        printf( "%s,%d,%d,%d,%d,%d,%.10f,%.10f,%.10f\n", _NAME, iparam[TIMING_N], iparam[TIMING_NB], iparam[TIMING_IB], iparam[TIMING_NRHS], iparam[TIMING_THRDNBR] ,sumt/niter, gflops, sd );
+      const char* sched = getenv("KAAPI_SCHED");
+      const char* cpuset = getenv("KAAPI_CPUSET");
+      const char* gpuset = getenv("KAAPI_GPUSET");
+      const char* ldpath = getenv("LD_LIBRARY_PATH");
+      const char* priority = getenv("QUARK_PRIORITY");
+      const char* cuda_window = getenv("KAAPI_CUDA_WINDOW_SIZE");
+      double alpha= 1.f;
+      double beta = 1.f;
+      int steal= 0;
+      int calibrate= 0;
+      int setarch=0;
+      int prio= 0;
+
+      if(getenv("KAAPI_PERFMODEL_CALIBRATE") != 0)
+      {
+        calibrate = 1;
+      }
+
+      if(getenv("QUARK_ARCH_GPU_ONLY") != 0)
+      {
+        setarch = 1;
+      }
+      
+      if(priority != 0)
+      {
+        prio = atoi(priority);
+      }
+      
+      if(getenv("KAAPI_HEFT_STEAL") != 0)
+      {
+        steal = 1;
+      }
+      if(getenv("KAAPI_GDUAL_STEAL") != 0)
+      {
+        steal = 1;
+      }      
+      
+      if(getenv("KAAPI_HEFT_ALPHA") != 0)
+      {
+        const char* str = getenv("KAAPI_HEFT_ALPHA");
+        alpha = atof(str);
+      }
+      if(getenv("KAAPI_HEFT_BETA") != 0)
+      {
+        const char* str = getenv("KAAPI_HEFT_BETA");
+        beta = atof(str);
+      }
+      if(getenv("KAAPI_GDUAL_ALPHA") != 0)
+      {
+        const char* str = getenv("KAAPI_GDUAL_ALPHA");
+        alpha = atof(str);
+      }
+      if(getenv("KAAPI_GDUAL_BETA") != 0)
+      {
+        const char* str = getenv("KAAPI_GDUAL_BETA");
+        beta = atof(str);        
+      }
+//      fprintf(stdout, "name setarch priority cpu gpu CUDA_WINDOW scheduler alpha beta calibrate steal(heft/gdual) N NB IB NRHS THREADS(PLASMA) time Gflops SD  cpuset gpuset LD_LIBRARY_PATH\n");
+        fprintf(stdout, "%s;%d;%d;%d;%d;%s;%s;%.4f;%.4f;%d;%d;%d;%d;%d;%d;%d;%.10f;%.10f;%.10f;%s;%s;%s\n",
+                _NAME, setarch, prio, kaapi_getconcurrency_cpu(), kaapi_getconcurrency_gpu(), cuda_window, sched, alpha, beta, calibrate, steal,
+                iparam[TIMING_N], iparam[TIMING_NB], iparam[TIMING_IB], iparam[TIMING_NRHS], iparam[TIMING_THRDNBR] ,sumt/niter, gflops, sd, cpuset, gpuset, ldpath );
     }
     fflush( stdout );
     free(t);

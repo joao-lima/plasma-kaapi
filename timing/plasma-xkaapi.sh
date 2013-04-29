@@ -19,14 +19,29 @@ ALLITER=10
 # export KAAPI_DOT_NOACTIVATION_LINK=1
 # export KAAPI_DOT_NOLABEL=1
 
-export KAAPI_DISPLAY_PERF=1
+#export KAAPI_DISPLAY_PERF=1
 
-#export KAAPI_PUSH_AFFINITY="writer"
-#export KAAPI_PUSH_AFFINITY="heft"
-export KAAPI_HEFT_CALIBRATE=1
+#export KAAPI_WSSELECT="hwsg"
+#export KAAPI_CUDA_PEER=1
+
+export KAAPI_SCHED="writer"
+#export KAAPI_SCHED="heft"
+#export KAAPI_PERFMODEL_CALIBRATE=1
+#export KAAPI_PERFMODEL_TRANSFER="null"
+export KAAPI_PERFMODEL_TRANSFER="idgraf"
+#export KAAPI_HEFT_STEAL=1
+#export KAAPI_SCHED="gdual"
+#export KAAPI_HEFT_CALIBRATE=1
 #    export KAAPI_STEAL_AFFINITY="writer"
-#    export KAAPI_PUSH_AFFINITY="locality"
+#    export KAAPI_SCHED="locality"
 #    export KAAPI_STEAL_AFFINITY="locality"
+
+export QUARK_ARCH_GPU_ONLY=1
+export QUARK_PRIORITY=0
+
+#export KAAPI_SCHED="speedup"
+#export KAAPI_SPEEDUP_THRESHOLD_CPU=0.0
+#export KAAPI_SPEEDUP_THRESHOLD_CUDA=100.0
 
 #ib=1024
 #ib=512
@@ -43,40 +58,46 @@ fi
 
 function run_test {
 #  export KAAPI_CPUSET="0:11"
-  export KAAPI_CPUSET="0,5,6,11"
-  export KAAPI_GPUSET="0~1"
 #  export KAAPI_CPUSET="0,5,6,11"
-#  export KAAPI_GPUSET="0~1,1~2,2~3,3~4,4~7,5~8,6~9,7~10"
+#  export KAAPI_GPUSET="0~1"
+  export KAAPI_CPUSET="0,5,6,11"
+  export KAAPI_GPUSET="0~1,1~2,2~3,3~4,4~7,5~8,6~9,7~10"
 
-  export KAAPI_WINDOW_SIZE=2
+  export KAAPI_CUDA_WINDOW_SIZE=2
 
-  #testing="time_dpotrf"
-  #testing="time_dpotrf_tile"
-  #testing="time_dgetrf_tile"
-  #testing="time_dgetrf_incpiv_tile"
-  #testing="time_dgetrf"
-  #testing="time_dgetrf_incpiv"
-#  testing="time_dgemm_tile"
+#  testing="time_dpotrf_tile.xkaapi"
+#  testing="time_dgetrf_tile"
+#  testing="time_dgetrf_incpiv_tile.xkaapi.setarch"
+#  testing="time_dgetrf_incpiv_tile.xkaapi"
+  testing="time_dgemm_tile.xkaapi"
+#  testing="time_dgemm_tile.xkaapi.setarch"
   #testing="time_sgemm_tile"
   #testing="time_dpotrf_tile time_dgemm_tile"
 #  testing="time_dgeqrf_tile"
-  testing="time_dgeqrfrh_tile"
+#  testing="time_dgeqrfrh_tile"
 
   #cache_policy="lru_double lru"
   cache_policy="lru_double"
   #cache_policy="lru"
 
+#  export KAAPI_HEFT_ALPHA=1.0
+#  export KAAPI_HEFT_BETA=10.0
+
+  export KAAPI_GDUAL_ALPHA=1.0
+#  export KAAPI_GDUAL_BETA=10.0
+
   #range="20480:20480:20480"
-  #range="32768:32768:32768"
+#  range="32768:32768:32768"
   #range="40960:40960:40960"
 #  range="10240:10240:10240"
   #range="10240:10240:20480"
-  range="8192:8192:8192"
-  #range="2048:8192:2048"
-#  range="2048:2048:2048"
-  #nblocks="2048"
-#  nblocks="1024"
-  nblocks="512"
+#  range="16384:16384:16384"
+#  range="8192:8192:8192"
+ #range="2048:8192:2048"
+  range="2048:2048:2048"
+#  nblocks="512 800 1024"
+#  nblocks="512 800 1024"
+  nblocks="1024"
   #nblocks=" $(seq 400 100 1200)"
   niter=1
 
@@ -110,8 +131,8 @@ function run_test {
   done
 }
 
-#run_test
-#exit 0
+run_test
+exit 0
 
 function generic_plasma {
   ncpu="$1"
@@ -156,7 +177,7 @@ function generic_plasma {
 	      then
 		 KAAPI_STACKSIZE_MASTER=536870912 \
 		 KAAPI_GPU_CACHE_POLICY=$cache \
-		 KAAPI_PUSH_AFFINITY=$aff \
+		 KAAPI_SCHED=$aff \
 			  ./$test --threads=1 --dyn --n_range=$range --niter=1 \
 			  --nowarmup --ifmt=0  --nb=$nb $options $verif  &>> $output
 	       fi

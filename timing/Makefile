@@ -15,6 +15,7 @@ XKAAPIDIR = $(HOME)/install/xkaapi/default
 QUARKDIR = $(HOME)/install/xkaapi/default/lib
 INCQUARK  = -I$(XKAAPIDIR)/include
 LIBQUARK  = -L$(XKAAPIDIR)/lib -lquark -lkaapi
+SUFFIX = xkaapi
 
 PLASMA_DIR = ..
 include ../Makefile.internal
@@ -73,7 +74,7 @@ SSRC = time_sgemm.c time_sposv.c time_spotrf.c time_sgesv.c time_sgetrf.c time_s
 
 ALLSRC = $(ZSRC) $(CSRC) $(DSRC) $(SSRC)
 ALLOBJ = $(ALLSRC:.c=.o)
-EXE = $(ALLOBJ:.o=)
+EXE = $(ALLOBJ:.o=.$(SUFFIX))
 
 all: $(EXE)
 
@@ -93,19 +94,19 @@ time_%.o : time_%.c $(ALLHDR)
 %auxiliary.o : %auxiliary.c $(ALLHDR)
 	$(CC) $(CFLAGS) -c $< -o $@
 
-time_s% : time_s%.o sauxiliary.o
+time_s%.$(SUFFIX) : time_s%.o sauxiliary.o
 	$(LOADER) $^ -o $@ $(LDFLAGS)
-time_d% : time_d%.o dauxiliary.o
+time_d%.$(SUFFIX) : time_d%.o dauxiliary.o
 	$(LOADER) $^ -o $@ $(LDFLAGS)
-time_c% : time_c%.o cauxiliary.o
+time_c%.$(SUFFIX) : time_c%.o cauxiliary.o
 	$(LOADER) $^ -o $@ $(LDFLAGS)
-time_z% : time_z%.o zauxiliary.o
+time_z%.$(SUFFIX) : time_z%.o zauxiliary.o
 	$(LOADER) $^ -o $@ $(LDFLAGS)
 
-time_zlapack2tile time_clapack2tile time_dlapack2tile time_slapack2tile : auxiliary.o
-time_zgecfi time_cgecfi time_dgecfi time_sgecfi : auxiliary.o
+time_zlapack2tile.$(SUFFIX) time_clapack2tile.$(SUFFIX) time_dlapack2tile.$(SUFFIX) time_slapack2tile.$(SUFFIX) : auxiliary.o
+time_zgecfi.$(SUFFIX) time_cgecfi.$(SUFFIX) time_dgecfi.$(SUFFIX) time_sgecfi.$(SUFFIX) : auxiliary.o
 
-png: time_dgesv time_zgesv
-	./time_dgesv --gnuplot-png | tee timeplot.gpt ; gnuplot timeplot.gpt
+png: time_dgesv.$(SUFFIX) time_zgesv.$(SUFFIX)
+	./time_dgesv.$(SUFFIX) --gnuplot-png | tee timeplot.gpt ; gnuplot timeplot.gpt
 
 .PHONY: all clean

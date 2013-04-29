@@ -129,7 +129,6 @@ RunTest(int *iparam, double *dparam, real_Double_t *t_)
     PLASMA_Desc_Destroy(&descC);
     PLASMA_Finalize();
 #if defined(CONFIG_USE_CUDA)
-    kaapi_finalize();
 #endif
 
     return 0;

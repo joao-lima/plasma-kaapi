@@ -38,7 +38,7 @@ void CORE_dgemm(int transA, int transB,
         (alpha), A, LDA,
         B, LDB,
         (beta), C, LDC);
-#if 1
+#if 0
   fprintf(stdout,"%s: a=%p b=%p c=%p m=%d n=%d k=%d\n", __FUNCTION__,
           A, B, C, M, N, K);
   fflush(stdout);
